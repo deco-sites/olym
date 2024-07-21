@@ -58,6 +58,30 @@
         "primaryColor": "#858585",
         "secondColor": "#afafaf"
       }
+    },
+    {
+      "__resolveType": "site/sections/Content/TextAndVideo.tsx",
+      "videoBackground": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/3ea3264b-8d53-462c-9120-09fa35a614ac",
+      "title": "<p><span style=\"color: #ffffff\">&lt;/CORRE_SUPRA&gt;</span></p>",
+      "content": "<p>TECNOLOGIA, PERFORMANCE &amp; DESIGN.</p>",
+      "gradinentColorText": {
+        "primaryColor": "#ffffff",
+        "secondColor": "#ffffff"
+      },
+      "loop": true,
+      "autoplay": true,
+      "muted": true,
+      "animation": {
+        "animationType": "fade-in-bottom",
+        "duration": "0.8"
+      },
+      "showAnimaton": true,
+      "button": {
+        "label": "Assista ao vídeo",
+        "href": "#",
+        "textColorButton": "#ffffff",
+        "backgroundButton": "#a5a5a5"
+      }
     }
   ],
   "seo": {

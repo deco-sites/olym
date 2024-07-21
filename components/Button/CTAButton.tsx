@@ -1,3 +1,4 @@
+import { type ComponentChildren } from "preact";
 export interface Props {
   label?: string;
   href?: string;
@@ -5,13 +6,25 @@ export interface Props {
   backgroundButton?: string;
   /** @format color */
   textColorButton?: string;
-  /** @hidden */
+  /**
+   * @hide true
+   */
   class?: string;
+  /**
+   * @hide true
+   */
+  children?: ComponentChildren;
 }
 
 export default function CTAButton(props: Props) {
-  const { label, href, textColorButton, backgroundButton, class: _class } =
-    props;
+  const {
+    label,
+    href,
+    textColorButton,
+    backgroundButton,
+    class: _class,
+    children,
+  } = props;
 
   return (
     <a
@@ -20,6 +33,7 @@ export default function CTAButton(props: Props) {
         _class}
       style={{ background: backgroundButton, color: textColorButton }}
     >
+      {children}
       {label}
     </a>
   );

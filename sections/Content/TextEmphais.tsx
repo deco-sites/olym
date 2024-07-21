@@ -57,7 +57,7 @@ export default function TextEmphasis(props: Props) {
               >
               </h2>
               <span
-                class="font-FKOlympikus text-6.5xl text-center md:text-7xl lg:text-7.5xl -mt-4 "
+                class="font-FKOlympikus text-6.5xl text-center md:text-7xl lg:text-7.5xl -mt-4 pb-4"
                 style={` background: linear-gradient(270deg,${gradineColorText.secondColor} -1.04%,${gradineColorText.primaryColor} 100.71%); -webkit-background-clip: text;  -webkit-text-fill-color: transparent`}
                 dangerouslySetInnerHTML={{ __html: content }}
               >
@@ -82,7 +82,7 @@ export default function TextEmphasis(props: Props) {
             >
             </h2>
             <span
-              class="font-FKOlympikus text-6.5xl text-center md:text-7xl lg:text-7.5xl -mt-4 "
+              class="font-FKOlympikus text-6.5xl text-center md:text-7xl lg:text-7.5xl -mt-4 pb-4"
               style={` background: linear-gradient(270deg,${gradineColorText.secondColor} -1.04%,${gradineColorText.primaryColor} 100.71%); -webkit-background-clip: text;  -webkit-text-fill-color: transparent`}
               dangerouslySetInnerHTML={{ __html: content }}
             >

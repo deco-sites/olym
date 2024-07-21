@@ -16,6 +16,10 @@ export interface Props {
    */
   duration?: string;
   children?: ComponentChildren;
+  /**
+   * @hide true
+   */
+  class?: string;
 }
 
 const snippet = (id: string, animationClass?: Animations) => {
@@ -34,7 +38,8 @@ const snippet = (id: string, animationClass?: Animations) => {
 };
 
 function ContainerAnimation(
-  { children, animationType = "fade-in", duration = "0.3" }: Props,
+  { children, animationType = "fade-in", duration = "0.3", class: _class }:
+    Props,
 ) {
   const id = useId();
 
@@ -46,7 +51,7 @@ function ContainerAnimation(
       </style>
       <div
         id={id}
-        class={"opacity-0"}
+        class={`opacity-0 ${_class}`}
         style={{ animationDuration: duration + "s" }}
       >
         {children}

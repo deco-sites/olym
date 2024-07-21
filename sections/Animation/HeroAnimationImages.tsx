@@ -43,8 +43,8 @@ export default function HeroAnimationImages(props: Props) {
                   <Image
                     src={img.image}
                     alt={img.alt}
-                    width={291}
-                    height={650}
+                    width={225}
+                    height={419}
                     class={"w-auto h-full object-cover lg:max-h-[450px] xl:max-h-[633px]"}
                   >
                   </Image>
@@ -59,8 +59,8 @@ export default function HeroAnimationImages(props: Props) {
               <Image
                 src={img.image}
                 alt={img.alt}
-                width={291}
-                height={650}
+                width={225}
+                height={419}
                 class={"w-auto h-full object-cover lg:max-h-[450px] xl:max-h-[633px]"}
               >
               </Image>

@@ -11,6 +11,32 @@ export default {
         "FKOlympikus": ["FKOlympikus"],
         "Signal": ["Signal"],
       },
+      fontSize: {
+        "6.5xl": [
+          "70px",
+          {
+            lineHeight: "60px",
+            letterSpacing: "-0.01em",
+            fontWeight: "400",
+          },
+        ],
+        "7xl": [
+          "90px",
+          {
+            lineHeight: "74px",
+            letterSpacing: "-0.01em",
+            fontWeight: "400",
+          },
+        ],
+        "7.5xl": [
+          "120px",
+          {
+            lineHeight: "100px",
+            letterSpacing: "-0.01em",
+            fontWeight: "400",
+          },
+        ],
+      },
       animation: {
         sliding: "sliding 30s linear infinite",
       },

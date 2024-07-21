@@ -40,6 +40,24 @@
         "colorFont": "#ffffff",
         "interval": 5
       }
+    },
+    {
+      "__resolveType": "site/sections/Content/TextEmphais.tsx",
+      "title": "<p><span style=\"color: rgb(141, 141, 141)\">&lt;/CORRA_SUPRA&gt;</span></p>",
+      "content": "<p>O SUPERTÊNIS BRASILEIRO COM AS MELHORES TECNOLOGIAS DO MUNDO DA CORRIDA.</p>",
+      "backgroundSection": "#d9d9d9",
+      "button": {
+        "label": "Comprar agora",
+        "href": "#"
+      },
+      "animation": {
+        "duration": "0.8",
+        "animationType": "fade-in-bottom"
+      },
+      "gradineColorText": {
+        "primaryColor": "#858585",
+        "secondColor": "#afafaf"
+      }
     }
   ],
   "seo": {

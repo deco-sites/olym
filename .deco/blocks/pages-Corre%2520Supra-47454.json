@@ -32,7 +32,14 @@
           "label": "REVIEWS",
           "href": "#REVIEWS"
         }
-      ]
+      ],
+      "alerts": {
+        "alerts": [
+          "<p>CORRE SUPRA. O SUPERTÊNIS FEITO POR BRASILEIROS.</p>"
+        ],
+        "colorFont": "#ffffff",
+        "interval": 5
+      }
     }
   ],
   "seo": {

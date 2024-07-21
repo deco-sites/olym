@@ -8,6 +8,8 @@ import {
 import Drawer from "../../components/ui/Drawer.tsx";
 import Icon from "../../components/ui/Icon.tsx";
 import MenuLP from "../../components/header/MenuLP.tsx";
+import type { Props as AlertProps } from "../../components/header/Alert.tsx";
+import Alert from "../../components/header/Alert.tsx";
 
 /**@titleBy label */
 interface Link {
@@ -33,6 +35,10 @@ interface Props {
    * @format text
    */
   ctaUrl?: string;
+  /**
+   * @title Slider Alerts
+   */
+  alerts?: AlertProps;
 }
 
 const Desktop = (props: Props) => {
@@ -106,11 +112,12 @@ export default function HeaderLP({
   menuItems = [{ label: "home", href: "#" }],
   cta = "Get Started",
   ctaUrl = "#",
+  alerts,
 }: Props) {
   const device = useDevice();
 
   return (
-    <header class=" bg-neutral text-white font-Signal font-light flex justify-center items-center">
+    <header class=" bg-neutral text-white font-Signal font-light flex justify-center items-center flex-col">
       {device == "desktop"
         ? (
           <Desktop
@@ -128,6 +135,13 @@ export default function HeaderLP({
             ctaUrl={ctaUrl}
           />
         )}
+      {alerts && (
+        <Alert
+          alerts={alerts.alerts}
+          interval={alerts.interval}
+          background={alerts.background}
+        />
+      )}
     </header>
   );
 }

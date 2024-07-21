@@ -7,6 +7,11 @@ export default {
   theme: {
     container: { center: true },
     extend: {
+      fontFamily: {
+        "FKOlympikus": ["FKOlympikus"],
+        "Signal": ["Signal"],
+      },
+
       animation: {
         sliding: "sliding 30s linear infinite",
       },

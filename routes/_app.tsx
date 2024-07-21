@@ -28,6 +28,41 @@ export default defineApp(async (_req, ctx) => {
           rel="stylesheet"
         />
 
+        <style
+          dangerouslySetInnerHTML={{
+            __html: ` @font-face {
+            font-family: 'FKOlympikus';
+            src:
+                url("${
+              asset("/fonts/FKOlympikus-Upright.ttf")
+            }") format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+            
+        @font-face {
+            font-family: 'Signal';
+            src:
+                url("${asset("/fonts/signalweb-regular.woff")}") format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+                @font-face {
+            font-family: 'Signal';
+            src:
+                url("${asset("/fonts/signalweb-light.woff")}") format('woff');
+            font-weight: light;
+            font-style: light;
+            font-display: swap;
+        }
+        `,
+          }}
+        >
+        </style>
+
         {/* Web Manifest */}
         <link rel="manifest" href={asset("/site.webmanifest")} />
       </Head>

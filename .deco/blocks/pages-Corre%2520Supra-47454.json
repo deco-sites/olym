@@ -42,25 +42,60 @@
       }
     },
     {
+      "__resolveType": "site/sections/Animation/HeroAnimationImages.tsx",
+      "primaryImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/7c385203-d77a-4a3e-8b4a-cc31e6db4695",
+      "altPrimary": "tenis traz",
+      "secondImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/e7996cdf-5851-4aed-ad1d-ae7b356267de",
+      "altSecond": "tenis frente",
+      "animation": {
+        "animationType": "fade-in-bottom",
+        "duration": "0.8"
+      },
+      "images": [
+        {
+          "animation": {
+            "animationType": "slide-right"
+          },
+          "alt": "tenis traz",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/1326f488-0101-4ec5-bbb3-3185fea84f67"
+        },
+        {
+          "animation": {
+            "animationType": "slide-left",
+            "duration": "0.4"
+          },
+          "alt": "tenis frente",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/6f623e03-3f4a-434c-9786-1ab0a73fe9ff"
+        }
+      ],
+      "background": "#d9d9d9",
+      "showAnimation": true
+    },
+    {
       "__resolveType": "site/sections/Content/TextEmphais.tsx",
       "title": "<p><span style=\"color: rgb(141, 141, 141)\">&lt;/CORRA_SUPRA&gt;</span></p>",
       "content": "<p>O SUPERTÊNIS BRASILEIRO COM AS MELHORES TECNOLOGIAS DO MUNDO DA CORRIDA.</p>",
-      "backgroundSection": "#d9d9d9",
+      "animation": {
+        "animationType": "fade-in-bottom",
+        "duration": "0.8"
+      },
       "button": {
         "label": "Comprar agora",
         "href": "#"
       },
-      "animation": {
-        "duration": "0.8",
-        "animationType": "fade-in-bottom"
-      },
+      "backgroundSection": "#d9d9d9",
       "gradineColorText": {
         "primaryColor": "#858585",
         "secondColor": "#afafaf"
-      }
+      },
+      "showAnimaton": true
     },
     {
       "__resolveType": "site/sections/Content/TextAndVideo.tsx",
+      "animation": {
+        "animationType": "fade-in-bottom",
+        "duration": "0.8"
+      },
       "videoBackground": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/3ea3264b-8d53-462c-9120-09fa35a614ac",
       "title": "<p><span style=\"color: #ffffff\">&lt;/CORRE_SUPRA&gt;</span></p>",
       "content": "<p>TECNOLOGIA, PERFORMANCE &amp; DESIGN.</p>",
@@ -71,10 +106,6 @@
       "loop": true,
       "autoplay": true,
       "muted": true,
-      "animation": {
-        "animationType": "fade-in-bottom",
-        "duration": "0.8"
-      },
       "showAnimaton": true,
       "button": {
         "label": "Assista ao vídeo",

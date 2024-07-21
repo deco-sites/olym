@@ -180,5 +180,19 @@
   "/.deco/blocks/Preview%20%2Fsections%2FImages%2FCarousel.tsx.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Images/Carousel.tsx"
+  },
+  "/.deco/blocks/Preview%20site%2Fsections%2FHeader%2FHeader.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Header/Header.tsx"
+  },
+  "/.deco/blocks/Preview%20site%2Fsections%2FHeader%2FHeaderLP.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Header/HeaderLP.tsx"
+  },
+  "/.deco/blocks/pages-Corre%2520Supra-47454.json": {
+    "name": "Corre Supra",
+    "path": "/corre_supra",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }

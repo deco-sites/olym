@@ -115,7 +115,7 @@ const Mobile = ({ logo, searchbar }: Props) => (
     <Drawer
       id={SEARCHBAR_DRAWER_ID}
       aside={
-        <Drawer.Aside title="Search" drawer={SEARCHBAR_DRAWER_ID}>
+        <Drawer.Aside drawer={SEARCHBAR_DRAWER_ID}>
           <div class="w-screen overflow-y-auto">
             <Searchbar {...searchbar} />
           </div>
@@ -125,7 +125,7 @@ const Mobile = ({ logo, searchbar }: Props) => (
     <Drawer
       id={SIDEMENU_DRAWER_ID}
       aside={
-        <Drawer.Aside title="Menu" drawer={SIDEMENU_DRAWER_ID}>
+        <Drawer.Aside drawer={SIDEMENU_DRAWER_ID}>
           <div
             id={SIDEMENU_CONTAINER_ID}
             class="h-full flex items-center justify-center"

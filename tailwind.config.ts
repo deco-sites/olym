@@ -11,7 +11,6 @@ export default {
         "FKOlympikus": ["FKOlympikus"],
         "Signal": ["Signal"],
       },
-
       animation: {
         sliding: "sliding 30s linear infinite",
       },
@@ -20,6 +19,9 @@ export default {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-50%)" },
         },
+      },
+      borderRadius: {
+        "4xl": "40px",
       },
     },
   },

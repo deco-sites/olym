@@ -1,0 +1,42 @@
+{
+  "name": "Corre Supra",
+  "path": "/corre_supra",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Header/HeaderLP.tsx",
+      "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/fb82fe45-843e-401d-9810-501fc485da46",
+      "cta": "Comprar agora",
+      "ctaUrl": "#",
+      "menuItems": [
+        {
+          "label": "Corra Supra",
+          "href": "#corra-supra"
+        },
+        {
+          "label": "HIGHLIGHTS",
+          "href": "#HIGHLIGHTS"
+        },
+        {
+          "label": "CORES",
+          "href": "#CORES"
+        },
+        {
+          "label": "TECNOLOGIAS",
+          "href": "#TECNOLOGIAS"
+        },
+        {
+          "label": "MÍDIA",
+          "href": "#MÍDIA"
+        },
+        {
+          "label": "REVIEWS",
+          "href": "#REVIEWS"
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

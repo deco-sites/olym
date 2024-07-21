@@ -16,6 +16,7 @@ interface Props {
    * @minItems 2
    */
   images: ItemImage[];
+  preload?: boolean;
   /**
    * @format color
    */
@@ -24,28 +25,31 @@ interface Props {
 }
 
 export default function HeroAnimationImages(props: Props) {
-  const { images, background, showAnimation } = props;
+  const { images, background, showAnimation, preload } = props;
 
   return (
     <div
-      class="flex justify-center items-center w-full max-w-screen lg:py-10 xl:py-16 max-h-[95vh] lg:max-h-full h-screen bg-neutral"
+      class="flex justify-center items-center w-full max-w-screen lg:py-10 xl:py-16 max-h-[95vh] lg:max-h-full h-screen bg-neutral relative"
       style={{ background: background }}
     >
       {showAnimation
         ? (
           <Animation>
-            <div class="flex flex-row gap-7 w-full h-full justify-center items-center px-7 overflow-hidden">
+            <div class="flex flex-row gap-7 w-auto mx-auto h-full justify-center items-center px-7 overflow-hidden">
               {images.map((img) => (
                 <Animation.AnimationItem
                   animationType={img.animation.animationType}
                   duration={img.animation.duration}
+                  class={"lg:max-h-[450px] xl:max-h-[633px] h-full w-auto"}
                 >
                   <Image
                     src={img.image}
                     alt={img.alt}
-                    width={225}
-                    height={419}
-                    class={"w-auto h-full object-cover lg:max-h-[450px] xl:max-h-[633px]"}
+                    loading={preload ? "eager" : "lazy"}
+                    fetchPriority={preload ? "high" : "low"}
+                    width={291}
+                    height={633}
+                    class={"h-full w-auto object-contain"}
                   >
                   </Image>
                 </Animation.AnimationItem>
@@ -59,9 +63,9 @@ export default function HeroAnimationImages(props: Props) {
               <Image
                 src={img.image}
                 alt={img.alt}
-                width={225}
-                height={419}
-                class={"w-auto h-full object-cover lg:max-h-[450px] xl:max-h-[633px]"}
+                width={291}
+                height={633}
+                class={"h-full w-auto object-contain lg:max-h-[450px] xl:max-h-[633px]"}
               >
               </Image>
             ))}

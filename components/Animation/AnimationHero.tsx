@@ -13,6 +13,10 @@ export interface Props {
   animationType?: Animations;
   duration?: string;
   children?: ComponentChildren;
+  /**
+   * hidde true
+   */
+  class?: string;
 }
 
 const scale = (id: string) => {
@@ -33,7 +37,8 @@ const scale = (id: string) => {
       if (scaleValue >= 0) {
         const finalScale = Math.min(scaleValue, 1.45);
         element.style.transform = `scale(${finalScale})`;
-        element.style.top = parseFloat(topValue) > 100 ? "100px" : topValue;
+        element.style.top = parseFloat(topValue) > 60 ? "60px" : topValue;
+        element.style.width = "auto";
       }
     }
   });
@@ -132,13 +137,13 @@ const animationByType = {
 };
 
 function AnimationItem(props: Props) {
-  const { children, animationType = "fade-in" } = props;
+  const { children, animationType = "fade-in", class: _class } = props;
   const id = useId();
 
   return (
     <div
       id={id}
-      class={"opacity-0"}
+      class={"opacity-0 " + _class}
       style={"transition: 2s cubic-bezier(.23,1,.32,1) 0s;"}
     >
       <style
@@ -165,8 +170,8 @@ export default function Animation(props: Props) {
 
   return (
     <div
-      class="w-full h-full "
-      style={"    transition: 2s cubic-bezier(.23,1,.32,1) 0s;"}
+      class="w-full h-full relative mx-auto"
+      style={"transition: 2s cubic-bezier(.23,1,.32,1) 0s;"}
       id={id}
     >
       {children}

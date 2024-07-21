@@ -68,7 +68,7 @@ const Desktop = (
       </div>
     </Modal>
 
-    <div class="flex flex-col gap-4 pt-5 container border-b border-gray-300">
+    <div class="flex flex-col gap-4 pt-5 container border-b border-gray-300 font-Signal">
       <div class="grid grid-cols-3 place-items-center">
         <div class="place-self-start">
           <a href="/" aria-label="Store logo">

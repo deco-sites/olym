@@ -6,7 +6,7 @@ interface Children {
   section: Section;
 }
 
-interface Props {
+export interface Props {
   animationType?:
     | "fade-in"
     | "fade-in-bottom"

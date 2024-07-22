@@ -113,6 +113,19 @@
         "textColorButton": "#ffffff",
         "backgroundButton": "#a5a5a5"
       }
+    },
+    {
+      "__resolveType": "site/sections/Content/TitleAndContent.tsx",
+      "title": "<p><span style=\"color: #a3a3a3\">O SUPERTÊNIS FEITO</span></p><p><span style=\"color: #a3a3a3\">POR BRASILEIROS.</span></p>",
+      "content": "<p><span style=\"color: #858585\">O Corre Supra traz o que há de melhor no mundo em termos de materiais e tecnologias para que os corredores brasileiros atinjam sua máxima performance.</span></p>",
+      "titleImage": "<p><span style=\"color: #858585\">APROVADO PELA:</span></p>",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/17ea89e5-aebf-4c04-97bf-f750d82437f2",
+      "alt": "selo",
+      "animation": {
+        "animationType": "fade-in-bottom",
+        "duration": "0.4"
+      },
+      "showAnimation": true
     }
   ],
   "seo": {

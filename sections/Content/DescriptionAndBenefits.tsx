@@ -47,7 +47,7 @@ interface Props {
    * @title Cor de fundo da Section
    * @format color
    */
-  background: string;
+  background?: string;
   /**
    * @title Configuração da animação
    */
@@ -94,7 +94,7 @@ export default function descriotionAndBenefits(props: Props) {
   const {
     description,
     emphasis,
-    background,
+    background = "#262626",
     animation,
     showAnimation = false,
   } = props;

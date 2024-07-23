@@ -8,42 +8,41 @@ import { useDevice } from "deco/hooks/useDevice.ts";
 interface ItemImage {
   /**
    * @title Image Desktop
+   * @description Imagem recomendada para a linha com uma imagem so:1272x600px ou com duas images:626x600px ou com as mesma proporção;
    */
   image: ImageWidget;
   /**
-   * @title Image MObile
+   * @title Image Mobile
+   * @description Tamanho da imagem recomendado 626x600px ou da mesma propoção
    */
   imageMobile: ImageWidget;
   /**
-   * @title alt da imagem
+   * @title Alt da imagem
    */
   alt: string;
-  /**
-   * @title Comprimento da imagem Desktop
-   * @description É importante setar o tamanho da imagem desktop por conta da sua variação no grid, assim é possivel garantir uma melhor responsividade
-   */
-  widht: number;
-  /**
-   * @title Altura da imagem Desktop
-   */
-  height: number;
 }
 
+/**
+ * @title Linhas
+ */
+interface Row {
+  /**
+   * @title Images
+   * @description imagens na mesma linha, recomendado no min 1 e no max 4
+   * @minItems 1
+   * @maxItems 2
+   */
+  images: ItemImage[];
+}
 interface Props {
   /**
    * @title Titulo
    */
   title: RichText;
   /**
-   * @title Imagens
+   * @title Linhas de imagens
    */
-  images: ItemImage[];
-  /**
-   * @title Grid Area
-   * @description Aqui você pode criar o layout das images do jeito que preferir e de acordo com a quantidade de imagens add acima, basta colocar img-'posição', por exemplo "'img-1 img1' 'img-2 img-3';" use este exemplo como referencia e veja o resultado ao lado
-   * @format textarea
-   */
-  gridTemplate: string;
+  rows: Row[];
   /**
    * @title Cor do funcdo
    * @format color
@@ -51,21 +50,57 @@ interface Props {
   background?: string;
 }
 
-function ItemGrid({ props, index }: { props: ItemImage; index: number }) {
-  const { image, imageMobile, alt, widht, height } = props;
+const MOBILESIZE = {
+  "widht": 335,
+  "height": 200,
+};
+
+const DESKTOPWIDTH = {
+  "1": 1272,
+  "2": 620,
+};
+
+const DESKTOPHEIGHT = {
+  "1": 600,
+  "2": 600,
+};
+
+function ItemImg(
+  { props, numberCol }: { props: ItemImage; numberCol: "1" | "2" },
+) {
+  const { image, imageMobile, alt } = props;
 
   const device = useDevice();
 
   return (
-    <div class="w-full h-full" style={{ gridArea: `img-${index + 1}` }}>
+    <div class={numberCol == "1" ? "w-full" : "lg:w-2/4 w-full" + " h-full "}>
       <Image
         src={device == "mobile" ? imageMobile : image}
         alt={alt}
-        width={device == "mobile" ? 335 : widht}
-        height={device == "mobile" ? 200 : height}
+        width={device == "mobile"
+          ? MOBILESIZE["widht"]
+          : DESKTOPWIDTH[numberCol || "2"]}
+        height={device == "mobile"
+          ? MOBILESIZE["height"]
+          : DESKTOPHEIGHT[numberCol || "2"]}
         loading={"lazy"}
         fetchPriority="low"
+        class={"w-full h-auto object-contain"}
       />
+    </div>
+  );
+}
+
+function Row(props: Row) {
+  const { images } = props;
+
+  return (
+    <div
+      class={"w-full flex-col lg:flex-row flex-wrap md:flex-nowrap gap-5 flex"}
+    >
+      {images.map((img) => (
+        <ItemImg props={img} numberCol={images.length === 1 ? "1" : "2"} />
+      ))}
     </div>
   );
 }
@@ -73,9 +108,8 @@ function ItemGrid({ props, index }: { props: ItemImage; index: number }) {
 export default function ImagesGrid(props: Props) {
   const {
     title,
-    images,
+    rows,
     background = "#262626",
-    gridTemplate = "'11''2''2';",
   } = props;
 
   return (
@@ -86,11 +120,8 @@ export default function ImagesGrid(props: Props) {
           dangerouslySetInnerHTML={{ __html: title }}
         >
         </span>
-        <div
-          class="flex flex-col lg:grid w-full h-full gap-5"
-          style={{ gridTemplateAreas: gridTemplate }}
-        >
-          {images.map((img, index) => <ItemGrid props={img} index={index} />)}
+        <div class="flex flex-col w-full h-full gap-5">
+          {rows.map((row) => <Row {...row} />)}
         </div>
       </div>
     </div>

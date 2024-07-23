@@ -271,7 +271,7 @@
     {
       "__resolveType": "site/sections/Images/ImagesGrid.tsx",
       "title": "<p><span>O CABEDAL TECNOLÓGICO QUE NÃO LACEIA</span></p>",
-      "gridTemplate": "'img-1 img-1' 'img-2 img-3';",
+      "gridTemplate": "'img-1 img-1' 'img-2 img-2' 'img-3 img-3';",
       "background": "#262626",
       "images": [
         {
@@ -284,7 +284,7 @@
         {
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/7c9a7494-3038-41cb-9041-71b74b7614e8",
           "alt": "TENIS",
-          "widht": 626,
+          "widht": 1272,
           "height": 600,
           "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/fc567c92-f912-43ed-a37d-e0f06aa44731"
         },
@@ -294,6 +294,31 @@
           "widht": 626,
           "height": 600,
           "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/cd9b1bf1-3aa4-4ff0-94a1-793e5c321843"
+        }
+      ],
+      "rows": [
+        {
+          "images": [
+            {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/04cb92fc-363b-4a6b-8c50-cb8f7f2fa9f2",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/36b3dce9-06f6-426e-bcd6-e5d72fe529f3",
+              "alt": "Tenis"
+            }
+          ]
+        },
+        {
+          "images": [
+            {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/b67afdf0-1bad-4326-bc99-eb9a8529ca13",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/81b21235-6457-4265-942e-89f3ceb5d1b2",
+              "alt": "tenis"
+            },
+            {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/1e3096ec-4434-4664-91c0-d191f7b0ab9c",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/95bf8d77-3963-4980-8eeb-ad551eb979ff",
+              "alt": "Tenis"
+            }
+          ]
         }
       ]
     }

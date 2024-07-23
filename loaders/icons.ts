@@ -5,6 +5,8 @@ import {
   AlignRight,
   Center,
   Default,
+  IconLess,
+  IconPlus,
   Left,
   Lettercase,
   Lowercase,
@@ -26,6 +28,9 @@ const icons = [
   { component: "S", label: "Small", prop: "fontSize" },
   { component: "M", label: "Normal", prop: "fontSize" },
   { component: "L", label: "Large", prop: "fontSize" },
+  { component: IconPlus, label: "IconPlus", prop: "icon" },
+  { component: IconLess, label: "IconLess", prop: "icon" },
+  { component: "none", label: "none", props: "icon" },
 ];
 
 // Used to load icons that will be used for ButtonGroup widgets.

@@ -267,6 +267,35 @@
           "backgroundIcon": "#000000"
         }
       ]
+    },
+    {
+      "__resolveType": "site/sections/Images/ImagesGrid.tsx",
+      "title": "<p><span>O CABEDAL TECNOLÓGICO QUE NÃO LACEIA</span></p>",
+      "gridTemplate": "'img-1 img-1' 'img-2 img-3';",
+      "background": "#262626",
+      "images": [
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/e8808717-2595-4239-8847-563fa73940f9",
+          "alt": "TENIS",
+          "widht": 1272,
+          "height": 600,
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/29c02e01-62d3-48da-908b-43f526da6cc3"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/7c9a7494-3038-41cb-9041-71b74b7614e8",
+          "alt": "TENIS",
+          "widht": 626,
+          "height": 600,
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/fc567c92-f912-43ed-a37d-e0f06aa44731"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/a8596b61-de94-44da-b691-266e29f240e5",
+          "alt": "TENIS",
+          "widht": 626,
+          "height": 600,
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/cd9b1bf1-3aa4-4ff0-94a1-793e5c321843"
+        }
+      ]
     }
   ],
   "seo": {

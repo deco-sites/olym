@@ -69,21 +69,62 @@ function EmphasisItem(props: Emphasis) {
             class="h-10 w-10 rounded-full flex justify-center items-center min-w-10 "
             style={{ background: backgroundIcon }}
           >
-            <Icon
-              id={icon == "IconPlus" ? "IconPLus" : "IconLess"}
-              width={26}
-              height={icon == "IconPlus" ? 26 : 5}
-            />
+            {icon == "IconPlus"
+              ? (
+                <svg
+                  width="26"
+                  height="26"
+                  viewBox="0 0 26 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="10.8726"
+                    y="0.659668"
+                    width="4.25532"
+                    height="24.6809"
+                    rx="2.12766"
+                    fill="white"
+                  />
+                  <rect
+                    x="0.659668"
+                    y="15.1274"
+                    width="4.25532"
+                    height="24.6809"
+                    rx="2.12766"
+                    transform="rotate(-90 0.659668 15.1274)"
+                    fill="white"
+                  />
+                </svg>
+              )
+              : (
+                <Icon
+                  id="IconLess"
+                  width={26}
+                  height={5}
+                />
+              )}
           </div>
         )}
-      <div class="flex flex-col -mt-[7px]">
+      <div class="flex flex-col -mt-[7px] gap-1">
         {preTitle && (
-          <span dangerouslySetInnerHTML={{ __html: preTitle }}></span>
+          <span
+            class="font-Signal text-lg -mb-[10px]"
+            dangerouslySetInnerHTML={{ __html: preTitle }}
+          >
+          </span>
         )}
-        <span class=" text-5xl" dangerouslySetInnerHTML={{ __html: title }}>
+        <span
+          class=" text-5xl leading-10"
+          dangerouslySetInnerHTML={{ __html: title }}
+        >
         </span>
         {postitle && (
-          <span dangerouslySetInnerHTML={{ __html: postitle }}></span>
+          <span
+            class="font-Signal text-lg"
+            dangerouslySetInnerHTML={{ __html: postitle }}
+          >
+          </span>
         )}
       </div>
     </div>
@@ -106,7 +147,7 @@ export default function descriotionAndBenefits(props: Props) {
           <ContainerAnimation
             animationType={animation?.animationType}
             duration={animation?.duration}
-            class=" h-full flex font-Signal px-10 py-10 text-white flex-col md:flex-row gap-20 max-w-[1272px] mx-auto"
+            class=" h-full flex font-Signal px-10 py-10 lg:px-0 text-white flex-col md:flex-row gap-20 max-w-[1272px] mx-auto"
           >
             <div class="lg:w-2/4 w-full">
               <span
@@ -123,7 +164,7 @@ export default function descriotionAndBenefits(props: Props) {
           </ContainerAnimation>
         )
         : (
-          <div class=" h-full flex font-Signal px-10 py-10 text-white flex-col md:flex-row gap-20 max-w-[1272px] mx-auto">
+          <div class=" h-full flex font-Signal px-10 lg:px-0 py-10 text-white flex-col md:flex-row gap-20 max-w-[1272px] mx-auto">
             <div class="lg:w-2/4 w-full">
               <span
                 class="font-light"

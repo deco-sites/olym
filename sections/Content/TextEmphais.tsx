@@ -50,7 +50,7 @@ export default function TextEmphasis(props: Props) {
             animationType={animation?.animationType}
             duration={animation?.duration}
           >
-            <div class="flex flex-col gap-5 md:gap-12 justify-center items-center max-w-[1056px] mx-auto">
+            <div class="flex flex-col gap-5 md:gap-10 justify-center items-center max-w-[1056px] mx-auto">
               <h2
                 class="font-Signal text-lg text-center"
                 dangerouslySetInnerHTML={{ __html: title }}
@@ -75,7 +75,7 @@ export default function TextEmphasis(props: Props) {
           </ContainerAnimation>
         )
         : (
-          <div class="flex flex-col gap-5 md:gap-12 justify-center items-center max-w-[1056px] mx-auto">
+          <div class="flex flex-col gap-5 md:gap-10 justify-center items-center max-w-[1056px] mx-auto">
             <h2
               class="font-Signal text-lg text-center"
               dangerouslySetInnerHTML={{ __html: title }}

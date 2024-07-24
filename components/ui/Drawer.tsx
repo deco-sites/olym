@@ -2,7 +2,6 @@ import { useScript } from "deco/hooks/useScript.ts";
 import { type ComponentChildren } from "preact";
 import { clx } from "../../sdk/clx.ts";
 import { useId } from "../../sdk/useId.ts";
-import Icon from "./Icon.tsx";
 
 export interface Props {
   open?: boolean;
@@ -89,7 +88,26 @@ function Aside(
         aria-label="X"
         class="btn btn-ghost absolute top-0 right-0 p-4"
       >
-        <Icon id="close" />
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2 18L18 2"
+            stroke="white"
+            stroke-width="2.3"
+            stroke-linecap="round"
+          />
+          <path
+            d="M18 18L2 2"
+            stroke="white"
+            stroke-width="2.3"
+            stroke-linecap="round"
+          />
+        </svg>
       </label>
       {children}
     </div>

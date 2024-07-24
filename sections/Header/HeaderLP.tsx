@@ -6,7 +6,6 @@ import {
   SIDEMENU_DRAWER_ID_LP,
 } from "../../constants.ts";
 import Drawer from "../../components/ui/Drawer.tsx";
-import Icon from "../../components/ui/Icon.tsx";
 import MenuLP from "../../components/header/MenuLP.tsx";
 import type { Props as AlertProps } from "../../components/header/Alert.tsx";
 import Alert from "../../components/header/Alert.tsx";
@@ -98,7 +97,32 @@ const Mobile = (props: Props) => {
         for={SIDEMENU_DRAWER_ID_LP}
         class="btn btn-square btn-sm btn-ghost"
       >
-        <Icon id="menu" />
+        <svg
+          width="21"
+          height="18"
+          viewBox="0 0 21 18"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1 8.57129H19.8"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M1 16.1431H19.8"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M1 1H19.8"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
       </label>
       <a href="/" class="flex w-full justify-center items-center pr-8">
         <Image src={logo} alt="Logo" width={178} height={19} class="" />

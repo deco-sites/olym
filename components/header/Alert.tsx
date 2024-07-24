@@ -23,13 +23,13 @@ function Alert({ alerts = [], interval = 5, background }: Props) {
   return (
     <div id={id}>
       <Slider
-        class="carousel carousel-center w-screen gap-6 bg-secondary text-secondary-content text-sm/4 h-[25px] lg:h-[35px]"
+        class="carousel carousel-center w-full gap-6 bg-secondary text-secondary-content text-sm/4 h-[35px] lg:h-[42px]"
         style={{ background: background }}
       >
         {alerts.map((alert, index) => (
           <Slider.Item index={index} class="carousel-item">
             <span
-              class="flex justify-center items-center w-screen text-center text-xs lg:text-lg text-white"
+              class="flex justify-center items-center w-full text-center text-xs lg:text-lg text-white "
               dangerouslySetInnerHTML={{ __html: alert }}
             />
           </Slider.Item>

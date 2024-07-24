@@ -29,7 +29,7 @@ export default function CTAButton(props: Props) {
   return (
     <a
       href={href}
-      class={"bg-secondary text-white rounded-4xl text-lg px-4 py-[6px] font-light leading-5 font-Signal " +
+      class={"bg-secondary text-white rounded-4xl text-lg px-3 py-[6px] font-light leading-5 font-Signal " +
         _class}
       style={{ background: backgroundButton, color: textColorButton }}
     >

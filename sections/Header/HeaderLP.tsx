@@ -10,6 +10,7 @@ import Icon from "../../components/ui/Icon.tsx";
 import MenuLP from "../../components/header/MenuLP.tsx";
 import type { Props as AlertProps } from "../../components/header/Alert.tsx";
 import Alert from "../../components/header/Alert.tsx";
+import CTAButton from "../../components/Button/CTAButton.tsx";
 
 /**@titleBy label */
 interface Link {
@@ -45,7 +46,7 @@ const Desktop = (props: Props) => {
   const { logo, menuItems, cta, ctaUrl } = props;
 
   return (
-    <div class="w-full mx-auto flex items-center justify-between px-5 h-[70px]">
+    <div class="w-full mx-auto flex items-center justify-between px-5 min-h-[90px] lg:py-5">
       <a href="/" class="flex items-center">
         <Image src={logo} alt="Logo" width={255} height={29} class="" />
       </a>
@@ -59,12 +60,12 @@ const Desktop = (props: Props) => {
             </li>
           ))}
         </ul>
-        <a
+        <CTAButton
           href={ctaUrl}
-          class="bg-secondary text-white rounded-4xl text-lg px-4 py-[6px] font-light leading-5"
+          class={"bg-secondary text-white rounded-4xl text-lg py-[6px] font-light leading-5 min-h-[34px]"}
         >
           {cta}
-        </a>
+        </CTAButton>
       </nav>
     </div>
   );

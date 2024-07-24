@@ -49,7 +49,7 @@ export default function TextAndVideo(props: Props) {
       >
         <video
           data-testid="html5-player"
-          class=" object-cover w-full h-full min-h-[550px] max-h-screen"
+          class=" object-cover w-full h-full min-h-[550px] max-h-screen xl:max-h-[95vh]"
           loop={loop}
           autoplay={autoplay}
           muted={muted}

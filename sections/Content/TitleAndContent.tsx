@@ -53,16 +53,16 @@ export default function CorredorBanner({
             class="w-full h-full"
           >
             <div
-              class={`flex ${flexDirection} flex-col items-center justify-between px-10 py-20 gap-20 md:px-10 md:py-[108px] lg:py-[130px] max-w-[1272px] mx-auto h-full`}
+              class={`flex ${flexDirection} flex-col items-center justify-between px-10 py-20 gap-20 md:px-10 md:py-[108px] lg:py-[130px] max-w-[1272px] md:px-[42px] lg:px-0 mx-auto h-full`}
             >
-              <div class="flex-1 mr-4 flex flex-col w-full lg:w-2/4 justify-start items-start h-full mb-auto">
+              <div class=" mr-4 flex flex-col w-full lg:w-2/4 justify-start items-start h-full mb-auto ">
                 <h2
                   dangerouslySetInnerHTML={{ __html: title }}
                   class=" mb-2 text-5xl md:text-6xl font-FKOlympikus md:leading-[52px] leading-[42px]"
                 >
                 </h2>
               </div>
-              <div class="flex-1 w-full lg:w-2/4 font-Signal gap-5 md:pr-20">
+              <div class="w-full lg:w-2/4 font-Signal gap-5 md:pr-20 lg:pl-5 lg:pr-0">
                 <span
                   class="text-lg mb-10 leading-[22px] block max-w-[515px]"
                   dangerouslySetInnerHTML={{ __html: content }}
@@ -86,16 +86,16 @@ export default function CorredorBanner({
         )
         : (
           <div
-            class={`flex ${flexDirection} flex-col items-center justify-between px-10 py-20 gap-20 md:px-10 md:py-[108px] max-w-[1272px] mx-auto h-full`}
+            class={`flex ${flexDirection} flex-col items-center justify-between px-10 py-20 gap-20 md:px-10 md:py-[108px] max-w-[1272px] md:px-[42px] mx-auto h-full`}
           >
-            <div class="flex-1 mr-4 flex flex-col w-full lg:w-2/4 justify-start items-start h-full mb-auto">
+            <div class=" mr-4 flex flex-col w-full lg:w-2/4 justify-start items-start h-full mb-auto">
               <h2
                 dangerouslySetInnerHTML={{ __html: title }}
                 class=" mb-2 text-5xl md:text-6xl font-FKOlympikus md:leading-[52px]"
               >
               </h2>
             </div>
-            <div class="flex-1 w-full lg:w-2/4 font-Signal gap-5 md:pr-20">
+            <div class=" w-full lg:w-2/4 font-Signal gap-5 md:pr-20 lg:pl-5 lg:pr-0">
               <span
                 class="text-lg mb-10 leading-[22px] block max-w-[515px]"
                 dangerouslySetInnerHTML={{ __html: content }}

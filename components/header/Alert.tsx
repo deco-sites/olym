@@ -27,9 +27,9 @@ function Alert({ alerts = [], interval = 5, background }: Props) {
         style={{ background: background }}
       >
         {alerts.map((alert, index) => (
-          <Slider.Item index={index} class="carousel-item">
+          <Slider.Item index={index} class="carousel-item w-screen">
             <span
-              class="flex justify-center items-center w-full text-center text-xs lg:text-lg text-white "
+              class="flex justify-center items-center w-full text-center text-xs lg:text-lg text-white mx-auto"
               dangerouslySetInnerHTML={{ __html: alert }}
             />
           </Slider.Item>

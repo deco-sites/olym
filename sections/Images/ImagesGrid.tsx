@@ -114,7 +114,7 @@ export default function ImagesGrid(props: Props) {
 
   return (
     <div class="w-full h-full " style={{ background: background }}>
-      <div class="w-full h-full flex flex-col gap-20 px-5 py-10 max-w-[1272px] mx-auto xl:px-0">
+      <div class="w-full h-full flex flex-col gap-20 px-5 py-10 max-w-[1272px] md:px-[42px] mx-auto xl:px-0">
         <span
           class="font-FKOlympikus text-white text-[50px] leading-[42px] md:text-6xl md:leading-[1] lg:text-[65px] text-center px-6 md:px-0"
           dangerouslySetInnerHTML={{ __html: title }}

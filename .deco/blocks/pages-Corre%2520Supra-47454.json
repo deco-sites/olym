@@ -38,7 +38,7 @@
           "<p>CORRE SUPRA. O SUPERTÊNIS FEITO POR BRASILEIROS.</p>"
         ],
         "colorFont": "#ffffff",
-        "interval": 5
+        "interval": 2
       }
     },
     {
@@ -96,183 +96,58 @@
         "animationType": "fade-in-bottom",
         "duration": "0.8"
       },
-      "videoBackground": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/3ea3264b-8d53-462c-9120-09fa35a614ac",
       "title": "<p><span style=\"color: #ffffff\">&lt;/CORRE_SUPRA&gt;</span></p>",
       "content": "<p>TECNOLOGIA, PERFORMANCE &amp; DESIGN.</p>",
-      "gradinentColorText": {
-        "primaryColor": "#ffffff",
-        "secondColor": "#ffffff"
-      },
-      "loop": true,
-      "autoplay": true,
-      "muted": true,
       "showAnimaton": true,
       "button": {
         "label": "Assista ao vídeo",
         "href": "#",
         "textColorButton": "#ffffff",
         "backgroundButton": "#a5a5a5"
-      }
+      },
+      "videoBackground": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/3ea3264b-8d53-462c-9120-09fa35a614ac",
+      "gradinentColorText": {
+        "primaryColor": "#ffffff",
+        "secondColor": "#ffffff"
+      },
+      "loop": true,
+      "autoplay": true,
+      "muted": true
     },
     {
       "__resolveType": "site/sections/Content/TitleAndContent.tsx",
       "title": "<p><span style=\"color: #a3a3a3\">O SUPERTÊNIS FEITO</span></p><p><span style=\"color: #a3a3a3\">POR BRASILEIROS.</span></p>",
       "content": "<p><span style=\"color: #858585\">O Corre Supra traz o que há de melhor no mundo em termos de materiais e tecnologias para que os corredores brasileiros atinjam sua máxima performance.</span></p>",
+      "animation": {
+        "animationType": "fade-in-bottom",
+        "duration": "0.4"
+      },
       "titleImage": "<p><span style=\"color: #858585\">APROVADO PELA:</span></p>",
       "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/17ea89e5-aebf-4c04-97bf-f750d82437f2",
       "alt": "selo",
-      "animation": {
-        "animationType": "fade-in-bottom",
-        "duration": "0.4"
-      },
       "showAnimation": true
     },
     {
-      "__resolveType": "site/sections/Content/DescriptionAndBenefits.tsx",
-      "description": "<p><span>O </span><span style=\"color: #5ddc02\">Oxitec 3.0</span><span> é o melhor cabedal já feito pela Olympikus. Uma nova composição de fios, com uma malha muito fina.</span></p><p><span><br> A junção da poliamida e do poliéster resultou em um mesh tecnológico que não laceia e garante o máximo de fluxo de ar.</span></p>",
-      "background": "#262626",
-      "emphasis": [
-        {
-          "title": "<p>LEVE</p>",
-          "backgroundIcon": "#7ad214",
-          "icon": "IconPlus"
-        },
-        {
-          "title": "<p>RESILIENTE</p>",
-          "backgroundIcon": "#7ad214",
-          "icon": "IconPlus"
-        },
-        {
-          "title": "<p>DEFORMAÇÃO DINÂMICA</p>",
-          "backgroundIcon": "#7ad214",
-          "icon": "IconLess"
-        }
-      ]
-    },
-    {
-      "__resolveType": "site/sections/Content/DescriptionAndBenefits.tsx",
-      "description": "<p><span>A nova palmilha tem a tecnologia </span><span style=\"color: #5ddc02\">NT-X</span><span> (confeccionada em Pebax® expandido com nitrogênio sem compressão), que proporciona uma redução significativa no seu peso.<br><br>Além disso, tem baixa absorção de água e suor, trazendo maior conforto térmico para a sua corrida.</span></p>",
-      "background": "#262626",
-      "emphasis": [
-        {
-          "title": "<p>LEVE</p>",
-          "backgroundIcon": "#7ad214",
-          "icon": "IconPlus"
-        },
-        {
-          "title": "<p><span>AJUSTÁVEL</span></p>",
-          "backgroundIcon": "#7ad214",
-          "icon": "IconPlus"
-        },
-        {
-          "title": "<p><span>RESPIRÁVEL</span></p>",
-          "backgroundIcon": "#7ad214",
-          "icon": "IconPlus"
-        }
-      ],
+      "__resolveType": "site/sections/Content/TextEmphais.tsx",
+      "title": "<p><span style=\"color: rgb(141, 141, 141)\">&lt;/CORRA_SUPRA&gt;</span></p>",
+      "content": "<p><span>ESTUDOS, DESEVOLVIMENTO, INOVAÇÃO E DESIGN CONCENTRADOS EM APENAS 217g.</span></p>",
       "animation": {
         "animationType": "fade-in-bottom",
-        "duration": "0.4"
+        "duration": "0.8"
       },
-      "showAnimation": true
-    },
-    {
-      "__resolveType": "site/sections/Content/DescriptionAndBenefits.tsx",
-      "description": "<p><span>O design do solado do Corre Supra foi criado colaborativamente com a </span><span style=\"color: #5ddc02\">Michelin,</span><span> uma das líderes mundiais na produção de pneus, que também atua na fabricação de solados de tênis de alta performance.<br><br>Essa cocriação resultou em aumento da durabilidade em comparação com as borrachas tradicionais, elevando ainda mais seu grip e garantindo maior aderência, além de diminuir o desgaste do solado.</span></p>",
-      "background": "#262626",
-      "emphasis": [
-        {
-          "title": "<p><span>ADERÊNCIA</span></p>",
-          "backgroundIcon": "#7ad214",
-          "icon": "IconPlus"
-        },
-        {
-          "title": "<p><span>DURABILIDADE</span></p>",
-          "backgroundIcon": "#7ad214",
-          "icon": "IconPlus"
-        }
-      ]
-    },
-    {
-      "__resolveType": "site/sections/Content/DescriptionAndBenefits.tsx",
-      "description": "<p><span>O primeiro modelo produzido no Brasil com entressola feita com 100% de </span><span style=\"color: #5ddc02\">Pebax®</span><span> (SCF - super critical foam), uma super espuma presente nos melhores supertênis do mundo e um material superior ao EVA. <br><br>O Corre Supra possui duas camadas de entressola, onde a primeira — logo acima da placa de impulsão — utiliza a expansão de lâminas de </span><span style=\"color: #5ddc02\">Pebax®</span><span> sem nenhuma compressão, resultando num material mais nobre.</span></p>",
-      "background": "#262626",
-      "emphasis": [
-        {
-          "title": "<p><span>LEVE</span></p>",
-          "backgroundIcon": "#7ad214",
-          "icon": "IconPlus"
-        },
-        {
-          "title": "<p><span>RESILIENTE</span></p>",
-          "backgroundIcon": "#7ad214",
-          "icon": "IconPlus"
-        }
-      ]
-    },
-    {
-      "__resolveType": "site/sections/Content/DescriptionAndBenefits.tsx",
-      "description": "<p><span>A tecnologia exclusiva Olympikus </span><span style=\"color: #7ad214\">Carbon G</span><span> é o resultado de uma placa de impulsão de carbono de primeira linha com revestimento em grafeno, essa junção de materiais trouxe resultados surpreendentes nos testes já realizados.<br><br>A aplicação da técnica de fibras contínuas de carbono em sua composição promove maior estabilidade e aumenta o retorno de energia na passada.<br><br>O revestimento em grafeno traz maior rigidez à placa, resultando em uma propulsão maior nos pés do corredor.</span></p>",
-      "background": "#262626",
-      "emphasis": [
-        {
-          "title": "<p><span style=\"color: #5dcc02\">ATÉ 3X</span><span> + PROPURÇÃO</span></p>",
-          "backgroundIcon": "#7ad214",
-          "postitle": "<p><span>EM COMPARAÇÃO ÀS FIBRAS CURTAS</span></p>"
-        },
-        {
-          "title": "<p><span style=\"color: rgb(93, 204, 2)\">ATÉ 3X</span> + RESISTÊNCIA</p>",
-          "backgroundIcon": "#7ad214",
-          "postitle": "<p><span>EM COMPARAÇÃO ÀS FIBRAS CURTAS</span></p>"
-        }
-      ]
-    },
-    {
-      "__resolveType": "site/sections/Content/DescriptionAndBenefits.tsx",
-      "description": "<p><span>A segunda camada da nossa entressola — logo abaixo da placa de impulsão — utiliza o </span><span style=\"color: #5ddc02\">Pebax®</span><span> expandido com nitrogênio em alta pressão e temperatura. Por ter mais densidade em relação a outros <br>materiais, necessita desse processo parma ser modelado ao design ideal. <br><br>O uso de </span><span style=\"color: #5ddc02\">Pebax®</span><span> garante que a entressola seja mais confortável e sofra menos deformação, voltando sempre ao seu estado original aumentando sua durabilidade.</span></p>",
-      "background": "#262626",
-      "emphasis": [
-        {
-          "title": "<p><span>CAMA ELÁSTICA</span></p>",
-          "backgroundIcon": "#7ad214",
-          "postitle": "<p></p>",
-          "preTitle": "<p><span style=\"color: #5ddc02\">EFEITO</span></p>"
-        },
-        {
-          "title": "<p><span>DE AMORTECIMENTO</span></p>",
-          "backgroundIcon": "#7ad214",
-          "postitle": "<p></p>",
-          "preTitle": "<p><span style=\"color: #5ddc02\">NÍVEL MÁXIMO</span></p>"
-        },
-        {
-          "title": "<p><span>8MM</span></p>",
-          "preTitle": "<p><span style=\"color: #5ddc02\">DROP</span></p>",
-          "backgroundIcon": "#000000"
-        }
-      ]
-    },
-    {
-      "__resolveType": "site/sections/Content/DescriptionAndBenefits.tsx",
-      "description": "<p><span>O cadarço foi desenvolvido pra criar um ajuste perfeito e individual aos pés dos corredores, excluindo a necessidade de um nó duplo. <br><br>Seu design com ranhuras e ondulações laterais promovem um maior atrito e encaixe entre si, evitando que o cadarço ceda ou desamarre durante a corrida.</span></p>",
-      "background": "#262626",
-      "emphasis": [
-        {
-          "title": "<p><span style=\"color: #5ddc02\">3X</span><span> + FORÇA DE AMARRAÇÃO</span></p>",
-          "backgroundIcon": "#7ad214",
-          "postitle": "<p><span>EM RELAÇÃO AO PADRÃO DO MERCADO</span></p>",
-          "preTitle": "<p></p>"
-        },
-        {
-          "title": "<p><span style=\"color: #5ddc02\">AMARRAÇÃO ÚNICA</span><span><br>DO ÍNICIO AO FIM DA CORRIDA</span></p>",
-          "backgroundIcon": "#000000"
-        }
-      ]
+      "button": {},
+      "backgroundSection": "#262626",
+      "gradineColorText": {
+        "primaryColor": "#ffffff",
+        "secondColor": "#ffffff"
+      },
+      "showAnimaton": false
     },
     {
       "__resolveType": "site/sections/Images/ImagesGrid.tsx",
+      "background": "#262626",
       "title": "<p><span>O CABEDAL TECNOLÓGICO QUE NÃO LACEIA</span></p>",
       "gridTemplate": "'img-1 img-1' 'img-2 img-2' 'img-3 img-3';",
-      "background": "#262626",
       "images": [
         {
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/e8808717-2595-4239-8847-563fa73940f9",
@@ -319,6 +194,419 @@
               "alt": "Tenis"
             }
           ]
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Content/DescriptionAndBenefits.tsx",
+      "background": "#262626",
+      "description": "<p><span>O </span><span style=\"color: #5ddc02\">Oxitec 3.0</span><span> é o melhor cabedal já feito pela Olympikus. Uma nova composição de fios, com uma malha muito fina.</span></p><p><span><br> A junção da poliamida e do poliéster resultou em um mesh tecnológico que não laceia e garante o máximo de fluxo de ar.</span></p>",
+      "emphasis": [
+        {
+          "title": "<p>LEVE</p>",
+          "backgroundIcon": "#7ad214",
+          "icon": "IconPlus"
+        },
+        {
+          "title": "<p>RESILIENTE</p>",
+          "backgroundIcon": "#7ad214",
+          "icon": "IconPlus"
+        },
+        {
+          "title": "<p>DEFORMAÇÃO DINÂMICA</p>",
+          "backgroundIcon": "#7ad214",
+          "icon": "IconLess"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Images/ImagesGrid.tsx",
+      "background": "#262626",
+      "title": "<p>PALMILHA NT-X</p>",
+      "gridTemplate": "'img-1 img-1' 'img-2 img-2' 'img-3 img-3';",
+      "images": [
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/e8808717-2595-4239-8847-563fa73940f9",
+          "alt": "TENIS",
+          "widht": 1272,
+          "height": 600,
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/29c02e01-62d3-48da-908b-43f526da6cc3"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/7c9a7494-3038-41cb-9041-71b74b7614e8",
+          "alt": "TENIS",
+          "widht": 1272,
+          "height": 600,
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/fc567c92-f912-43ed-a37d-e0f06aa44731"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/a8596b61-de94-44da-b691-266e29f240e5",
+          "alt": "TENIS",
+          "widht": 626,
+          "height": 600,
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/cd9b1bf1-3aa4-4ff0-94a1-793e5c321843"
+        }
+      ],
+      "rows": [
+        {
+          "images": [
+            {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/50fd95f4-74dd-499d-9dd6-3e9d47e423c5",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/3bba9115-3fc2-45f1-bef1-132a557a8d0c",
+              "alt": "Tenis"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Content/DescriptionAndBenefits.tsx",
+      "background": "#262626",
+      "description": "<p><span>A nova palmilha tem a tecnologia </span><span style=\"color: #5ddc02\">NT-X</span><span> (confeccionada em Pebax® expandido com nitrogênio sem compressão), que proporciona uma redução significativa no seu peso.<br><br>Além disso, tem baixa absorção de água e suor, trazendo maior conforto térmico para a sua corrida.</span></p>",
+      "emphasis": [
+        {
+          "title": "<p>LEVE</p>",
+          "backgroundIcon": "#7ad214",
+          "icon": "IconPlus"
+        },
+        {
+          "title": "<p><span>AJUSTÁVEL</span></p>",
+          "backgroundIcon": "#7ad214",
+          "icon": "IconPlus"
+        },
+        {
+          "title": "<p><span>RESPIRÁVEL</span></p>",
+          "backgroundIcon": "#7ad214",
+          "icon": "IconPlus"
+        }
+      ],
+      "animation": {
+        "animationType": "fade-in-bottom",
+        "duration": "0.4"
+      },
+      "showAnimation": true
+    },
+    {
+      "__resolveType": "site/sections/Images/ImagesGrid.tsx",
+      "background": "#262626",
+      "title": "<p><span>ENTRESSOLA INTERNA COM NT-X: 100% PEBAX® EXPANDIDO COM NITROGÊNIO SEM COMPRESSÃO</span></p>",
+      "gridTemplate": "'img-1 img-1' 'img-2 img-2' 'img-3 img-3';",
+      "images": [
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/e8808717-2595-4239-8847-563fa73940f9",
+          "alt": "TENIS",
+          "widht": 1272,
+          "height": 600,
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/29c02e01-62d3-48da-908b-43f526da6cc3"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/7c9a7494-3038-41cb-9041-71b74b7614e8",
+          "alt": "TENIS",
+          "widht": 1272,
+          "height": 600,
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/fc567c92-f912-43ed-a37d-e0f06aa44731"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/a8596b61-de94-44da-b691-266e29f240e5",
+          "alt": "TENIS",
+          "widht": 626,
+          "height": 600,
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/cd9b1bf1-3aa4-4ff0-94a1-793e5c321843"
+        }
+      ],
+      "rows": [
+        {
+          "images": [
+            {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/f733a8a5-9a43-4d5e-b8e9-136a9a166e1f",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/eb51d9cb-a7d5-430e-9e7d-cc6bcd6ef3dc",
+              "alt": "Tenis"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Content/DescriptionAndBenefits.tsx",
+      "background": "#262626",
+      "description": "<p><span>O primeiro modelo produzido no Brasil com entressola feita com 100% de </span><span style=\"color: #5ddc02\">Pebax®</span><span> (SCF - super critical foam), uma super espuma presente nos melhores supertênis do mundo e um material superior ao EVA. <br><br>O Corre Supra possui duas camadas de entressola, onde a primeira — logo acima da placa de impulsão — utiliza a expansão de lâminas de </span><span style=\"color: #5ddc02\">Pebax®</span><span> sem nenhuma compressão, resultando num material mais nobre.</span></p>",
+      "emphasis": [
+        {
+          "title": "<p><span>LEVE</span></p>",
+          "backgroundIcon": "#7ad214",
+          "icon": "IconPlus"
+        },
+        {
+          "title": "<p><span>RESILIENTE</span></p>",
+          "backgroundIcon": "#7ad214",
+          "icon": "IconPlus"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Images/ImagesGrid.tsx",
+      "background": "#262626",
+      "title": "<p><span>ENTRESSOLA INTERNA COM NT-X: 100% PEBAX® EXPANDIDO COM NITROGÊNIO SEM COMPRESSÃO</span></p>",
+      "gridTemplate": "'img-1 img-1' 'img-2 img-2' 'img-3 img-3';",
+      "images": [
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/e8808717-2595-4239-8847-563fa73940f9",
+          "alt": "TENIS",
+          "widht": 1272,
+          "height": 600,
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/29c02e01-62d3-48da-908b-43f526da6cc3"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/7c9a7494-3038-41cb-9041-71b74b7614e8",
+          "alt": "TENIS",
+          "widht": 1272,
+          "height": 600,
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/fc567c92-f912-43ed-a37d-e0f06aa44731"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/a8596b61-de94-44da-b691-266e29f240e5",
+          "alt": "TENIS",
+          "widht": 626,
+          "height": 600,
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/cd9b1bf1-3aa4-4ff0-94a1-793e5c321843"
+        }
+      ],
+      "rows": [
+        {
+          "images": [
+            {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/996314ba-30d0-4971-947a-2d595b1058e4",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/b4451170-78e9-4392-bedc-e7aa9905a4f8",
+              "alt": "Tenis"
+            }
+          ]
+        },
+        {
+          "images": [
+            {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/188ae80b-df1a-48c6-8407-eed47496263f",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/39c80a33-712d-4d2d-9ba0-a89b8de1c1bf",
+              "alt": "tenis"
+            },
+            {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/b64f82be-51ed-479f-8ebc-7122a7c26bfd",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/95f67b2b-f758-4598-8cda-5b8f000d7a70",
+              "alt": "tenis"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Content/DescriptionAndBenefits.tsx",
+      "background": "#262626",
+      "description": "<p><span>A tecnologia exclusiva Olympikus </span><span style=\"color: #7ad214\">Carbon G</span><span> é o resultado de uma placa de impulsão de carbono de primeira linha com revestimento em grafeno, essa junção de materiais trouxe resultados surpreendentes nos testes já realizados.<br><br>A aplicação da técnica de fibras contínuas de carbono em sua composição promove maior estabilidade e aumenta o retorno de energia na passada.<br><br>O revestimento em grafeno traz maior rigidez à placa, resultando em uma propulsão maior nos pés do corredor.</span></p>",
+      "emphasis": [
+        {
+          "title": "<p><span style=\"color: #5dcc02\">ATÉ 3X</span><span> + PROPURÇÃO</span></p>",
+          "backgroundIcon": "#7ad214",
+          "postitle": "<p><span>EM COMPARAÇÃO ÀS FIBRAS CURTAS</span></p>"
+        },
+        {
+          "title": "<p><span style=\"color: rgb(93, 204, 2)\">ATÉ 3X</span> + RESISTÊNCIA</p>",
+          "backgroundIcon": "#7ad214",
+          "postitle": "<p><span>EM COMPARAÇÃO ÀS FIBRAS CURTAS</span></p>"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Images/ImagesGrid.tsx",
+      "background": "#262626",
+      "title": "<p><span>ENTRESSOLA INTERNA COM NT-X: 100% PEBAX® EXPANDIDO COM NITROGÊNIO SEM COMPRESSÃO</span></p>",
+      "gridTemplate": "'img-1 img-1' 'img-2 img-2' 'img-3 img-3';",
+      "images": [
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/e8808717-2595-4239-8847-563fa73940f9",
+          "alt": "TENIS",
+          "widht": 1272,
+          "height": 600,
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/29c02e01-62d3-48da-908b-43f526da6cc3"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/7c9a7494-3038-41cb-9041-71b74b7614e8",
+          "alt": "TENIS",
+          "widht": 1272,
+          "height": 600,
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/fc567c92-f912-43ed-a37d-e0f06aa44731"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/a8596b61-de94-44da-b691-266e29f240e5",
+          "alt": "TENIS",
+          "widht": 626,
+          "height": 600,
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/cd9b1bf1-3aa4-4ff0-94a1-793e5c321843"
+        }
+      ],
+      "rows": [
+        {
+          "images": [
+            {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/b9432f4e-0846-4067-b9fe-a0943b1ecd47",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/e6b16875-62b0-4eeb-905a-824f60d51558",
+              "alt": "Tenis"
+            }
+          ]
+        },
+        {
+          "images": [
+            {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/41f6f6f2-3213-432d-89a0-8f81d244b0e7",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/2d758adc-1dd5-4b90-8288-63b178ae0a74",
+              "alt": "tenis"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Content/DescriptionAndBenefits.tsx",
+      "background": "#262626",
+      "description": "<p><span>A segunda camada da nossa entressola — logo abaixo da placa de impulsão — utiliza o </span><span style=\"color: #5ddc02\">Pebax®</span><span> expandido com nitrogênio em alta pressão e temperatura. Por ter mais densidade em relação a outros <br>materiais, necessita desse processo parma ser modelado ao design ideal. <br><br>O uso de </span><span style=\"color: #5ddc02\">Pebax®</span><span> garante que a entressola seja mais confortável e sofra menos deformação, voltando sempre ao seu estado original aumentando sua durabilidade.</span></p>",
+      "emphasis": [
+        {
+          "title": "<p><span>CAMA ELÁSTICA</span></p>",
+          "backgroundIcon": "#7ad214",
+          "postitle": "<p></p>",
+          "preTitle": "<p><span style=\"color: #5ddc02\">EFEITO</span></p>"
+        },
+        {
+          "title": "<p><span>DE AMORTECIMENTO</span></p>",
+          "backgroundIcon": "#7ad214",
+          "postitle": "<p></p>",
+          "preTitle": "<p><span style=\"color: #5ddc02\">NÍVEL MÁXIMO</span></p>"
+        },
+        {
+          "title": "<p><span>8MM</span></p>",
+          "preTitle": "<p><span style=\"color: #5ddc02\">DROP</span></p>",
+          "backgroundIcon": "#000000"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Images/ImagesGrid.tsx",
+      "background": "#262626",
+      "title": "<p><span>ENTRESSOLA INTERNA COM NT-X: 100% PEBAX® EXPANDIDO COM NITROGÊNIO SEM COMPRESSÃO</span></p>",
+      "gridTemplate": "'img-1 img-1' 'img-2 img-2' 'img-3 img-3';",
+      "images": [
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/e8808717-2595-4239-8847-563fa73940f9",
+          "alt": "TENIS",
+          "widht": 1272,
+          "height": 600,
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/29c02e01-62d3-48da-908b-43f526da6cc3"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/7c9a7494-3038-41cb-9041-71b74b7614e8",
+          "alt": "TENIS",
+          "widht": 1272,
+          "height": 600,
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/fc567c92-f912-43ed-a37d-e0f06aa44731"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/a8596b61-de94-44da-b691-266e29f240e5",
+          "alt": "TENIS",
+          "widht": 626,
+          "height": 600,
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/cd9b1bf1-3aa4-4ff0-94a1-793e5c321843"
+        }
+      ],
+      "rows": [
+        {
+          "images": [
+            {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/37527275-c96d-4d85-b6ae-64886524234e",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/3e3f61ff-f3ad-4cf4-8477-b569489db1b3",
+              "alt": "Tenis"
+            }
+          ]
+        },
+        {
+          "images": [
+            {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/9167aabb-0b46-4bc3-84b5-6db634b88758",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/9a79448b-5cba-4a64-bf99-18353cf78064",
+              "alt": "tenis"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Content/DescriptionAndBenefits.tsx",
+      "background": "#262626",
+      "description": "<p><span>O design do solado do Corre Supra foi criado colaborativamente com a </span><span style=\"color: #5ddc02\">Michelin,</span><span> uma das líderes mundiais na produção de pneus, que também atua na fabricação de solados de tênis de alta performance.<br><br>Essa cocriação resultou em aumento da durabilidade em comparação com as borrachas tradicionais, elevando ainda mais seu grip e garantindo maior aderência, além de diminuir o desgaste do solado.</span></p>",
+      "emphasis": [
+        {
+          "title": "<p><span>ADERÊNCIA</span></p>",
+          "backgroundIcon": "#7ad214",
+          "icon": "IconPlus"
+        },
+        {
+          "title": "<p><span>DURABILIDADE</span></p>",
+          "backgroundIcon": "#7ad214",
+          "icon": "IconPlus"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Images/ImagesGrid.tsx",
+      "background": "#262626",
+      "title": "<p><span>ENTRESSOLA INTERNA COM NT-X: 100% PEBAX® EXPANDIDO COM NITROGÊNIO SEM COMPRESSÃO</span></p>",
+      "gridTemplate": "'img-1 img-1' 'img-2 img-2' 'img-3 img-3';",
+      "images": [
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/e8808717-2595-4239-8847-563fa73940f9",
+          "alt": "TENIS",
+          "widht": 1272,
+          "height": 600,
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/29c02e01-62d3-48da-908b-43f526da6cc3"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/7c9a7494-3038-41cb-9041-71b74b7614e8",
+          "alt": "TENIS",
+          "widht": 1272,
+          "height": 600,
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/fc567c92-f912-43ed-a37d-e0f06aa44731"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/a8596b61-de94-44da-b691-266e29f240e5",
+          "alt": "TENIS",
+          "widht": 626,
+          "height": 600,
+          "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/cd9b1bf1-3aa4-4ff0-94a1-793e5c321843"
+        }
+      ],
+      "rows": [
+        {
+          "images": [
+            {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/7045f3bf-f9ce-47a8-bf0e-8c638b1e1510",
+              "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/93f5b730-b932-4856-88e2-f2fb0fcdfa46",
+              "alt": "Tenis"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Content/DescriptionAndBenefits.tsx",
+      "description": "<p><span>O cadarço foi desenvolvido pra criar um ajuste perfeito e individual aos pés dos corredores, excluindo a necessidade de um nó duplo. <br><br>Seu design com ranhuras e ondulações laterais promovem um maior atrito e encaixe entre si, evitando que o cadarço ceda ou desamarre durante a corrida.</span></p>",
+      "background": "#262626",
+      "emphasis": [
+        {
+          "title": "<p><span style=\"color: #5ddc02\">3X</span><span> + FORÇA DE AMARRAÇÃO</span></p>",
+          "backgroundIcon": "#7ad214",
+          "postitle": "<p><span>EM RELAÇÃO AO PADRÃO DO MERCADO</span></p>",
+          "preTitle": "<p></p>"
+        },
+        {
+          "title": "<p><span style=\"color: #5ddc02\">AMARRAÇÃO ÚNICA</span><span><br>DO ÍNICIO AO FIM DA CORRIDA</span></p>",
+          "backgroundIcon": "#000000"
         }
       ]
     }

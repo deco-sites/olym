@@ -21,13 +21,13 @@ function Alert({ alerts = [], interval = 5, background }: Props) {
   const id = useId();
 
   return (
-    <div id={id}>
+    <div id={id} class="w-full">
       <Slider
         class="carousel carousel-center w-full gap-6 bg-secondary text-secondary-content text-sm/4 h-[35px] lg:h-[42px]"
         style={{ background: background }}
       >
         {alerts.map((alert, index) => (
-          <Slider.Item index={index} class="carousel-item w-screen">
+          <Slider.Item index={index} class="carousel-item w-full">
             <span
               class="flex justify-center items-center w-full text-center text-xs lg:text-lg text-white mx-auto"
               dangerouslySetInnerHTML={{ __html: alert }}

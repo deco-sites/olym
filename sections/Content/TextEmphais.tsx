@@ -87,7 +87,7 @@ export default function TextEmphasis(props: Props) {
               dangerouslySetInnerHTML={{ __html: content }}
             >
             </span>
-            {button && (
+            {button && button.label && (
               <CTAButton
                 label={button.label}
                 href={button.href}

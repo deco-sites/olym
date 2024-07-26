@@ -44,11 +44,11 @@ const TRANLATEY = {
 function AnimationScroll(next: boolean, nMax: number) {
   const TRANSLATEY = {
     1: ["translate-y-[30%]"],
-    2: ["translate-y-[-5%]", "lg:translate-y-[-5%]"],
-    3: ["translate-y-[-30%]", "lg:translate-y-[-25%]"],
-    4: ["translate-y-[-50%]", "lg:translate-y-[-45%]"],
-    5: ["translate-y-[-70%]", "lg:translate-y-[-65%]"],
-    6: ["translate-y-[-100%]", "lg:translate-y-[-90%]"],
+    2: ["translate-y-[-5%]", "lg:translate-y-[0%]"],
+    3: ["translate-y-[-30%]", "lg:translate-y-[-10%]"],
+    4: ["translate-y-[-50%]", "lg:translate-y-[-30%]"],
+    5: ["translate-y-[-70%]", "lg:translate-y-[-45%]"],
+    6: ["translate-y-[-100%]", "lg:translate-y-[-70%]"],
     7: ["translate-y-[-130%]", "lg:translate-y-[-120%]"],
   };
 

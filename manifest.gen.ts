@@ -18,7 +18,7 @@ import * as $$$$$$1 from "./sections/Animation/HeroAnimationImages.tsx";
 import * as $$$$$$2 from "./sections/Category/CategoryBanner.tsx";
 import * as $$$$$$3 from "./sections/Category/CategoryGrid.tsx";
 import * as $$$$$$4 from "./sections/Component.tsx";
-import * as $$$$$$5 from "./sections/Construction/ContructionTennis.tsx";
+import * as $$$$$$5 from "./sections/Construction/ConstructionTennis.tsx";
 import * as $$$$$$6 from "./sections/Content/DescriptionAndBenefits.tsx";
 import * as $$$$$$7 from "./sections/Content/Faq.tsx";
 import * as $$$$$$8 from "./sections/Content/Hero.tsx";
@@ -64,7 +64,7 @@ const manifest = {
     "site/sections/Category/CategoryBanner.tsx": $$$$$$2,
     "site/sections/Category/CategoryGrid.tsx": $$$$$$3,
     "site/sections/Component.tsx": $$$$$$4,
-    "site/sections/Construction/ContructionTennis.tsx": $$$$$$5,
+    "site/sections/Construction/ConstructionTennis.tsx": $$$$$$5,
     "site/sections/Content/DescriptionAndBenefits.tsx": $$$$$$6,
     "site/sections/Content/Faq.tsx": $$$$$$7,
     "site/sections/Content/Hero.tsx": $$$$$$8,

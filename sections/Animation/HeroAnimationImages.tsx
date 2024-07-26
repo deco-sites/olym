@@ -29,7 +29,7 @@ export default function HeroAnimationImages(props: Props) {
 
   return (
     <div
-      class="flex justify-center items-center w-full max-w-screen lg:py-10 xl:py-16 max-h-[95vh] lg:max-h-full h-screen bg-neutral relative"
+      class="flex justify-center items-center w-full max-w-screen lg:py-10 xl:py-16 max-h-[95vh] lg:max-h-full h-screen bg-neutral relative overflow-hidden lg:overflow-visible"
       style={{ background: background }}
     >
       {showAnimation

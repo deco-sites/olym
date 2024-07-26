@@ -1,6 +1,5 @@
 import { ImageWidget, RichText } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import { useSection } from "deco/hooks/useSection.ts";
 import { useDevice } from "deco/hooks/useDevice.ts";
 import { useScript } from "deco/hooks/useScript.ts";
 
@@ -34,22 +33,22 @@ interface Props {
 
 const TRANLATEY = {
   1: "translate-y-[30%]",
-  2: "translate-y-[-15%] lg:translate-y-[-5%]",
-  3: "translate-y-[-40%] lg:translate-y-[-25%]",
-  4: "translate-y-[-75%] lg:translate-y-[-45%]",
-  5: "translate-y-[-100%] lg:translate-y-[-65%]",
-  6: "translate-y-[-130%] lg:translate-y-[-90%]",
+  2: "translate-y-[-5%] lg:translate-y-[-5%]",
+  3: "translate-y-[-30%] lg:translate-y-[-25%]",
+  4: "translate-y-[-50%] lg:translate-y-[-45%]",
+  5: "translate-y-[-70%] lg:translate-y-[-65%]",
+  6: "translate-y-[-100%] lg:translate-y-[-90%]",
   7: "translate-y-[-130%] lg:translate-y-[-120%]",
 };
 
 function AnimationScroll(next: boolean, nMax: number) {
   const TRANSLATEY = {
     1: ["translate-y-[30%]"],
-    2: ["translate-y-[-15%]", "lg:translate-y-[-5%]"],
-    3: ["translate-y-[-40%]", "lg:translate-y-[-25%]"],
-    4: ["translate-y-[-75%]", "lg:translate-y-[-45%]"],
-    5: ["translate-y-[-100%]", "lg:translate-y-[-65%]"],
-    6: ["translate-y-[-130%]", "lg:translate-y-[-90%]"],
+    2: ["translate-y-[-5%]", "lg:translate-y-[-5%]"],
+    3: ["translate-y-[-30%]", "lg:translate-y-[-25%]"],
+    4: ["translate-y-[-50%]", "lg:translate-y-[-45%]"],
+    5: ["translate-y-[-70%]", "lg:translate-y-[-65%]"],
+    6: ["translate-y-[-100%]", "lg:translate-y-[-90%]"],
     7: ["translate-y-[-130%]", "lg:translate-y-[-120%]"],
   };
 
@@ -67,6 +66,12 @@ function AnimationScroll(next: boolean, nMax: number) {
   );
   const nextImg = globalThis.document.querySelector(
     `[data-index-img="${nextIndex}"]`,
+  );
+  const currentContent = globalThis.document.querySelector(
+    `[data-index-content="${index}"]`,
+  );
+  const nextContent = globalThis.document.querySelector(
+    `[data-index-content="${nextIndex}"]`,
   );
 
   // Remove a classe atual de transição
@@ -91,6 +96,10 @@ function AnimationScroll(next: boolean, nMax: number) {
     // Atualiza a opacidade das imagens
     currentImg?.classList.replace("opacity-1", "opacity-0");
     nextImg?.classList.replace("opacity-0", "opacity-1");
+    currentContent?.classList.replace("opacity-1", "opacity-0");
+    nextContent?.classList.replace("opacity-0", "opacity-1");
+    currentContent?.classList.replace("h-full", "h-0");
+    nextContent?.classList.replace("h-0", "h-full");
 
     // Atualiza os atributos do container
     container?.setAttribute("data-index", nextIndex.toString());
@@ -110,7 +119,7 @@ function StepImage(
       <div
         data-index-img={index}
         data-position-img={position}
-        class={`absolute top-0 bottom-0 left-0 right-0 ${
+        class={`absolute top-0 bottom-0 left-0 right-0 -z-10 ${
           index == indexImg ? "opacity-1" : "opacity-0 "
         }`}
       >
@@ -147,7 +156,6 @@ export default function ConstructionTennis(props: Props) {
     background = "#262626",
     buttonColor = "#a5a5a5",
   } = props;
-  const prev = step.length - 1;
 
   const device = useDevice();
 
@@ -158,19 +166,26 @@ export default function ConstructionTennis(props: Props) {
       slide-next"
         style={{ background: background }}
       >
-        <div class="flex flex-col gap-5w-full h-full text-white">
-          <div class="relative">
+        <div class="flex flex-col gap-5w-full h-full text-white px-10">
+          <div
+            class="relative z-10"
+            style={`box-shadow: 1px 40px 30px ${background};`}
+          >
             <span
-              class="font-FKOlympikus text-[65px] leading-[55px] w-full text-left "
+              class="font-FKOlympikus text-[65px] leading-[55px] w-full text-left z-10 "
               dangerouslySetInnerHTML={{ __html: title }}
             >
             </span>
           </div>
           <div class={"min-h-[300px] overflow-hidden w-full h-full relative"}>
             <div
+              id="animationScroll"
+              data-position={1}
+              data-index={0}
               class={` absolute w-full h-full max-w-[500px] mx-auto  ${
                 TRANLATEY[index as keyof typeof TRANLATEY || 1]
               }`}
+              style={"transition: 1.4s cubic-bezier(.23,1,.32,1) 0s;"}
             >
               {step.map((img, indexImg) => (
                 <StepImage props={img} index={indexImg} indexImg={index} />
@@ -179,18 +194,19 @@ export default function ConstructionTennis(props: Props) {
           </div>
           <div>
             <div
-              class="w-full flex flex-row justify-end lg:relative px-5  min-h-[200px] relative pt-5"
-              style={{ background: background }}
+              class="w-full flex flex-row justify-end lg:relative  min-h-[200px] relative pt-5"
+              style={`background: ${background};     box-shadow: 0px -20px 30px ${background}`}
             >
               <div class="w-full h-full relative pb-[70px]">
                 {step.map((item, indexContent) => (
                   <div
+                    data-index-content={indexContent}
                     class={`flex font-Signal text-base
                    text-left w-full
                   ${
                       indexContent == index
-                        ? "opacity-1 relative "
-                        : "opacity-0 absolute"
+                        ? "opacity-1 h-full"
+                        : "opacity-0 h-0"
                     }`}
                   >
                     <span dangerouslySetInnerHTML={{ __html: item.content }}>
@@ -202,15 +218,20 @@ export default function ConstructionTennis(props: Props) {
                 <button
                   class="flex justify-center items-center rounded-full w-10 h-10"
                   style={{ background: buttonColor }}
-                  hx-target="closest section"
-                  hx-swap="outerHTML transition:true"
-                  hx-get={useSection({
-                    props: {
-                      index: index < 1
-                        ? step[step.length - 1].position
-                        : index - 1,
-                    },
-                  })}
+                  // hx-target="closest section"
+                  // hx-swap="outerHTML transition:true"
+                  // hx-get={useSection({
+                  //   props: {
+                  //     index: index < 1
+                  //       ? step[step.length - 1].position
+                  //       : index - 1,
+                  //   },
+                  // })}
+                  hx-on:click={useScript(
+                    AnimationScroll,
+                    false,
+                    step[step.length - 1].position,
+                  )}
                 >
                   <svg
                     width="20"
@@ -242,11 +263,16 @@ export default function ConstructionTennis(props: Props) {
                 <button
                   class="flex justify-center items-center rounded-full w-10 h-10"
                   style={{ background: buttonColor }}
-                  hx-target="closest section"
-                  hx-swap="outerHTML transition:true"
-                  hx-get={useSection({
-                    props: { index: index == prev ? 0 : index + 1 },
-                  })}
+                  // hx-target="closest section"
+                  // hx-swap="outerHTML transition:true"
+                  // hx-get={useSection({
+                  //   props: { index: index == prev ? 0 : index + 1 },
+                  // })}
+                  hx-on:click={useScript(
+                    AnimationScroll,
+                    true,
+                    step[step.length - 1].position,
+                  )}
                 >
                   <svg
                     width="20"
@@ -283,22 +309,25 @@ export default function ConstructionTennis(props: Props) {
 
   return (
     <div
-      class="w-full h-full overflow-hidden pt-[70px] lg:py-[70px] px-5 lx:px-0 "
+      class="w-full h-full overflow-hidden pt-[70px] py-[70px] px-5 lx:px-0 "
       style={{ background: background }}
     >
-      <div class="w-full h-full max-w-[1270px] min-h-[660px] lg:min-h-[560px]  mx-auto text-white flex flex-col items-center justify-start relative">
+      <div class="w-full h-full max-w-[1270px] min-h-[660px] :min-h-[560px]  mx-auto text-white flex flex-col items-center justify-start relative">
         <span
-          class="font-FKOlympikus text-[65px] leading-[55px] w-full text-left"
+          class="font-FKOlympikus text-[65px] leading-[55px] w-full text-left z-10 "
           dangerouslySetInnerHTML={{ __html: title }}
         >
         </span>
-        <div class="w-full h-full lg:grid lg:grid-cols-[300px_auto_300px] flex flex-col grid-rows-1 min-h-[500px] absolute ">
+        <div class="w-full h-full grid grid-cols-[300px_auto_300px]  flex-col grid-rows-1 min-h-[500px] absolute ">
           <div class="relative h-autoh-full flex items-center w-full flex-col justify-center">
             {step.map((item, indexContent) => (
               <div
+                data-index-content={indexContent}
                 class={`flex font-Signal relative items-center w-full slide-next 
                    before:content-[''] before:w-[280px] before:h-[1px] before:absolute before:left-[240px] before:translate-y-[50%] before:top-[calc(50%-49px) before:border-white before:border-t before:border-dashed 
-                ${indexContent == index ? "opacity-1" : "opacity-0 "}  `}
+                ${
+                  indexContent == index ? "opacity-1 h-full" : "opacity-0 h-0"
+                }  `}
               >
                 <span
                   class="absolute top-2/4 bottom-0 left-0 right-0 text-lg text-left w-full"
@@ -312,35 +341,20 @@ export default function ConstructionTennis(props: Props) {
             id="animationScroll"
             data-position={1}
             data-index={0}
-            class={` relative w-full h-full max-w-[500px] mx-auto slide-next ${
+            class={` relative w-full h-full max-w-[500px] mx-auto ${
               TRANLATEY[index as keyof typeof TRANLATEY || 1]
             }`}
+            style={"transition: 1.4s cubic-bezier(.23,1,.32,1) 0s;"}
           >
             {step.map((img, indexImg) => (
               <StepImage props={img} index={indexImg} indexImg={index} />
             ))}
           </div>
           <div
-            class="w-full flex flex-row justify-end lg:relative px-5 absolute bottom-0"
+            class="w-full flex flex-row justify-end relative px-5  bottom-0"
             style={{ background: background }}
           >
-            <div class="w-full h-full relative pb-[70px]">
-              {step.map((item, indexContent) => (
-                <div
-                  class={`flex font-Signal text-base
-                   top-0 bottom-0 left-0 right-0 text-left w-full
-                  ${
-                    indexContent == index
-                      ? "opacity-1 relative "
-                      : "opacity-0 absolute"
-                  }`}
-                >
-                  <span dangerouslySetInnerHTML={{ __html: item.content }}>
-                  </span>
-                </div>
-              ))}
-            </div>
-            <div class="flex flex-col gap-4 items-center justify-center z-10 absolute lg:relative">
+            <div class="flex flex-col gap-4 items-center justify-center z-10 ">
               <button
                 class="flex justify-center items-center rounded-full w-10 h-10"
                 style={{ background: buttonColor }}

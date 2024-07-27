@@ -664,7 +664,12 @@
           "position": 6
         }
       ],
-      "index": 0
+      "index": 0,
+      "cta": {
+        "href": "#",
+        "label": "Comprar Agora",
+        "background": "#7ad214"
+      }
     }
   ],
   "seo": {

@@ -2,6 +2,7 @@ import { ImageWidget, RichText } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import { useDevice } from "deco/hooks/useDevice.ts";
 import { useScript } from "deco/hooks/useScript.ts";
+import CTAButton from "../../components/Button/CTAButton.tsx";
 
 /**
  * @titleBy alt
@@ -12,6 +13,15 @@ interface Step {
   imageOpacity: ImageWidget;
   alt: string;
   position: number;
+}
+
+interface CTA {
+  href?: string;
+  label?: string;
+  /**
+   * @format color
+   */
+  background?: string;
 }
 
 interface Props {
@@ -28,7 +38,8 @@ interface Props {
   /**
    * @format color
    */
-  buttonColor?: string;
+  arrowBgColor?: string;
+  cta?: CTA;
 }
 
 const TRANLATEY = {
@@ -154,7 +165,8 @@ export default function ConstructionTennis(props: Props) {
     step,
     index = 1,
     background = "#262626",
-    buttonColor = "#a5a5a5",
+    arrowBgColor = "#a5a5a5",
+    cta,
   } = props;
 
   const device = useDevice();
@@ -166,7 +178,7 @@ export default function ConstructionTennis(props: Props) {
       slide-next"
         style={{ background: background }}
       >
-        <div class="flex flex-col gap-5w-full h-full text-white px-10">
+        <div class="flex flex-col gap-5w-full h-full text-white p-10">
           <div
             class="relative z-10"
             style={`box-shadow: 1px 40px 30px ${background};`}
@@ -192,7 +204,7 @@ export default function ConstructionTennis(props: Props) {
               ))}
             </div>
           </div>
-          <div>
+          <div class="flex justify-center items-center flex-col gap-5">
             <div
               class="w-full flex flex-row justify-end lg:relative  min-h-[200px] relative pt-5"
               style={`background: ${background};     box-shadow: 0px -20px 30px ${background}`}
@@ -217,7 +229,7 @@ export default function ConstructionTennis(props: Props) {
               <div class="flex flex-col gap-4 items-center justify-center z-10 ">
                 <button
                   class="flex justify-center items-center rounded-full w-10 h-10"
-                  style={{ background: buttonColor }}
+                  style={{ background: arrowBgColor }}
                   // hx-target="closest section"
                   // hx-swap="outerHTML transition:true"
                   // hx-get={useSection({
@@ -262,7 +274,7 @@ export default function ConstructionTennis(props: Props) {
                 </button>
                 <button
                   class="flex justify-center items-center rounded-full w-10 h-10"
-                  style={{ background: buttonColor }}
+                  style={{ background: arrowBgColor }}
                   // hx-target="closest section"
                   // hx-swap="outerHTML transition:true"
                   // hx-get={useSection({
@@ -301,6 +313,13 @@ export default function ConstructionTennis(props: Props) {
                 </button>
               </div>
             </div>
+            {cta?.label && (
+              <CTAButton
+                href={cta?.href}
+                label={cta?.label}
+                backgroundButton={cta?.background}
+              />
+            )}
           </div>
         </div>
       </div>
@@ -357,7 +376,7 @@ export default function ConstructionTennis(props: Props) {
             <div class="flex flex-col gap-4 items-center justify-center z-10 ">
               <button
                 class="flex justify-center items-center rounded-full w-10 h-10"
-                style={{ background: buttonColor }}
+                style={{ background: arrowBgColor }}
                 // hx-target="closest section"
                 // hx-swap="outerHTML transition:true"
                 // hx-get={useSection({ props: { index: index < 1 ? step[step.length - 1].position : index - 1 } })}
@@ -396,7 +415,7 @@ export default function ConstructionTennis(props: Props) {
               </button>
               <button
                 class="flex justify-center items-center rounded-full w-10 h-10"
-                style={{ background: buttonColor }}
+                style={{ background: arrowBgColor }}
                 // hx-target="closest section"
                 // hx-swap="outerHTML transition:true"
                 // hx-get={useSection({ props: { index: index == prev ? 0 : index + 1 } })}
@@ -434,6 +453,14 @@ export default function ConstructionTennis(props: Props) {
             </div>
           </div>
         </div>
+        {cta?.label && (
+          <CTAButton
+            href={cta?.href}
+            label={cta?.label}
+            backgroundButton={cta?.background}
+            class="mt-auto z-10"
+          />
+        )}
       </div>
     </div>
   );

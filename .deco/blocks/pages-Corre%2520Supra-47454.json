@@ -787,6 +787,48 @@
           }
         }
       ]
+    },
+    {
+      "__resolveType": "site/sections/Blog/BlogPost.tsx",
+      "preTitle": "<p><span>&lt;/MÍDIA&gt;</span></p>",
+      "title": "<p>o corre supra por quem mais entende DE TECNOLOGIA</p>",
+      "posts": [
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/0533b8c4-5d4c-4478-8ee9-e427c89f2b9e",
+          "alt": "post 1",
+          "title": "Conheça o primeiro supertênis de corrida 100% feito no Brasil.",
+          "href": "#"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/0533b8c4-5d4c-4478-8ee9-e427c89f2b9e",
+          "alt": "post 1",
+          "title": "Conheça o primeiro supertênis de corrida 100% feito no Brasil.",
+          "href": "#"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/0533b8c4-5d4c-4478-8ee9-e427c89f2b9e",
+          "alt": "post 1",
+          "title": "Conheça o primeiro supertênis de corrida 100% feito no Brasil.",
+          "href": "#"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/0533b8c4-5d4c-4478-8ee9-e427c89f2b9e",
+          "alt": "post 1",
+          "title": "Olympikus lança seu supertênis com uma nova tecnologia chamada nITRO X.",
+          "href": "#"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Images/ImageAndText.tsx",
+      "backgroundImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/4f9244af-c5a0-42f1-8f0e-41024a0723e7",
+      "title": "<p><span>O seu corre de alta performance agora é Supra.</span></p>",
+      "cta": {
+        "label": "Comprar agora",
+        "href": "#"
+      },
+      "backgroundImageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/fa83775c-7605-44e3-9923-7d76513f58fa",
+      "alt": "homem correndo"
     }
   ],
   "seo": {

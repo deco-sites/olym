@@ -144,6 +144,25 @@ function AnimationSlider(
     setInterval(onClickNext, interval);
   }
 
+  root?.addEventListener("touchmove", (event) => {
+    // Previne o comportamento padrão para evitar rolagem, etc.
+    event.preventDefault();
+
+    const widht = root.clientWidth;
+    const partial = widht / 2;
+
+    // Pega a posição do primeiro toque
+    const touch = event.touches[0];
+    const touchX = touch.clientX;
+    if (touchX < partial) {
+      onClickPrev();
+    } else {
+      onClickNext();
+    }
+
+    // Exibe a posição
+  });
+
   next?.addEventListener("click", onClickNext);
   prev?.addEventListener("click", onClickPrev);
 }

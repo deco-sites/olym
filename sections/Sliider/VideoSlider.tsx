@@ -5,6 +5,7 @@ import Slider from "../../components/ui/SliderAnimation.tsx";
 import { useId } from "../../sdk/useId.ts";
 import CTAButton from "deco-sites/olym/components/Button/CTAButton.tsx";
 import Image from "apps/website/components/Image.tsx";
+import { useDevice } from "deco/hooks/useDevice.ts";
 
 type Animation =
   | "fade-in-top"
@@ -59,14 +60,16 @@ interface Props {
 function Item({ props, index }: { props: Itemvideo; index: number }) {
   const { title, content, button, animation, imageBackground } = props;
 
+  const device = useDevice();
+
   return (
     <div class="w-full h-full flex relative justify-center items-center text-white">
       <div class=" w-full h-full">
         <Image
           src={imageBackground.imageDesktop}
           alt={imageBackground.alt}
-          width={1441}
-          height={700}
+          width={device == "mobile" ? 375 : 1441}
+          height={device == "mobile" ? 560 : 700}
           loading="eager"
           fetchPriority="low"
           class={"w-full h-full "}
@@ -136,7 +139,7 @@ export default function VideoSlider(props: Props) {
       class={clx(
         "grid relative text-white",
         "grid-rows-[1fr_32px_1fr_64px]",
-        "grid-cols-[32px_1fr_32px] min-h-[660px]",
+        "grid-cols-[32px_1fr_32px] min-h-[560px]",
         "sm:grid-cols-[112px_1fr_112px] sm:min-h-min",
         "w-screen",
       )}

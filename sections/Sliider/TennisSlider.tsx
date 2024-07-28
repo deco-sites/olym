@@ -62,7 +62,7 @@ function Carrousel(
       class={clx(
         "grid",
         "grid-rows-[1fr_32px_1fr_64px]",
-        "grid-cols-1 min-h-[600px]",
+        "grid-cols-1 min-h-[600px] xl:min-h-[620px]",
         "sm:grid-cols-[112px_1fr_112px] sm:min-h-min",
         "w-full",
       )}

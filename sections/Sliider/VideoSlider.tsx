@@ -70,7 +70,7 @@ function Item({ props, index }: { props: Itemvideo; index: number }) {
           alt={imageBackground.alt}
           width={device == "mobile" ? 375 : 1441}
           height={device == "mobile" ? 560 : 700}
-          loading="eager"
+          loading="lazy"
           fetchPriority="low"
           class={"w-full h-full "}
         />
@@ -141,11 +141,11 @@ export default function VideoSlider(props: Props) {
         "grid-rows-[1fr_32px_1fr_64px]",
         "grid-cols-[32px_1fr_32px] min-h-[560px]",
         "sm:grid-cols-[112px_1fr_112px] sm:min-h-min",
-        "w-screen",
+        "w-full",
       )}
     >
       <div class="col-span-full row-span-full">
-        <Slider class="carousel carousel-center w-full gap-6">
+        <Slider class="carousel carousel-center w-full gap-6 overflow-hidden">
           {slides.map((video, index) => (
             <Slider.Item
               index={index}

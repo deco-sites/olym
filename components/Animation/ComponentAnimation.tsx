@@ -87,8 +87,6 @@ const animationByType = {
             from {
                 opacity: 0;
                 transform: translateY(100%);
-    
-    top: 0;
             }
             to {
                 opacity: 1;

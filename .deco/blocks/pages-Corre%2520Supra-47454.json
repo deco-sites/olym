@@ -749,6 +749,44 @@
         "primaryColor": "#858585",
         "secondColor": "#ebebeb"
       }
+    },
+    {
+      "__resolveType": "site/sections/Sliider/VideoSlider.tsx",
+      "interval": 5,
+      "slides": [
+        {
+          "imageBackground": {
+            "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/d6cf8cec-e623-435e-b916-028924ee486a",
+            "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/9f620c43-da2a-422e-a7f4-49d980e54f30",
+            "alt": "img video"
+          },
+          "title": "<p>REVIEW CORRIDA NO AR</p>",
+          "content": "<p><span>“Tênis eficiente”</span></p>",
+          "button": {
+            "label": "Assista ao vídeo",
+            "backgroundButton": "#fefbfb",
+            "textColorButton": "#000000",
+            "showBorder": false
+          },
+          "animation": "fade-in-botton-right",
+          "duration": 0.5
+        },
+        {
+          "imageBackground": {
+            "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/baf864c8-f11c-4aa2-ae67-91e656dc71bb",
+            "imageDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/2535d8d5-673a-4f88-9afb-781f1a7adbfa",
+            "alt": "img video"
+          },
+          "content": "<p><span>“O que há de melhor<br>na tecnologia”</span></p>",
+          "title": "<p><span>REVIEW TÊNIS CERTO</span></p>",
+          "button": {
+            "label": "Assista ao vídeo",
+            "backgroundButton": "#fefbfb",
+            "textColorButton": "#000000",
+            "showBorder": false
+          }
+        }
+      ]
     }
   ],
   "seo": {

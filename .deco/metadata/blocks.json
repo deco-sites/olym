@@ -202,5 +202,9 @@
   "/.deco/blocks/Preview%20site%2Fsections%2FImages%2FImageAndText.tsx.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Images/ImageAndText.tsx"
+  },
+  "/.deco/blocks/Preview%20site%2Fsections%2FFooter%2FFooterLP.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Footer/FooterLP.tsx"
   }
 }

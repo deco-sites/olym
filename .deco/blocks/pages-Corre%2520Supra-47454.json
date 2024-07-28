@@ -829,6 +829,79 @@
       },
       "backgroundImageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/fa83775c-7605-44e3-9923-7d76513f58fa",
       "alt": "homem correndo"
+    },
+    {
+      "__resolveType": "site/sections/Footer/FooterLP.tsx",
+      "title": "<p>CORRE SUPRA.<br>O SUPERTÊNIS FEITO POR BRASILEIROS.</p>",
+      "cards": [
+        {
+          "link": [
+            {
+              "label": "Corre Supra",
+              "href": "#"
+            },
+            {
+              "label": "Highlights",
+              "href": "#"
+            },
+            {
+              "label": "Tecnologias",
+              "href": "#"
+            }
+          ],
+          "title": "MAPA DO SITE"
+        },
+        {
+          "link": [
+            {
+              "label": "Mídia ",
+              "href": "#"
+            },
+            {
+              "label": "Reviews",
+              "href": "#"
+            }
+          ]
+        },
+        {
+          "link": [
+            {
+              "label": "Facebook",
+              "href": "#"
+            },
+            {
+              "label": "Instagram",
+              "href": "#"
+            },
+            {
+              "label": "Youtube",
+              "href": "#"
+            }
+          ],
+          "title": "REDES SOCIAIS"
+        },
+        {
+          "link": [
+            {
+              "label": "FAQ",
+              "href": "#"
+            },
+            {
+              "label": "Política de Privacidade",
+              "href": "#"
+            },
+            {
+              "label": "Termos de Uso",
+              "href": "#"
+            },
+            {
+              "label": "Política de Conteúdo",
+              "href": "#"
+            }
+          ],
+          "title": "POLíTICAS"
+        }
+      ]
     }
   ],
   "seo": {

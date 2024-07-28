@@ -670,6 +670,85 @@
         "label": "Comprar Agora",
         "background": "#7ad214"
       }
+    },
+    {
+      "__resolveType": "site/sections/Sliider/TennisSlider.tsx",
+      "title": "<p><span>AS CORES DA VELOCIDADE</span></p>",
+      "slider": [
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/42a7ad6a-54f2-4a6c-b6c3-bb16dac9f716",
+          "dotImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/97a3c3f2-e3c7-4887-bf8b-1ac0792dd693",
+          "alt": "Tennis 1",
+          "cta": {
+            "label": "Comprar agora"
+          }
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/73eb8245-ecd4-496f-b1f7-6dbdf39e6d34",
+          "dotImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/a937e2c1-d7e3-46dd-8e31-033923074aa8",
+          "alt": "Tennis 2",
+          "cta": {
+            "label": "Comprar agora"
+          }
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/b7fab7d0-d892-4869-b52b-e62fc09186d8",
+          "alt": "Tennis 3",
+          "dotImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/4eb388cc-2599-4635-9915-ba298ff91d4a",
+          "cta": {
+            "label": "Comprar agora"
+          }
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/2f446ad7-2be8-4114-94f8-89126bfcbc8e",
+          "dotImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/e62a32d1-2c62-4aa5-9478-ad9333bcbabe",
+          "alt": "Tennis 4",
+          "cta": {
+            "label": "Em breve",
+            "showBorder": true,
+            "backgroundButton": "#ffffff",
+            "textColorButton": "#a5a5a5",
+            "borderColor": "#a5a5a5"
+          }
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/ea4c835a-f828-4cb6-9918-d09e3f0811b9",
+          "dotImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/1b283a1b-2eff-4406-a584-b6af2288a1d6",
+          "alt": "Tennis 5",
+          "cta": {
+            "backgroundButton": "#ffffff",
+            "label": "Em breve",
+            "textColorButton": "#a5a5a5",
+            "borderColor": "#a5a5a5",
+            "showBorder": true
+          }
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/32a492bb-2e0b-4cfd-beb6-ac11d3a6c815",
+          "dotImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/d4f8010a-fd08-4024-8fe4-14cbe36f1703",
+          "alt": "Tennis 6",
+          "cta": {
+            "border": true,
+            "borderColor": "#a5a5a5",
+            "label": "Em Breve",
+            "href": "#",
+            "backgroundButton": "#ffffff",
+            "textColorButton": "#a5a5a5",
+            "showBorder": true
+          }
+        }
+      ],
+      "interval": 4,
+      "cta": {
+        "border": true,
+        "borderColor": "#ff0000",
+        "label": "Em Breve",
+        "href": "#"
+      },
+      "gradineColorText": {
+        "primaryColor": "#858585",
+        "secondColor": "#ebebeb"
+      }
     }
   ],
   "seo": {

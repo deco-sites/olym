@@ -1,9 +1,27 @@
 import { useScript } from "deco/hooks/useScript.ts";
 import type { JSX } from "preact";
 import { clx } from "../../sdk/clx.ts";
+import { type ComponentChildren } from "preact";
 
+function Button(
+  { index, children, ...props }:
+    & { index: number; children?: ComponentChildren }
+    & JSX.IntrinsicElements["button"],
+) {
+  return (
+    <button
+      {...props}
+      data-button={index}
+      class={clx("focus:outline-none group", props.class?.toString())}
+    >
+      {children}
+    </button>
+  );
+}
 function Dot(
-  { index, ...props }: { index: number } & JSX.IntrinsicElements["button"],
+  { index, children, ...props }:
+    & { index: number; children?: ComponentChildren }
+    & JSX.IntrinsicElements["button"],
 ) {
   return (
     <button
@@ -11,7 +29,9 @@ function Dot(
       data-dot={index}
       aria-label={`go to slider item ${index}`}
       class={clx("focus:outline-none group", props.class?.toString())}
-    />
+    >
+      {children}
+    </button>
   );
 }
 
@@ -89,6 +109,7 @@ const onLoad = ({ rootId, scroll, interval, infinite }: Props) => {
     const prev = root?.querySelector<HTMLElement>('[data-slide="prev"]');
     const next = root?.querySelector<HTMLElement>('[data-slide="next"]');
     const dots = root?.querySelectorAll<HTMLElement>("[data-dot]");
+    const buttons = root?.querySelectorAll<HTMLElement>("[data-button]");
 
     if (!root || !slider || !items || items.length === 0) {
       console.warn(
@@ -172,11 +193,14 @@ const onLoad = ({ rootId, scroll, interval, infinite }: Props) => {
           const item = e.target.getAttribute("data-slider-item");
           const index = Number(item) || 0;
           const dot = dots?.item(index);
+          const button = buttons?.item(index);
 
           if (e.isIntersecting) {
             dot?.setAttribute("disabled", "");
+            button?.setAttribute("disabled", "");
           } else {
             dot?.removeAttribute("disabled");
+            button?.removeAttribute("disabled");
           }
 
           if (!infinite) {
@@ -235,6 +259,7 @@ Slider.Dot = Dot;
 Slider.Item = Item;
 Slider.NextButton = NextButton;
 Slider.PrevButton = PrevButton;
+Slider.Button = Button;
 Slider.JS = JS;
 
 export default Slider;

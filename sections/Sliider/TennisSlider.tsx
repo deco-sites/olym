@@ -10,27 +10,62 @@ import Image from "apps/website/components/Image.tsx";
  * @titleBy alt
  */
 interface ItemSlider {
+  /**
+   * @title Imagem
+   */
   image: ImageWidget;
+  /**
+   * @title Teg alt
+   */
   alt: string;
+  /**
+   * @title Imagem do Dot
+   */
   dotImage: ImageWidget;
+  /**
+   * @title Estilização do CTA
+   */
   cta?: PropsCta;
 }
 
 interface Color {
-  /** @format color */
+  /**
+   *  @format color
+   * @title Cor Inicial
+   * @default #858585
+   */
   primaryColor?: string;
-  /** @format color */
+  /**
+   * @format color-input
+   * @title Cor Secundaria
+   * @default #afafaf
+   */
   secondColor?: string;
 }
 
 interface Props {
+  /**
+   * @title Titulo
+   */
   title: RichText;
   /**
-   * @description Define a gradient for the "content" text, if you want to leave it in a solid color, leave both colors the same, default: initial color: #858585, secondary color: #afafaf
+   * @title Gradient no fundo do texto
+   * @description Defina as cores do gradiente para aplicar no conteudo, caso queira uma cor solida basta inserir as duas cores iguais. Default: Cor inicial #858585, Cor secundaria: #afafaf
    */
   gradineColorText?: Color;
+  /**
+   * @title Slides
+   */
   slider: ItemSlider[];
+  /**
+   * @title Tempo de cada slide
+   * @description Tempo em segundos para a mudança automatica
+   */
   interval?: number;
+  /**
+   * @title Cor de Fundo
+   * @format color-input
+   */
   background?: string;
 }
 

@@ -6,27 +6,47 @@ import ContainerAnimation from "../../components/Animation/ComponentAnimation.ts
 interface CorredorBannerProps {
   /**
    * @format rich-text
+   * @title Titulo
    */
   title?: RichText;
 
   /**
    * @format rich-text
+   * @title Conteudo
    */
   content?: RichText;
   /**
    * @format color-input
+   * @title Cor de fundo
    */
   backgroundColor?: string;
+  /**
+   * @title Titulo da imagem
+   */
   titleImage: RichText;
+  /**
+   * @title Imagem
+   */
   image: ImageWidget;
+  /**
+   * @title Tag alt
+   */
   alt: string;
 
   /**
    * @format checkbox
+   * @title inverter posição
    */
   revertPosition?: boolean;
+  /**
+   * @title Configuração da Animação
+   */
   animation?: AnimationProps;
-  showAnimation?: boolean;
+  /**
+   * @title Ativar animação
+   * @description Caso queira ter uma melhor visualização do conteudo, basta desativar essa opção, após finalizado a edição, ative novamente para que fucione corretamente no site
+   */
+  showAnimaton?: boolean;
 }
 
 export default function CorredorBanner({
@@ -37,15 +57,15 @@ export default function CorredorBanner({
   titleImage = "Aprovado por",
   alt = "alt image",
   backgroundColor = "#FFFFFF",
-  revertPosition = true,
+  revertPosition = false,
   animation,
-  showAnimation = false,
+  showAnimaton = false,
 }: CorredorBannerProps) {
   const flexDirection = revertPosition ? "lg:flex-row" : "lg:flex-row-reverse";
 
   return (
     <div class="w-full h-full" style={{ background: backgroundColor }}>
-      {showAnimation
+      {showAnimaton
         ? (
           <ContainerAnimation
             animationType={animation?.animationType}

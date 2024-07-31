@@ -28,7 +28,7 @@ interface Emphasis {
   /**
    * @title Cor das Elipses
    * @description Caso tenha escolido o icone, é possivel escolher a cor de fundo da Elipse também, padrão: #v7ad214
-   * @format color
+   * @format color-input
    */
   backgroundIcon: string;
 }
@@ -45,17 +45,18 @@ interface Props {
   emphasis: Emphasis[];
   /**
    * @title Cor de fundo da Section
-   * @format color
+   * @format color-input
    */
   background?: string;
   /**
-   * @title Configuração da animação
+   * @title Configuração da Animação
    */
   animation?: AnimationProps;
   /**
-   * @title Ativar Animação?
+   * @title Ativar animação
+   * @description Caso queira ter uma melhor visualização do conteudo, basta desativar essa opção, após finalizado a edição, ative novamente para que fucione corretamente no site
    */
-  showAnimation?: boolean;
+  showAnimaton?: boolean;
 }
 
 function EmphasisItem(props: Emphasis) {
@@ -137,12 +138,12 @@ export default function descriotionAndBenefits(props: Props) {
     emphasis,
     background = "#262626",
     animation,
-    showAnimation = false,
+    showAnimaton = false,
   } = props;
 
   return (
     <div class={"w-full h-full flex "} style={{ background: background }}>
-      {showAnimation
+      {showAnimaton
         ? (
           <ContainerAnimation
             animationType={animation?.animationType}

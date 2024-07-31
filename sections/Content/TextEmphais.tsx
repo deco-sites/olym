@@ -5,26 +5,51 @@ import ContainerAnimation from "../../components/Animation/ComponentAnimation.ts
 import type { Props as Animation } from "../../components/Animation/ComponentAnimation.tsx";
 
 interface Color {
-  /** @format color */
+  /**
+   *  @format color
+   * @title Cor Inicial
+   * @default #858585
+   */
   primaryColor?: string;
-  /** @format color */
+  /**
+   * @format color-input
+   * @title Cor Secundaria
+   * @default #afafaf
+   */
   secondColor?: string;
 }
 
 interface Props {
+  /**
+   * @title Titulo
+   */
   title: RichText;
+  /**
+   * @title Conteudo
+   */
   content: RichText;
   /**
-   * @description Define a gradient for the "content" text, if you want to leave it in a solid color, leave both colors the same, default: initial color: #858585, secondary color: #afafaf
+   * @title Gradient no fundo do texto
+   * @description Defina as cores do gradiente para aplicar no conteudo, caso queira uma cor solida basta inserir as duas cores iguais. Default: Cor inicial #858585, Cor secundaria: #afafaf
    */
   gradineColorText?: Color;
   /**
-   * @description customizing the CTA layout, background, text color...
+   * @description Customizações do CTA
    */
   button?: Button;
-  /** @format color */
+  /**
+   *  @format color
+   * @title Cor de fundo da Seção
+   */
   backgroundSection?: string;
+  /**
+   * @title Configuração da Animação
+   */
   animation?: Animation;
+  /**
+   * @title Ativar animação
+   * @description Caso queira ter uma melhor visualização do conteudo, basta desativar essa opção, após finalizado a edição, ative novamente para que fucione corretamente no site
+   */
   showAnimaton?: boolean;
 }
 

@@ -5,12 +5,13 @@ import { useId } from "../../sdk/useId.ts";
 export interface Props {
   alerts?: RichText[];
   /**
-   * @title Autoplay interval
-   * @description time (in seconds) to start the carousel autoplay
+   * @title Tempo de cada slide
+   * @description Tempo em segundos para a mudança automatica
    */
   interval?: number;
   /**
-   * @format color
+   * @format color-input
+   * @title Cor de fundo
    * @description escolha a cor de fundo, padrão #7bd301
    * @default #7bd301
    */

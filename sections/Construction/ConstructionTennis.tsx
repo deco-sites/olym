@@ -3,43 +3,62 @@ import Image from "apps/website/components/Image.tsx";
 import { useDevice } from "deco/hooks/useDevice.ts";
 import { useScript } from "deco/hooks/useScript.ts";
 import CTAButton from "../../components/Button/CTAButton.tsx";
+import { Props as PropsCTA } from "../../components/Button/CTAButton.tsx";
 
 /**
  * @titleBy alt
  */
 interface Step {
+  /**
+   * @title Conteudo
+   */
   content: RichText;
+  /**
+   * @title Imagem
+   */
   image: ImageWidget;
+  /**
+   * @title Imagem Opaca
+   */
   imageOpacity: ImageWidget;
+  /**
+   * @title Tag alt
+   */
   alt: string;
+  /**
+   * @title Posição da imagem
+   * @description A posição serve para que detemrinar em quql posição a imagem deve ir com os eventos dos botões
+   */
   position: number;
 }
 
-interface CTA {
-  href?: string;
-  label?: string;
-  /**
-   * @format color
-   */
-  background?: string;
-}
-
 interface Props {
+  /**
+   * @title Titulo
+   */
   title: RichText;
+  /**
+   * @title Etapas
+   */
   step: Step[];
   /**
    * hidde true
    */
   index?: number;
   /**
-   * @format color
+   * @format color-input
+   * @title Cor de fundo
    */
   background?: string;
   /**
-   * @format color
+   * @format color-input
+   * @title Cor dos botões
    */
   arrowBgColor?: string;
-  cta?: CTA;
+  /**
+   * @title Estilização do CTA
+   */
+  cta?: PropsCTA;
 }
 
 const TRANLATEY = {
@@ -313,13 +332,7 @@ export default function ConstructionTennis(props: Props) {
                 </button>
               </div>
             </div>
-            {cta?.label && (
-              <CTAButton
-                href={cta?.href}
-                label={cta?.label}
-                backgroundButton={cta?.background}
-              />
-            )}
+            {cta?.label && <CTAButton {...cta} />}
           </div>
         </div>
       </div>
@@ -455,9 +468,7 @@ export default function ConstructionTennis(props: Props) {
         </div>
         {cta?.label && (
           <CTAButton
-            href={cta?.href}
-            label={cta?.label}
-            backgroundButton={cta?.background}
+            {...cta}
             class="mt-auto z-10"
           />
         )}

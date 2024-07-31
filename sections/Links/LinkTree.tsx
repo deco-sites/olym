@@ -19,7 +19,7 @@ export interface Header {
   /** @format textarea */
   description?: string;
   /**
-   * @format color
+   * @format color-input
    * @description color to be used in title and description
    */
   textColor: string;
@@ -50,7 +50,7 @@ export interface Link {
 
 export interface Style {
   /**
-   * @format color
+   * @format color-input
    * @description color to be used in link's text
    */
   textColor: string;

@@ -5,25 +5,62 @@ import ContainerAnimation from "../../components/Animation/ComponentAnimation.ts
 import type { Props as Animation } from "../../components/Animation/ComponentAnimation.tsx";
 
 interface Color {
-  /** @format color */
+  /**
+   *  @format color
+   * @title Cor Inicial
+   * @default #858585
+   */
   primaryColor?: string;
-  /** @format color */
+  /**
+   * @format color-input
+   * @title Cor Secundaria
+   * @default #afafaf
+   */
   secondColor?: string;
 }
 
 interface Props {
+  /**
+   * @title Video
+   */
   videoBackground: Video;
+  /**
+   * @title Video em Loop
+   */
   loop?: boolean;
+  /**
+   * @title Auto play no video
+   */
   autoplay?: boolean;
+  /**
+   * @title Mutado
+   */
   muted?: boolean;
+  /**
+   * @title Titulo
+   */
   title: RichText;
+  /**
+   * @title Conteudo
+   */
   content: RichText;
   /**
-   * @description Define a gradient for the "content" text, if you want to leave it in a solid color, leave both colors the same, default: initial color: #858585, secondary color: #afafaf
+   * @title Gradient no fundo do texto
+   * @description Defina as cores do gradiente para aplicar no conteudo, caso queira uma cor solida basta inserir as duas cores iguais. Default: Cor inicial #858585, Cor secundaria: #afafaf
    */
-  gradinentColorText?: Color;
+  gradineColorText?: Color;
+  /**
+   * @description Customizações do CTA
+   */
   button?: Button;
+  /**
+   * @title Configuração da Animação
+   */
   animation?: Animation;
+  /**
+   * @title Ativar animação
+   * @description Caso queira ter uma melhor visualização do conteudo, basta desativar essa opção, após finalizado a edição, ative novamente para que fucione corretamente no site
+   */
   showAnimaton?: boolean;
 }
 
@@ -33,7 +70,7 @@ export default function TextAndVideo(props: Props) {
     content,
     button,
     animation,
-    gradinentColorText = { primaryColor: "#afafaf", secondColor: "#858585" },
+    gradineColorText = { primaryColor: "#afafaf", secondColor: "#858585" },
     showAnimaton,
     loop = true,
     autoplay = true,
@@ -78,7 +115,7 @@ export default function TextAndVideo(props: Props) {
                 </h2>
                 <span
                   class="font-FKOlympikus text-6.5xl text-center md:text-7xl lg:text-7.5xl -mt-4 pb-4"
-                  style={` background: linear-gradient(270deg,${gradinentColorText.secondColor} -1.04%,${gradinentColorText.primaryColor} 100.71%); -webkit-background-clip: text;  -webkit-text-fill-color: transparent`}
+                  style={` background: linear-gradient(270deg,${gradineColorText.secondColor} -1.04%,${gradineColorText.primaryColor} 100.71%); -webkit-background-clip: text;  -webkit-text-fill-color: transparent`}
                   dangerouslySetInnerHTML={{ __html: content }}
                 >
                 </span>
@@ -116,7 +153,7 @@ export default function TextAndVideo(props: Props) {
               </h2>
               <span
                 class="font-FKOlympikus text-6.5xl text-center md:text-7xl lg:text-7.5xl -mt-4 pb-4"
-                style={` background: linear-gradient(270deg,${gradinentColorText.secondColor} -1.04%,${gradinentColorText.primaryColor} 100.71%); -webkit-background-clip: text;  -webkit-text-fill-color: transparent`}
+                style={` background: linear-gradient(270deg,${gradineColorText.secondColor} -1.04%,${gradineColorText.primaryColor} 100.71%); -webkit-background-clip: text;  -webkit-text-fill-color: transparent`}
                 dangerouslySetInnerHTML={{ __html: content }}
               >
               </span>

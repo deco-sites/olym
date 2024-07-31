@@ -44,8 +44,8 @@ interface Props {
    */
   rows: Row[];
   /**
-   * @title Cor do funcdo
-   * @format color
+   * @title Cor do fundo
+   * @format color-input
    */
   background?: string;
 }

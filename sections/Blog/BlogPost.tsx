@@ -5,9 +5,17 @@ import { useId } from "deco-sites/olym/sdk/useId.ts";
 import Image from "apps/website/components/Image.tsx";
 
 interface Color {
-  /** @format color */
+  /**
+   *  @format color
+   * @title Cor Inicial
+   * @default #858585
+   */
   primaryColor?: string;
-  /** @format color */
+  /**
+   * @format color-input
+   * @title Cor Secundaria
+   * @default #afafaf
+   */
   secondColor?: string;
 }
 
@@ -15,20 +23,45 @@ interface Color {
  * @titleBy title
  */
 interface Posts {
+  /**
+   * @title Image
+   */
   image: ImageWidget;
+  /**
+   * @title Tag alt
+   */
   alt: string;
+  /**
+   * @title Title
+   */
   title?: string;
+  /**
+   * @title Link
+   */
   href: string;
 }
 
 interface Props {
+  /**
+   * @title Pre Titulo
+   */
   preTitle?: RichText;
+  /**
+   * @title titulo
+   */
   title: RichText;
   /**
-   * @description Define a gradient for the "content" text, if you want to leave it in a solid color, leave both colors the same, default: initial color: #858585, secondary color: #afafaf
+   * @title Gradient no fundo do texto
+   * @description Defina as cores do gradiente para aplicar no conteudo, caso queira uma cor solida basta inserir as duas cores iguais. Default: Cor inicial #858585, Cor secundaria: #afafaf
    */
   gradineColorText?: Color;
+  /**
+   * @title Posts
+   */
   posts: Posts[];
+  /**
+   * @title Duração de Slide
+   */
   interval?: number;
 }
 

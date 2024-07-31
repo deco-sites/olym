@@ -10,9 +10,15 @@ type Animations =
   | "zoom-in";
 
 export interface Props {
+  /** \
+   * @title Tipo da Animaçâo
+   * @description Escolha o tipo de animaçâo para este componene, Default:"fade-in"
+   */
   animationType?: Animations;
   /**
    * @default 0.3
+   * @title Duraçâo da animaçâo
+   * @description Default: 0.3s
    */
   duration?: string;
   children?: ComponentChildren;

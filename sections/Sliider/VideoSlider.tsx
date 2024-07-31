@@ -29,8 +29,17 @@ const ANIMATIONS = {
 };
 
 interface ImageDevice {
+  /**
+   * @title Imagem Desktop
+   */
   imageMobile: ImageWidget;
+  /**
+   * @title Imagem Mobile
+   */
   imageDesktop: ImageWidget;
+  /**
+   * @title Tag alt
+   */
   alt: string;
 }
 
@@ -38,22 +47,45 @@ interface ImageDevice {
  * @titleBy title
  */
 interface Itemvideo {
+  /**
+   * @title Titulo
+   */
   title: RichText;
+  /**
+   * @title Conteudo
+   */
   content: RichText;
   /**
-   * @description customizing the CTA layout, background, text color...
+   * @description Customizações do CTA
    */
   button?: Button;
+  /**
+   * @title Imagem de Fundo
+   */
   imageBackground: ImageDevice;
-  /** @format color */
-  backgroundSection?: string;
+  /**
+   * @title Configuração da Animação
+   */
   animation?: Animation;
+  /**
+   * @title Duração da animação
+   */
   duration?: number;
+  /**
+   * @title Ativar animação
+   * @description Caso queira ter uma melhor visualização do conteudo, basta desativar essa opção, após finalizado a edição, ative novamente para que fucione corretamente no site
+   */
   showAnimaton?: boolean;
 }
 
 interface Props {
+  /**
+   * @title Duração de Slide
+   */
   interval?: number;
+  /**
+   * @title Slides
+   */
   slides: Itemvideo[];
 }
 

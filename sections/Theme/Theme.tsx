@@ -11,7 +11,7 @@ import { clx } from "../../sdk/clx.ts";
 
 export interface ThemeColors {
   /**
-   * @format color-input
+   * @format color-input-input
    * @title Base
    */
   "base-100"?: string;
@@ -21,7 +21,7 @@ export interface ThemeColors {
   "secondary"?: string;
   /**
    * @title Accent
-   * @format color-input */
+   * @format color-input-input */
   "tertiary"?: string;
   /** @format color-input */
   "neutral"?: string;
@@ -48,7 +48,7 @@ export interface ComplementaryColors {
   "secondary-content"?: string;
   /**
    * @title Accent Content
-   * @format color-input */
+   * @format color-input-input */
   "tertiary-content"?: string;
   /** @format color-input */
   "neutral-content"?: string;

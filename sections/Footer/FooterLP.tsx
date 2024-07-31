@@ -4,7 +4,13 @@ import { RichText } from "apps/admin/widgets.ts";
  * @titleBy label
  */
 interface Links {
+  /**
+   * @title Label
+   */
   label: string;
+  /**
+   * @title Link
+   */
   href: string;
 }
 
@@ -12,12 +18,24 @@ interface Links {
  * @titleBy title
  */
 interface Card {
+  /**
+   * @title Titulo
+   */
   title?: string;
+  /**
+   * @title Lista de links
+   */
   link?: Links[];
 }
 
 interface Props {
+  /**
+   * @title Titulo
+   */
   title: RichText;
+  /**
+   * @title Colunas
+   */
   cards?: Card[];
 }
 

@@ -125,7 +125,8 @@
       "titleImage": "<p><span style=\"color: #858585\">APROVADO PELA:</span></p>",
       "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/17ea89e5-aebf-4c04-97bf-f750d82437f2",
       "alt": "selo",
-      "showAnimation": true
+      "showAnimation": true,
+      "showAnimaton": true
     },
     {
       "__resolveType": "site/sections/Content/TextEmphais.tsx",
@@ -748,7 +749,8 @@
       "gradineColorText": {
         "primaryColor": "#858585",
         "secondColor": "#ebebeb"
-      }
+      },
+      "background": "#d9d9d9"
     },
     {
       "__resolveType": "site/sections/Sliider/VideoSlider.tsx",

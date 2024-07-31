@@ -1,14 +1,33 @@
 import { type ComponentChildren } from "preact";
 export interface Props {
+  /**
+   * @title Label
+   */
   label?: string;
+  /**
+   * @title Link
+   */
   href?: string;
-  /** @format color */
+  /**
+   * @format color-input
+   * @title Cor de CTA
+   * @default #7bd301
+   */
   backgroundButton?: string;
-  /** @format color */
+  /**
+   * @format color-input
+   * @title Cor do texto
+   * @default #ffff
+   */
   textColorButton?: string;
   /**
-  /** @format color */
+   *  @format color
+   * @title Cor da borda
+   */
   borderColor?: string;
+  /**
+   * @title Ativar borda
+   */
   showBorder?: boolean;
   /**
    * @hide true

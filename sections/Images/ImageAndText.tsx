@@ -7,18 +7,29 @@ import Image from "apps/website/components/Image.tsx";
 interface Props {
   /**
    * @format rich-text
+   * @title Titulo
    */
   title?: string;
   /**
    * @format rich-text
+   * @description Descrição
    */
   description?: string;
+  /**
+   * @description Customizações do CTA
+   */
   cta?: CtaProps;
   /**
-   * @description The background image for the section.
+   * @description Imagem de fundo Desktop
    */
   backgroundImage: ImageWidget;
+  /**
+   * @description Imagem de fundo mobile
+   */
   backgroundImageMobile: ImageWidget;
+  /**
+   * @description Tag alt
+   */
   alt: string;
 }
 

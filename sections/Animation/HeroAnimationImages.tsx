@@ -5,8 +5,17 @@ import Image from "apps/website/components/Image.tsx";
 
 /**@titleBy alt */
 interface ItemImage {
+  /**
+   * @title Image
+   */
   image: ImageWidget;
+  /**
+   * @title tag alt
+   */
   alt: string;
+  /**
+   * @title Configuração da Animação
+   */
   animation: AnimationProps;
 }
 
@@ -14,13 +23,24 @@ interface Props {
   /**
    * @maxItems 2
    * @minItems 2
+   * @title Images
+   * @description São nescessarios duas imagens para que a animação funcione corretamente
    */
   images: ItemImage[];
+  /**
+   * @title Pre carregar imagem
+   * @description Se precisa de um carregamnto rapido da imagem é importante ativar esa opção, recomendado na primeira dobra do site
+   */
   preload?: boolean;
   /**
-   * @format color
+   * @format color-input
+   * @title Cor de fundo
    */
   background?: string;
+  /**
+   * @title Ativar animação
+   * @description Caso queira ter uma melhor visualização do conteudo, basta desativar essa opção, após finalizado a edição, ative novamente para que fucione corretamente no site
+   */
   showAnimation?: boolean;
 }
 
@@ -39,7 +59,6 @@ export default function HeroAnimationImages(props: Props) {
               {images.map((img) => (
                 <Animation.AnimationItem
                   animationType={img.animation.animationType}
-                  duration={img.animation.duration}
                   class={"lg:max-h-[450px] xl:max-h-[633px] h-full w-auto"}
                 >
                   <Image

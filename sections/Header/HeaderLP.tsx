@@ -13,30 +13,37 @@ import CTAButton from "../../components/Button/CTAButton.tsx";
 
 /**@titleBy label */
 interface Link {
+  /**
+   * @title Nome
+   */
   label: string;
+  /**
+   * @title Link
+   * @description Você pode adicionar tanto um link externo quando o id de determinada seçâo como por exemplo: #Slider
+   */
   href: string;
 }
 
 interface Props {
   /**
-   * @format textarea
+   * @ttle Logo
    */
   logo: ImageWidget;
   /**
-   * @title Menu Items
+   * @title Items do Menu
    */
   menuItems?: Link[];
   /**
-   * @title Call to Action
+   * @title CTA
    */
   cta?: string;
   /**
-   * @title Call to Action URL
+   * @title Url do CTA
    * @format text
    */
   ctaUrl?: string;
   /**
-   * @title Slider Alerts
+   * @title Alertas
    */
   alerts?: AlertProps;
 }

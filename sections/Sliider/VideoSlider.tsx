@@ -241,7 +241,7 @@ export default function VideoSlider(props: Props) {
         "grid-rows-[1fr_32px_1fr_64px]",
         "grid-cols-[32px_1fr_32px] min-h-[560px]",
         "sm:grid-cols-[112px_1fr_112px] sm:min-h-min",
-        "w-full",
+        "w-full max-h-[92vh]",
       )}
     >
       <div class="col-span-full row-span-full">
@@ -352,7 +352,7 @@ export default function VideoSlider(props: Props) {
       </ul>
 
       <Slider.JS
-        rootId={id}
+        rootId={idS || id}
         interval={interval && interval * 1e3}
         animations={arrayAnimation}
         nMax={slides.length - 1}

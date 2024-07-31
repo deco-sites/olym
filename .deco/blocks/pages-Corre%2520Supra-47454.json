@@ -861,7 +861,6 @@
     },
     {
       "__resolveType": "site/sections/Sliider/VideoSlider.tsx",
-      "interval": 5,
       "slides": [
         {
           "imageBackground": {
@@ -900,7 +899,8 @@
         "animationType": "fade-in-bottom"
       },
       "showAnimaton": true,
-      "idS": "midia"
+      "idS": "midia",
+      "interval": 2
     },
     {
       "__resolveType": "site/sections/Blog/BlogPost.tsx",

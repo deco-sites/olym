@@ -73,7 +73,7 @@ export default function CorredorBanner({
             class="w-full h-full"
           >
             <div
-              class={`flex ${flexDirection} flex-col items-center justify-between px-10 py-20 gap-20 md:px-10 md:py-[108px] lg:py-[130px] max-w-[1272px] md:px-[42px] lg:px-0 mx-auto h-full`}
+              class={`flex ${flexDirection} flex-col items-center justify-between px-10 py-20 gap-20 md:py-[108px] lg:py-[130px] max-w-[1272px] md:px-[42px] mx-auto h-full`}
             >
               <div class=" mr-4 flex flex-col w-full lg:w-2/4 justify-start items-start h-full mb-auto ">
                 <h2
@@ -106,7 +106,7 @@ export default function CorredorBanner({
         )
         : (
           <div
-            class={`flex ${flexDirection} flex-col items-center justify-between px-10 py-20 gap-20 md:px-10 md:py-[108px] max-w-[1272px] md:px-[42px] mx-auto h-full`}
+            class={`flex ${flexDirection} flex-col items-center justify-between px-10 py-20 gap-20 md:py-[108px] lg:py-[130px] max-w-[1272px] md:px-[42px] mx-auto h-full`}
           >
             <div class=" mr-4 flex flex-col w-full lg:w-2/4 justify-start items-start h-full mb-auto">
               <h2

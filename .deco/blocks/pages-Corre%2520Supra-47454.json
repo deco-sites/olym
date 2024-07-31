@@ -112,7 +112,11 @@
       },
       "loop": true,
       "autoplay": true,
-      "muted": true
+      "muted": true,
+      "gradineColorText": {
+        "primaryColor": "#ffffff",
+        "secondColor": "#ffffff"
+      }
     },
     {
       "__resolveType": "site/sections/Content/TitleAndContent.tsx",
@@ -136,13 +140,15 @@
         "animationType": "fade-in-bottom",
         "duration": "0.8"
       },
-      "button": {},
+      "button": {
+        "label": "Comprar agora"
+      },
       "backgroundSection": "#262626",
       "gradineColorText": {
         "primaryColor": "#ffffff",
         "secondColor": "#ffffff"
       },
-      "showAnimaton": false
+      "showAnimaton": true
     },
     {
       "__resolveType": "site/sections/Images/ImagesGrid.tsx",
@@ -180,7 +186,11 @@
               "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/36b3dce9-06f6-426e-bcd6-e5d72fe529f3",
               "alt": "Tenis"
             }
-          ]
+          ],
+          "animation": {
+            "animationType": "fade-in-bottom"
+          },
+          "showAnimaton": true
         },
         {
           "images": [
@@ -194,9 +204,17 @@
               "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/95bf8d77-3963-4980-8eeb-ad551eb979ff",
               "alt": "Tenis"
             }
-          ]
+          ],
+          "animation": {
+            "animationType": "fade-in-bottom"
+          },
+          "showAnimaton": true
         }
-      ]
+      ],
+      "animation": {
+        "animationType": "fade-in-bottom"
+      },
+      "showAnimaton": true
     },
     {
       "__resolveType": "site/sections/Content/DescriptionAndBenefits.tsx",
@@ -218,7 +236,11 @@
           "backgroundIcon": "#7ad214",
           "icon": "IconLess"
         }
-      ]
+      ],
+      "showAnimaton": true,
+      "animation": {
+        "animationType": "fade-in-bottom"
+      }
     },
     {
       "__resolveType": "site/sections/Images/ImagesGrid.tsx",
@@ -256,9 +278,17 @@
               "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/3bba9115-3fc2-45f1-bef1-132a557a8d0c",
               "alt": "Tenis"
             }
-          ]
+          ],
+          "showAnimaton": true,
+          "animation": {
+            "animationType": "fade-in-bottom"
+          }
         }
-      ]
+      ],
+      "showAnimaton": true,
+      "animation": {
+        "animationType": "fade-in-bottom"
+      }
     },
     {
       "__resolveType": "site/sections/Content/DescriptionAndBenefits.tsx",
@@ -283,9 +313,10 @@
       ],
       "animation": {
         "animationType": "fade-in-bottom",
-        "duration": "0.4"
+        "duration": "0.3"
       },
-      "showAnimation": true
+      "showAnimation": true,
+      "showAnimaton": true
     },
     {
       "__resolveType": "site/sections/Images/ImagesGrid.tsx",
@@ -323,9 +354,17 @@
               "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/eb51d9cb-a7d5-430e-9e7d-cc6bcd6ef3dc",
               "alt": "Tenis"
             }
-          ]
+          ],
+          "animation": {
+            "animationType": "fade-in-bottom"
+          },
+          "showAnimaton": true
         }
-      ]
+      ],
+      "animation": {
+        "animationType": "fade-in-bottom"
+      },
+      "showAnimaton": true
     },
     {
       "__resolveType": "site/sections/Content/DescriptionAndBenefits.tsx",
@@ -342,7 +381,11 @@
           "backgroundIcon": "#7ad214",
           "icon": "IconPlus"
         }
-      ]
+      ],
+      "showAnimaton": true,
+      "animation": {
+        "animationType": "fade-in-bottom"
+      }
     },
     {
       "__resolveType": "site/sections/Images/ImagesGrid.tsx",
@@ -380,7 +423,11 @@
               "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/b4451170-78e9-4392-bedc-e7aa9905a4f8",
               "alt": "Tenis"
             }
-          ]
+          ],
+          "showAnimaton": true,
+          "animation": {
+            "animationType": "fade-in-bottom"
+          }
         },
         {
           "images": [
@@ -394,9 +441,17 @@
               "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/95f67b2b-f758-4598-8cda-5b8f000d7a70",
               "alt": "tenis"
             }
-          ]
+          ],
+          "animation": {
+            "animationType": "fade-in-bottom"
+          },
+          "showAnimaton": true
         }
-      ]
+      ],
+      "showAnimaton": true,
+      "animation": {
+        "animationType": "fade-in-bottom"
+      }
     },
     {
       "__resolveType": "site/sections/Content/DescriptionAndBenefits.tsx",
@@ -413,7 +468,11 @@
           "backgroundIcon": "#7ad214",
           "postitle": "<p><span>EM COMPARAÇÃO ÀS FIBRAS CURTAS</span></p>"
         }
-      ]
+      ],
+      "animation": {
+        "animationType": "fade-in-bottom"
+      },
+      "showAnimaton": true
     },
     {
       "__resolveType": "site/sections/Images/ImagesGrid.tsx",
@@ -451,7 +510,11 @@
               "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/e6b16875-62b0-4eeb-905a-824f60d51558",
               "alt": "Tenis"
             }
-          ]
+          ],
+          "animation": {
+            "animationType": "fade-in-bottom"
+          },
+          "showAnimaton": true
         },
         {
           "images": [
@@ -460,9 +523,17 @@
               "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/2d758adc-1dd5-4b90-8288-63b178ae0a74",
               "alt": "tenis"
             }
-          ]
+          ],
+          "animation": {
+            "animationType": "fade-in-bottom"
+          },
+          "showAnimaton": true
         }
-      ]
+      ],
+      "showAnimaton": true,
+      "animation": {
+        "animationType": "fade-in-bottom"
+      }
     },
     {
       "__resolveType": "site/sections/Content/DescriptionAndBenefits.tsx",
@@ -486,7 +557,11 @@
           "preTitle": "<p><span style=\"color: #5ddc02\">DROP</span></p>",
           "backgroundIcon": "#000000"
         }
-      ]
+      ],
+      "showAnimaton": true,
+      "animation": {
+        "animationType": "fade-in-bottom"
+      }
     },
     {
       "__resolveType": "site/sections/Images/ImagesGrid.tsx",
@@ -524,7 +599,11 @@
               "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/3e3f61ff-f3ad-4cf4-8477-b569489db1b3",
               "alt": "Tenis"
             }
-          ]
+          ],
+          "animation": {
+            "animationType": "fade-in-bottom"
+          },
+          "showAnimaton": true
         },
         {
           "images": [
@@ -533,9 +612,17 @@
               "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/9a79448b-5cba-4a64-bf99-18353cf78064",
               "alt": "tenis"
             }
-          ]
+          ],
+          "showAnimaton": true,
+          "animation": {
+            "animationType": "fade-in-bottom"
+          }
         }
-      ]
+      ],
+      "animation": {
+        "animationType": "fade-in-bottom"
+      },
+      "showAnimaton": true
     },
     {
       "__resolveType": "site/sections/Content/DescriptionAndBenefits.tsx",
@@ -552,7 +639,11 @@
           "backgroundIcon": "#7ad214",
           "icon": "IconPlus"
         }
-      ]
+      ],
+      "animation": {
+        "animationType": "fade-in-bottom"
+      },
+      "showAnimaton": true
     },
     {
       "__resolveType": "site/sections/Images/ImagesGrid.tsx",
@@ -590,9 +681,17 @@
               "imageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/93f5b730-b932-4856-88e2-f2fb0fcdfa46",
               "alt": "Tenis"
             }
-          ]
+          ],
+          "showAnimaton": true,
+          "animation": {
+            "animationType": "fade-in-bottom"
+          }
         }
-      ]
+      ],
+      "animation": {
+        "animationType": "fade-in-bottom"
+      },
+      "showAnimaton": true
     },
     {
       "__resolveType": "site/sections/Content/DescriptionAndBenefits.tsx",
@@ -609,7 +708,11 @@
           "title": "<p><span style=\"color: #5ddc02\">AMARRAÇÃO ÚNICA</span><span><br>DO ÍNICIO AO FIM DA CORRIDA</span></p>",
           "backgroundIcon": "#000000"
         }
-      ]
+      ],
+      "animation": {
+        "animationType": "fade-in-bottom"
+      },
+      "showAnimaton": true
     },
     {
       "__resolveType": "site/sections/Construction/ConstructionTennis.tsx",
@@ -788,7 +891,11 @@
             "showBorder": false
           }
         }
-      ]
+      ],
+      "animationE": {
+        "animationType": "fade-in-bottom"
+      },
+      "showAnimaton": true
     },
     {
       "__resolveType": "site/sections/Blog/BlogPost.tsx",
@@ -830,7 +937,11 @@
         "href": "#"
       },
       "backgroundImageMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/fa83775c-7605-44e3-9923-7d76513f58fa",
-      "alt": "homem correndo"
+      "alt": "homem correndo",
+      "animation": {
+        "animationType": "fade-in-bottom"
+      },
+      "showAnimaton": true
     },
     {
       "__resolveType": "site/sections/Footer/FooterLP.tsx",

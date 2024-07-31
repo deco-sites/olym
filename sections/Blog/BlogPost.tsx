@@ -138,7 +138,7 @@ export default function BlogPosts(props: Props) {
 
   return (
     <div class="w-full h-full">
-      <div class="flex flex-col max-w-[1276px] xl:max-w-[1372px] mx-auto font-Signal py-10 md:py-20 lg:py-[70px]">
+      <div class="flex flex-col max-w-[1272px] xl:max-w-[1372px] mx-auto font-Signal py-10 md:py-20 lg:py-[70px]">
         {preTitle && (
           <span
             class={"px-10 text-lg xl:px-12  text-neutral"}

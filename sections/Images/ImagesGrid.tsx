@@ -1,6 +1,8 @@
 import { ImageWidget, RichText } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import { useDevice } from "deco/hooks/useDevice.ts";
+import ContainerAnimation from "deco-sites/olym/components/Animation/ComponentAnimation.tsx";
+import type { Props as Animation } from "../../components/Animation/ComponentAnimation.tsx";
 
 /**
  * @titleBy alt
@@ -33,6 +35,15 @@ interface Row {
    * @maxItems 2
    */
   images: ItemImage[];
+  /**
+   * @title Configuração da Animação
+   */
+  animation?: Animation;
+  /**
+   * @title Ativar animação
+   * @description Caso queira ter uma melhor visualização do conteudo, basta desativar essa opção, após finalizado a edição, ative novamente para que fucione corretamente no site
+   */
+  showAnimaton?: boolean;
 }
 interface Props {
   /**
@@ -48,6 +59,15 @@ interface Props {
    * @format color-input
    */
   background?: string;
+  /**
+   * @title Configuração da Animação do titulo
+   */
+  animation?: Animation;
+  /**
+   * @title Ativar animação
+   * @description Caso queira ter uma melhor visualização do conteudo, basta desativar essa opção, após finalizado a edição, ative novamente para que fucione corretamente no site
+   */
+  showAnimaton?: boolean;
 }
 
 const MOBILESIZE = {
@@ -92,8 +112,24 @@ function ItemImg(
 }
 
 function Row(props: Row) {
-  const { images } = props;
+  const { images, animation, showAnimaton } = props;
 
+  if (showAnimaton) {
+    return (
+      <ContainerAnimation
+        animationType={animation?.animationType}
+        duration={animation?.duration}
+      >
+        <div
+          class={"w-full flex-col lg:flex-row flex-wrap md:flex-nowrap gap-5 flex"}
+        >
+          {images.map((img) => (
+            <ItemImg props={img} numberCol={images.length === 1 ? "1" : "2"} />
+          ))}
+        </div>
+      </ContainerAnimation>
+    );
+  }
   return (
     <div
       class={"w-full flex-col lg:flex-row flex-wrap md:flex-nowrap gap-5 flex"}
@@ -110,16 +146,34 @@ export default function ImagesGrid(props: Props) {
     title,
     rows,
     background = "#262626",
+    animation,
+    showAnimaton,
   } = props;
 
   return (
     <div class="w-full h-full " style={{ background: background }}>
       <div class="w-full h-full flex flex-col gap-20 px-5 py-10 max-w-[1272px] md:px-[42px] mx-auto xl:px-0">
-        <span
-          class="font-FKOlympikus text-white text-[50px] leading-[42px] md:text-6xl md:leading-[1] lg:text-[65px] text-center px-6 md:px-0"
-          dangerouslySetInnerHTML={{ __html: title }}
-        >
-        </span>
+        {showAnimaton
+          ? (
+            <ContainerAnimation
+              animationType={animation?.animationType}
+              duration={animation?.duration}
+            >
+              <span
+                class="font-FKOlympikus text-white text-[50px] leading-[42px] md:text-6xl md:leading-[1] lg:text-[65px] text-center px-6 md:px-0 block"
+                dangerouslySetInnerHTML={{ __html: title }}
+              >
+              </span>
+            </ContainerAnimation>
+          )
+          : (
+            <span
+              class="font-FKOlympikus text-white text-[50px] leading-[42px] md:text-6xl md:leading-[1] lg:text-[65px] text-center px-6 md:px-0 block"
+              dangerouslySetInnerHTML={{ __html: title }}
+            >
+            </span>
+          )}
+
         <div class="flex flex-col w-full h-full gap-5">
           {rows.map((row) => <Row {...row} />)}
         </div>

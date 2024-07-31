@@ -47,6 +47,11 @@ interface Row {
 }
 interface Props {
   /**
+   * @title Id de Referencia
+   * @description Este Id serve de referenciar caso queira criar uma navegação na mesma pagina
+   */
+  id?: string;
+  /**
    * @title Titulo
    */
   title: RichText;
@@ -148,10 +153,11 @@ export default function ImagesGrid(props: Props) {
     background = "#262626",
     animation,
     showAnimaton,
+    id,
   } = props;
 
   return (
-    <div class="w-full h-full " style={{ background: background }}>
+    <div id={id} class="w-full h-full " style={{ background: background }}>
       <div class="w-full h-full flex flex-col gap-20 px-5 py-10 max-w-[1272px] md:px-[42px] mx-auto xl:px-0">
         {showAnimaton
           ? (

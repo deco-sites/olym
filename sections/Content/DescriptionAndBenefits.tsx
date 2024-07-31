@@ -35,6 +35,11 @@ interface Emphasis {
 
 interface Props {
   /**
+   * @title Id de Referencia
+   * @description Este Id serve de referenciar caso queira criar uma navegação na mesma pagina
+   */
+  id?: string;
+  /**
    * @title Descrição
    */
   description: RichText;
@@ -139,10 +144,15 @@ export default function descriotionAndBenefits(props: Props) {
     background = "#262626",
     animation,
     showAnimaton = false,
+    id,
   } = props;
 
   return (
-    <div class={"w-full h-full flex "} style={{ background: background }}>
+    <div
+      id={id}
+      class={"w-full h-full flex "}
+      style={{ background: background }}
+    >
       {showAnimaton
         ? (
           <ContainerAnimation

@@ -21,6 +21,11 @@ interface Color {
 
 interface Props {
   /**
+   * @title Id de Referencia
+   * @description Este Id serve de referenciar caso queira criar uma navegação na mesma pagina
+   */
+  id?: string;
+  /**
    * @title Titulo
    */
   title: RichText;
@@ -62,10 +67,12 @@ export default function TextEmphasis(props: Props) {
     animation,
     gradineColorText = { primaryColor: "#afafaf", secondColor: "#858585" },
     showAnimaton,
+    id,
   } = props;
 
   return (
     <div
+      id={id}
       style={{ background: backgroundSection }}
       class="py-14 md:py-24 px-8 w-full md:px-[60px]"
     >

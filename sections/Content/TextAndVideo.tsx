@@ -21,6 +21,11 @@ interface Color {
 
 interface Props {
   /**
+   * @title Id de Referencia
+   * @description Este Id serve de referenciar caso queira criar uma navegação na mesma pagina
+   */
+  id?: string;
+  /**
    * @title Video
    */
   videoBackground: Video;
@@ -76,10 +81,11 @@ export default function TextAndVideo(props: Props) {
     autoplay = true,
     muted = true,
     videoBackground,
+    id,
   } = props;
 
   return (
-    <div class="w-full h-full">
+    <div id={id} class="w-full h-full">
       <div
         style="width:100%;height:100%"
         class="xl:h-[700px] min-h-[550px] w-full relative max-h-screen"

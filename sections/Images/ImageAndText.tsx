@@ -8,6 +8,11 @@ import type { Props as Animation } from "../../components/Animation/ComponentAni
 
 interface Props {
   /**
+   * @title Id de Referencia
+   * @description Este Id serve de referenciar caso queira criar uma navegação na mesma pagina
+   */
+  id?: string;
+  /**
    * @format rich-text
    * @title Titulo
    */
@@ -52,10 +57,11 @@ export default function ImageAndText({
   cta,
   animation,
   showAnimaton,
+  id,
 }: Props) {
   const device = useDevice();
   return (
-    <div class="relative w-full h-full text-white">
+    <div id={id} class="relative w-full h-full text-white">
       \<div class="w-full h-full">
         <Image
           src={device == "mobile" ? backgroundImageMobile : backgroundImage}

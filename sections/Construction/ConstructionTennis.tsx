@@ -34,6 +34,11 @@ interface Step {
 
 interface Props {
   /**
+   * @title Id de Referencia
+   * @description Este Id serve de referenciar caso queira criar uma navegação na mesma pagina
+   */
+  id?: string;
+  /**
    * @title Titulo
    */
   title: RichText;
@@ -186,6 +191,7 @@ export default function ConstructionTennis(props: Props) {
     background = "#262626",
     arrowBgColor = "#a5a5a5",
     cta,
+    id,
   } = props;
 
   const device = useDevice();
@@ -193,6 +199,7 @@ export default function ConstructionTennis(props: Props) {
   if (device == "mobile") {
     return (
       <div
+        id={id}
         class="w-full h-full overflow-hidden 
       slide-next"
         style={{ background: background }}
@@ -341,6 +348,7 @@ export default function ConstructionTennis(props: Props) {
 
   return (
     <div
+      id={id}
       class="w-full h-full overflow-hidden pt-[70px] py-[70px] px-5 lx:px-0 "
       style={{ background: background }}
     >

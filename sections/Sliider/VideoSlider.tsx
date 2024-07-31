@@ -77,6 +77,11 @@ interface Itemvideo {
 
 interface Props {
   /**
+   * @title Id de Referencia
+   * @description Este Id serve de referenciar caso queira criar uma navegação na mesma pagina
+   */
+  idS?: string;
+  /**
    * @title Duração de Slide
    */
   interval?: number;
@@ -217,7 +222,7 @@ function Item(
 }
 
 export default function VideoSlider(props: Props) {
-  const { interval, slides, animationE, showAnimaton } = props;
+  const { interval, slides, animationE, showAnimaton, idS } = props;
 
   const arrayAnimation: { animation?: Animation }[] = [];
 
@@ -229,7 +234,7 @@ export default function VideoSlider(props: Props) {
 
   return (
     <div
-      id={id}
+      id={idS || id}
       data-index={1}
       class={clx(
         "grid relative text-white",

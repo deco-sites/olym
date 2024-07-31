@@ -5,6 +5,11 @@ import ContainerAnimation from "../../components/Animation/ComponentAnimation.ts
 
 interface CorredorBannerProps {
   /**
+   * @title Id de Referencia
+   * @description Este Id serve de referenciar caso queira criar uma navegação na mesma pagina
+   */
+  id?: string;
+  /**
    * @format rich-text
    * @title Titulo
    */
@@ -60,11 +65,12 @@ export default function CorredorBanner({
   revertPosition = false,
   animation,
   showAnimaton = false,
+  id,
 }: CorredorBannerProps) {
   const flexDirection = revertPosition ? "lg:flex-row" : "lg:flex-row-reverse";
 
   return (
-    <div class="w-full h-full" style={{ background: backgroundColor }}>
+    <div id={id} class="w-full h-full" style={{ background: backgroundColor }}>
       {showAnimaton
         ? (
           <ContainerAnimation

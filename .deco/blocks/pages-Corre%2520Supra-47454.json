@@ -10,27 +10,27 @@
       "menuItems": [
         {
           "label": "Corra Supra",
-          "href": "#corra-supra"
+          "href": "#corre-supra"
         },
         {
           "label": "HIGHLIGHTS",
-          "href": "#HIGHLIGHTS"
+          "href": "#styles"
         },
         {
           "label": "CORES",
-          "href": "#CORES"
+          "href": "#cores"
         },
         {
           "label": "TECNOLOGIAS",
-          "href": "#TECNOLOGIAS"
+          "href": "#tecnologia"
         },
         {
           "label": "MÍDIA",
-          "href": "#MÍDIA"
+          "href": "#midia"
         },
         {
           "label": "REVIEWS",
-          "href": "#REVIEWS"
+          "href": "#posts"
         }
       ],
       "alerts": {
@@ -69,7 +69,8 @@
         }
       ],
       "background": "#d9d9d9",
-      "showAnimation": true
+      "showAnimation": true,
+      "id": "corre-supra"
     },
     {
       "__resolveType": "site/sections/Content/TextEmphais.tsx",
@@ -148,7 +149,8 @@
         "primaryColor": "#ffffff",
         "secondColor": "#ffffff"
       },
-      "showAnimaton": true
+      "showAnimaton": true,
+      "id": "tecnologia"
     },
     {
       "__resolveType": "site/sections/Images/ImagesGrid.tsx",
@@ -773,7 +775,8 @@
         "href": "#",
         "label": "Comprar Agora",
         "background": "#7ad214"
-      }
+      },
+      "id": "styles"
     },
     {
       "__resolveType": "site/sections/Sliider/TennisSlider.tsx",
@@ -810,7 +813,7 @@
           "cta": {
             "label": "Em breve",
             "showBorder": true,
-            "backgroundButton": "#ffffff",
+            "backgroundButton": "#d9d9d9",
             "textColorButton": "#a5a5a5",
             "borderColor": "#a5a5a5"
           }
@@ -820,7 +823,7 @@
           "dotImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/1b283a1b-2eff-4406-a584-b6af2288a1d6",
           "alt": "Tennis 5",
           "cta": {
-            "backgroundButton": "#ffffff",
+            "backgroundButton": "#d9d9d9",
             "label": "Em breve",
             "textColorButton": "#a5a5a5",
             "borderColor": "#a5a5a5",
@@ -836,7 +839,7 @@
             "borderColor": "#a5a5a5",
             "label": "Em Breve",
             "href": "#",
-            "backgroundButton": "#ffffff",
+            "backgroundButton": "#d9d9d9",
             "textColorButton": "#a5a5a5",
             "showBorder": true
           }
@@ -853,7 +856,8 @@
         "primaryColor": "#858585",
         "secondColor": "#ebebeb"
       },
-      "background": "#d9d9d9"
+      "background": "#d9d9d9",
+      "id": "cores"
     },
     {
       "__resolveType": "site/sections/Sliider/VideoSlider.tsx",
@@ -895,7 +899,8 @@
       "animationE": {
         "animationType": "fade-in-bottom"
       },
-      "showAnimaton": true
+      "showAnimaton": true,
+      "idS": "midia"
     },
     {
       "__resolveType": "site/sections/Blog/BlogPost.tsx",
@@ -926,7 +931,8 @@
           "title": "Olympikus lança seu supertênis com uma nova tecnologia chamada nITRO X.",
           "href": "#"
         }
-      ]
+      ],
+      "idS": "posts"
     },
     {
       "__resolveType": "site/sections/Images/ImageAndText.tsx",

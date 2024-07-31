@@ -45,6 +45,11 @@ interface Color {
 
 interface Props {
   /**
+   * @title Id de Referencia
+   * @description Este Id serve de referenciar caso queira criar uma navegação na mesma pagina
+   */
+  id?: string;
+  /**
    * @title Titulo
    */
   title: RichText;
@@ -181,10 +186,11 @@ function Carrousel(
 }
 
 export default function TennnisSlider(props: Props) {
-  const { title, slider, interval, background, gradineColorText } = props;
+  const { title, slider, interval, background, gradineColorText, id } = props;
 
   return (
     <div
+      id={id}
       class={"flex w-full h-full flex-col lg:py-7 gap-4 py-10"}
       style={{ background: background }}
     >

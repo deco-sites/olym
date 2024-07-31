@@ -21,6 +21,11 @@ interface ItemImage {
 
 interface Props {
   /**
+   * @title Id de Referencia
+   * @description Este Id serve de referenciar caso queira criar uma navegação na mesma pagina
+   */
+  id?: string;
+  /**
    * @maxItems 2
    * @minItems 2
    * @title Images
@@ -45,10 +50,11 @@ interface Props {
 }
 
 export default function HeroAnimationImages(props: Props) {
-  const { images, background, showAnimation, preload } = props;
+  const { images, background, showAnimation, preload, id } = props;
 
   return (
     <div
+      id={id}
       class="flex justify-center items-center w-full max-w-screen lg:py-10 xl:py-16 max-h-[95vh] lg:max-h-full h-screen bg-neutral relative overflow-hidden lg:overflow-visible"
       style={{ background: background }}
     >

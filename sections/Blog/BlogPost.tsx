@@ -43,6 +43,11 @@ interface Posts {
 
 interface Props {
   /**
+   * @title Id de Referencia
+   * @description Este Id serve de referenciar caso queira criar uma navegação na mesma pagina
+   */
+  idS?: string;
+  /**
    * @title Pre Titulo
    */
   preTitle?: RichText;
@@ -133,11 +138,12 @@ export default function BlogPosts(props: Props) {
     gradineColorText = { primaryColor: "#afafaf", secondColor: "#858585" },
     posts,
     interval,
+    idS,
   } = props;
   const id = useId();
 
   return (
-    <div class="w-full h-full">
+    <div id={idS} class="w-full h-full">
       <div class="flex flex-col max-w-[1272px] xl:max-w-[1372px] mx-auto font-Signal py-10 md:py-20 lg:py-[70px]">
         {preTitle && (
           <span

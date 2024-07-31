@@ -206,5 +206,11 @@
   "/.deco/blocks/Preview%20site%2Fsections%2FFooter%2FFooterLP.tsx.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Footer/FooterLP.tsx"
+  },
+  "/.deco/blocks/pages-Tenis%2520Quadra%2520BR%25201-452442.json": {
+    "name": "Tenis Quadra BR 1",
+    "path": "/tenis-qu4dra-br1",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }

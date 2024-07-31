@@ -1,0 +1,15 @@
+{
+  "name": "Tenis Quadra BR 1",
+  "path": "/tenis-qu4dra-br1",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Content/TextBanner.tsx",
+      "title": "<h1 style=\"text-align: start\"><span style=\"color: #e3fe01\">OLYMPIKUS QU4DRA BR1</span></h1>",
+      "background": "#00494d"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

@@ -36,7 +36,8 @@
   },
   "mode": "dark",
   "complementaryColors": {
-    "primary-content": "#000000",
-    "base-200": "#262626"
+    "primary-content": "#00494d",
+    "base-200": "#262626",
+    "secondary-content": "#e3fe01"
   }
 }

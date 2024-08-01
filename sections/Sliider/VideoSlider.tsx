@@ -122,7 +122,7 @@ function Item(
           height={device == "mobile" ? 560 : 700}
           loading="lazy"
           fetchPriority="low"
-          class={"w-full h-full "}
+          class={"w-full h-full max-h-[92vh] object-cover"}
         />
       </div>
       <div class="absolute top-0 bottom-0 left-0 right-0 flex justify-center items-center">

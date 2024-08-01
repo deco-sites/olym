@@ -158,7 +158,7 @@ export default function descriotionAndBenefits(props: Props) {
           <ContainerAnimation
             animationType={animation?.animationType}
             duration={animation?.duration}
-            class=" h-full flex font-Signal px-10 py-10 pb-[60px] lg:pb-10 text-white flex-col md:flex-row gap-20 max-w-[1272px] mx-auto md:px-[42px]"
+            class=" h-full flex font-Signal px-10 py-10 pb-[110px] text-white flex-col md:flex-row gap-20 max-w-[1272px] mx-auto md:px-[42px] xl:px-0"
           >
             <div class="lg:w-2/4 w-full">
               <span
@@ -175,7 +175,7 @@ export default function descriotionAndBenefits(props: Props) {
           </ContainerAnimation>
         )
         : (
-          <div class=" h-full flex font-Signal px-10 pb-[60px] lg:pb-10 py-10 text-white flex-col md:flex-row gap-20 max-w-[1272px] mx-auto md:px-[42px]">
+          <div class=" h-full flex font-Signal px-10 pb-[110px] py-10 text-white flex-col md:flex-row gap-20 max-w-[1272px] mx-auto md:px-[42px] xl:px-0">
             <div class="lg:w-2/4 w-full">
               <span
                 class="font-light text-lg max-w-[552px]"

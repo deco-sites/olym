@@ -136,7 +136,7 @@
     },
     {
       "__resolveType": "site/sections/Construction/ConstructionTennis.tsx",
-      "title": "<p><span>A PERFORMANCE REIMAGINADA</span></p>",
+      "title": "<p>ALTA PERFORMANCE DO INÍCIO AO FIM.</p>",
       "cta": {
         "label": "Comprar Agora",
         "href": "#",
@@ -607,7 +607,7 @@
       "description": "<p><span>A tecnologia exclusiva Olympikus </span><span style=\"color: #7ad214\">Carbon G</span><span> é o resultado de uma placa de impulsão de carbono de primeira linha com revestimento em grafeno, essa junção de materiais trouxe resultados surpreendentes nos testes já realizados.<br><br>A aplicação da técnica de fibras contínuas de carbono em sua composição promove maior estabilidade e aumenta o retorno de energia na passada.<br><br>O revestimento em grafeno traz maior rigidez à placa, resultando em uma propulsão maior nos pés do corredor.</span></p>",
       "emphasis": [
         {
-          "title": "<p><span style=\"color: #5dcc02\">ATÉ 3X</span><span> + PROPURÇÃO</span></p>",
+          "title": "<p><span style=\"color: rgb(93, 204, 2)\">ATÉ 3X</span> + PROPULÇÃO</p>",
           "backgroundIcon": "#7ad214",
           "postitle": "<p><span>EM COMPARAÇÃO ÀS FIBRAS CURTAS</span></p>"
         },

@@ -84,7 +84,18 @@ function AnimationSlider(
     return index;
   }
 
+  // deno-lint-ignore no-explicit-any
+  let timeAnimation: any;
+
+  function Startinterval() {
+    timeAnimation = setInterval(onClickNext, interval);
+  }
+  function StopInterval() {
+    clearInterval(timeAnimation);
+  }
+
   function event(newIndex: number) {
+    StopInterval();
     slider?.forEach((e) => {
       const dataSlide = e.getAttribute("data-container") || "0";
       // const dataAnimation = e.getAttribute('data-animation')
@@ -124,6 +135,9 @@ function AnimationSlider(
     });
 
     root?.setAttribute("data-index", newIndex.toString());
+    if (interval) {
+      Startinterval();
+    }
   }
 
   function onClickNext() {
@@ -141,7 +155,7 @@ function AnimationSlider(
   }
 
   if (interval) {
-    setInterval(onClickNext, interval);
+    Startinterval();
   }
 
   next?.addEventListener("click", onClickNext);

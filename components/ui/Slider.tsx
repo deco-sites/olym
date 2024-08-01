@@ -71,6 +71,9 @@ export interface Props {
 }
 
 const onLoad = ({ rootId, scroll, interval, infinite }: Props) => {
+  // deno-lint-ignore no-explicit-any
+  let time: any;
+
   function init() {
     // Percentage of the item that has to be inside the container
     // for it it be considered as inside the container
@@ -141,7 +144,15 @@ const onLoad = ({ rootId, scroll, interval, infinite }: Props) => {
       return indices;
     };
 
+    function Startinterval() {
+      time = setInterval(onClickNext, interval);
+    }
+    function StopInterval() {
+      clearInterval(time);
+    }
+
     const goToItem = (to: number) => {
+      StopInterval();
       const item = items.item(to);
 
       if (!isHTMLElement(item)) {
@@ -157,6 +168,9 @@ const onLoad = ({ rootId, scroll, interval, infinite }: Props) => {
         behavior: scroll,
         left: item.offsetLeft - slider.offsetLeft,
       });
+      if (interval) {
+        Startinterval();
+      }
     };
 
     const onClickPrev = () => {
@@ -233,7 +247,7 @@ const onLoad = ({ rootId, scroll, interval, infinite }: Props) => {
     next?.addEventListener("click", onClickNext);
 
     if (interval) {
-      setInterval(onClickNext, interval);
+      Startinterval();
     }
   }
 

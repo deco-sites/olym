@@ -68,6 +68,18 @@
       },
       "invertOrderMobile": true,
       "invertOrderDesktop": true
+    },
+    {
+      "__resolveType": "site/sections/Newsletter/Newsletter.tsx",
+      "title": "Newsletter",
+      "content": "<p>Cadastre-se em nossa newsletter para receber ofertas e novidades exclusivas sobre os produtos Olympikus.</p>",
+      "plachegolder": "Digite aqui seu Email",
+      "cta": {
+        "label": "Cadastre-se",
+        "backgroundButton": "#000000",
+        "textColorButton": "#ffffff"
+      },
+      "background": "#b3b3b3"
     }
   ],
   "seo": {

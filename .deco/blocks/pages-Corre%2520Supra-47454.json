@@ -131,7 +131,8 @@
       "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/17ea89e5-aebf-4c04-97bf-f750d82437f2",
       "alt": "selo",
       "showAnimation": true,
-      "showAnimaton": true
+      "showAnimaton": true,
+      "revertPosition": true
     },
     {
       "__resolveType": "site/sections/Construction/ConstructionTennis.tsx",

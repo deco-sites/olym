@@ -70,9 +70,61 @@
       "invertOrderDesktop": true
     },
     {
+      "__resolveType": "site/sections/Content/ContentCardsAndImage.tsx",
+      "content": {
+        "tileCards": "<p><span>Conheça as tecnologias do </span><span style=\"color: #e3fe01\">Olympikus QU4DRA BR1</span></p>",
+        "content": {
+          "preTitle": "<p><u><span style=\"color: #e3fe01\">Tecnologias ↘</span></u></p>",
+          "title": "<p><span style=\"color: #e3fe01\">Deixe sua marca<br>em qu4dra</span></p>",
+          "posTitle": "<p>Estabilidade e conforto pra você focar no que interessa.</p>"
+        },
+        "cards": [
+          {
+            "content": "<p><span style=\"color: rgb(255, 255, 255); font-size: 12px\">Tecnologia que proporciona leveza e amortecimento, trazendo maior conforto e efeito trampolim.</span></p>",
+            "title": "ELEVA PRO",
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/aff294a5-5fe5-48c9-8237-9f015f0c3023"
+          },
+          {
+            "content": "<p><span>Borracha antiderrapante que mantém aderência firme ao solo.</span></p>",
+            "title": "GRIPPER",
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/a91aa9c2-10b6-4ed2-b1de-d457715f6deb"
+          },
+          {
+            "content": "<p><span>Design em curvas possui linhas orgânicas que evita desgaste e garante maior estabilidade nas mudanças de direções em quadra.</span></p>",
+            "title": "SOLADO"
+          },
+          {
+            "content": "<p><span>Confeccionado em poliéster, ele envolve o tornozelo com mais firmeza e suporte. As tramas mais espaçadas permitem maior respirabilidade dos pés para maior conforto.</span></p>",
+            "title": "CABEDAL"
+          },
+          {
+            "content": "<p><span>Em tecido poliéster e com textura diferenciada, proporciona uma amarração superior e mais segura.</span></p>",
+            "title": "ATACADOR"
+          },
+          {
+            "content": "<p><span>Possui tecido respirável que se molda ao pé como uma meia pois é unido a lingueta, o que resulta num alto ajuste e maior sensação de conforto.</span></p>",
+            "title": "FORRO"
+          },
+          {
+            "content": "<p><span>O puxador traseiro auxilia no calce e o puxador frontal ajuda na disposição dos atacadores.</span></p>",
+            "title": "PUXADOR"
+          },
+          {
+            "content": "<p><span>Palmilha anatômica moldada, composta por tecido poliéster e EVA com 4mm de espessura, adapta-se ao pé evitando o deslizamento e proporcionando conforto ideal durante o uso.</span></p>",
+            "title": "PALMILHA"
+          }
+        ]
+      },
+      "image": {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/2cd570ed-14f3-4ba1-9c0f-b3fc316cd28c",
+        "alt": "tenis"
+      },
+      "invertOrderDesktop": true
+    },
+    {
       "__resolveType": "site/sections/Newsletter/Newsletter.tsx",
-      "title": "Newsletter",
       "content": "<p>Cadastre-se em nossa newsletter para receber ofertas e novidades exclusivas sobre os produtos Olympikus.</p>",
+      "title": "Newsletter",
       "plachegolder": "Digite aqui seu Email",
       "cta": {
         "label": "Cadastre-se",

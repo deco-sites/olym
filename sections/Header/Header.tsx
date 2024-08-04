@@ -1,9 +1,9 @@
-import type { HTMLWidget, ImageWidget } from "apps/admin/widgets.ts";
+import type { ImageWidget } from "apps/admin/widgets.ts";
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
 import { useDevice } from "deco/hooks/useDevice.ts";
 import { useSection } from "deco/hooks/useSection.ts";
-import Alert from "../../components/header/Alert.tsx";
+import Alert, { Props as AlertsProps } from "../../components/header/Alert.tsx";
 import Bag from "../../components/header/Bag.tsx";
 import Menu from "../../components/header/Menu.tsx";
 import NavItem from "../../components/header/NavItem.tsx";
@@ -28,7 +28,7 @@ export interface Logo {
 }
 
 export interface SectionProps {
-  alerts?: HTMLWidget[];
+  alerts?: AlertsProps;
 
   /**
    * @title Navigation items
@@ -244,7 +244,7 @@ const Mobile = ({ logo, searchbar }: Props) => (
 );
 
 function Header({
-  alerts = [],
+  alerts,
   logo = {
     src:
       "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/986b61d4-3847-4867-93c8-b550cb459cc7",
@@ -265,10 +265,10 @@ function Header({
       }}
     >
       <div class="bg-base-100 fixed w-full z-40 font-Signal">
-        {alerts.length > 0 && <Alert alerts={alerts} />}
         {device === "desktop"
           ? <Desktop logo={logo} {...props} />
           : <Mobile logo={logo} {...props} />}
+        {alerts && <Alert {...alerts} />}
       </div>
     </header>
   );

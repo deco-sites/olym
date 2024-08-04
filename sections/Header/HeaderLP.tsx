@@ -172,6 +172,7 @@ export default function HeaderLP({
           alerts={alerts.alerts}
           interval={alerts.interval}
           background={alerts.background}
+          type={alerts.type}
         />
       )}
     </header>

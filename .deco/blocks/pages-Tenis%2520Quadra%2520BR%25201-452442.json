@@ -10,10 +10,16 @@
         "width": 206,
         "height": 24
       },
-      "alerts": [
-        "<p>Frete grátis para todo o Brasil acima de R$ 199,99</p>",
-        "<p>Frete grátis para todo o Brasil acima de R$ 199,99</p>"
-      ],
+      "alerts": {
+        "0": "<p>Frete grátis para todo o Brasil acima de R$ 199,99</p>",
+        "1": "<p>Frete grátis para todo o Brasil acima de R$ 199,99</p>",
+        "alerts": [
+          "<p>10% off no pix à vista | Confira as regras</p>",
+          "<p>Frete grátis para todo o Brasil acima de R$ 199,99</p>"
+        ],
+        "background": "#000000",
+        "type": "Variant2"
+      },
       "searchbar": {
         "loader": {
           "data": {

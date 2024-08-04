@@ -11,12 +11,12 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
 
   return (
     <li
-      class="group flex items-center pr-5"
+      class="group-hover:opacity-80 group-hover:hover:opacity-100 flex items-center pr-5 duration-200"
       style={{ height: NAVBAR_HEIGHT_DESKTOP }}
     >
       <a
         href={url}
-        class="group-hover:underline text-base/5 font-medium"
+        class=" hover:opacity-1 text-base/5 font-medium text-base-100 uppercase"
       >
         {name}
       </a>

@@ -3,19 +3,36 @@
   "path": "/tenis-qu4dra-br1",
   "sections": [
     {
+      "__resolveType": "site/sections/Header/Header.tsx",
+      "logo": {
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/fb82fe45-843e-401d-9810-501fc485da46",
+        "alt": "olympikus",
+        "width": 206,
+        "height": 24
+      },
+      "alerts": [
+        "<p>Frete grátis para todo o Brasil acima de R$ 199,99</p>",
+        "<p>Frete grátis para todo o Brasil acima de R$ 199,99</p>"
+      ],
+      "searchbar": {
+        "loader": {
+          "data": {
+            "searches": [],
+            "products": []
+          }
+        }
+      },
+      "navItems": {
+        "__resolveType": "navbar"
+      }
+    },
+    {
       "__resolveType": "site/sections/Content/TextBanner.tsx",
       "title": "<h1 style=\"text-align: start\"><span style=\"color: #e3fe01\">OLYMPIKUS QU4DRA BR1</span></h1>",
       "background": "#00494d"
     },
     {
       "__resolveType": "site/sections/Images/VideoAndImage.tsx",
-      "video": {
-        "video": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/1bb5c63d-97af-4ee4-a376-a8a5162c0fde",
-        "alt": "video",
-        "loop": true,
-        "autoplay": true,
-        "muted": true
-      },
       "image": {
         "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/ea14de10-9be6-4178-83b2-fd470ae5f07d",
         "alt": "tenis",
@@ -27,6 +44,13 @@
         },
         "positionDesktop": "Direita",
         "positionMobile": "Centro"
+      },
+      "video": {
+        "video": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/1bb5c63d-97af-4ee4-a376-a8a5162c0fde",
+        "alt": "video",
+        "loop": true,
+        "autoplay": true,
+        "muted": true
       }
     },
     {
@@ -50,15 +74,9 @@
     },
     {
       "__resolveType": "site/sections/Images/ContentAndImage.tsx",
-      "image": {
-        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/cbddc635-a094-4c83-9e72-b3a1e376b434",
-        "alt": "jogador ",
-        "title": "<p><span>BRUNO REZENDE</span></p>",
-        "backgroud": "#e4e4e4"
-      },
       "content": {
-        "title": "<p><span style=\"color: #e3fe01\">O nome do jogo</span></p>",
         "content": "<p><span style=\"color: #e3fe01\">Uma expressão de excelência, paixão e legado para quem vive as 4 linhas. Co-criado junto com um dos maiores jogadores da história do vôlei mundial, Bruno Rezende ↗, o Olympikus QU4DRA BR1 foi desenvolvido com tudo o que você precisa para fazer bonito na hora do jogo e fora dele.<br><br>Resultado de uma parceria de longa data e da nossa constante evolução, o produto traz as melhores tecnologias diretamente do mundo das quadras para você mudar o rumo do jogo. Além disso, seu design fluido cria um visual único que se destaca e permite que você se movimente livremente, trocando de direção a qualquer momento e assumindo o controle da partida.</span></p>",
+        "title": "<p><span style=\"color: #e3fe01\">O nome do jogo</span></p>",
         "cta": {
           "href": "#",
           "backgroundButton": "#000000",
@@ -66,8 +84,14 @@
         },
         "background": "#07494d"
       },
-      "invertOrderMobile": true,
-      "invertOrderDesktop": true
+      "image": {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/cbddc635-a094-4c83-9e72-b3a1e376b434",
+        "alt": "jogador ",
+        "title": "<p><span>BRUNO REZENDE</span></p>",
+        "backgroud": "#e4e4e4"
+      },
+      "invertOrderDesktop": true,
+      "invertOrderMobile": true
     },
     {
       "__resolveType": "site/sections/Content/ContentCardsAndImage.tsx",

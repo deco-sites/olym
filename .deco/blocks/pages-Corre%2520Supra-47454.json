@@ -74,8 +74,8 @@
     },
     {
       "__resolveType": "site/sections/Content/TextEmphais.tsx",
-      "title": "<p><span style=\"color: rgb(141, 141, 141)\">&lt;/CORRA_SUPRA&gt;</span></p>",
-      "content": "<p>O SUPERTÊNIS BRASILEIRO </p><p>COM AS MELHORES TECNOLOGIAS</p><p>DO MUNDO DA CORRIDA.</p>",
+      "title": "<p>&lt;/CORRA_SUPRA&gt;</p>",
+      "content": "<p>O SUPERTÊNIS BRASILEIRO</p><p>COM AS MELHORES TECNOLOGIAS</p><p>DO MUNDO DA CORRIDA.</p>",
       "animation": {
         "animationType": "fade-in-bottom",
         "duration": "0.8"
@@ -89,7 +89,7 @@
         "primaryColor": "#858585",
         "secondColor": "#afafaf"
       },
-      "showAnimaton": true
+      "showAnimaton": false
     },
     {
       "__resolveType": "site/sections/Content/TextAndVideo.tsx",

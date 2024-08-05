@@ -1,0 +1,13 @@
+{
+  "__resolveType": "site/apps/deco/vtex.ts",
+  "salesChannel": "1",
+  "defaultSegment": {
+    "channelPrivacy": "public"
+  },
+  "platform": "vtex",
+  "publicUrl": "www.olympikus.com.br",
+  "account": "olympikus",
+  "appKey": {
+    "__resolveType": "website/loaders/secret.ts"
+  }
+}

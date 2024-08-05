@@ -1,25 +1,65 @@
-import Icon from "../../components/ui/Icon.tsx";
+import { useScript } from "deco/hooks/useScript.ts";
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
+import { ImageWidget, RichText } from "apps/admin/widgets.ts";
+
+/**@titleBy label */
+interface Link {
+  label: RichText;
+  href: string;
+}
+/**@titleBy title */
+export interface Column {
+  image?: ImageWidget;
+  alt?: string;
+  title: string;
+  items?: Link[];
+}
 
 export interface Props {
   navItems: SiteNavigationElement[];
 }
 
-function SubMenuItem({ item }: { item: SiteNavigationElement }) {
+function CloseDrawer() {
+  const close: HTMLElement | null = document.querySelector(
+    `[for="sidemenu-drawer"]`,
+  );
+
+  close?.click();
+}
+
+function Item({ item }: { item: SiteNavigationElement }) {
   return (
-    <div class="collapse collapse-plus">
-      <input type="checkbox" />
-      <div class="collapse-title uppercase font-Signal text-sm ">
+    <a href={item.url} class="text-xs font-normal">
+      {item.name}
+    </a>
+  );
+}
+
+function SubMenuItem({ item }: { item: SiteNavigationElement }) {
+  if (item.children && item.children.length < 1) {
+    return (
+      <div class="py-[14px]">
+        <a
+          href={item.url}
+          class="min-h-12 uppercase font-Signal text-sm font-normal"
+        >
+          {item.name}
+        </a>
+      </div>
+    );
+  }
+
+  return (
+    <div class="collapse collapse-plus min-h-12">
+      <input type="checkbox" class="contents" />
+      <div class="collapse-title min-h-12 uppercase font-Signal text-sm !px-0 font-normal">
         {item.name}
       </div>
-      <div class="collapse-content">
+      <div class="collapse-content pb-0 !px-2">
         <ul>
-          <li>
-            <a class="underline text-sm " href={item.url}>Ver todos</a>
-          </li>
           {item.children?.map((node) => (
             <li>
-              <SubMenuItem item={node} />
+              <Item item={node} />
             </li>
           ))}
         </ul>
@@ -29,19 +69,26 @@ function SubMenuItem({ item }: { item: SiteNavigationElement }) {
 }
 
 function MenuItem({ item }: { item: SiteNavigationElement }) {
+  if (item.children && item.children?.length < 1) {
+    return (
+      <div class="px-4 py-2">
+        <a href={item.url} class="uppercase font-FKOlympikus text-4xl">
+          {item.name}
+        </a>
+      </div>
+    );
+  }
+
   return (
     <div class="collapse collapse-plus">
       <input type="checkbox" />
-      <div class="collapse-title uppercase font-FKOlympikus text-4xl">
+      <div class="collapse-title uppercase font-FKOlympikus text-4xl !py-2 !px-5 after:!font-Signal after:!top-2 after:!right-9">
         {item.name}
       </div>
-      <div class="collapse-content">
+      <div class="collapse-content !pb-0 !pl-5 !pr-0">
         <ul>
-          <li>
-            <a class="underline text-sm " href={item.url}>Ver todos</a>
-          </li>
           {item.children?.map((node) => (
-            <li>
+            <li class="border-b border-base-200 last:border-none">
               <SubMenuItem item={node} />
             </li>
           ))}
@@ -55,18 +102,17 @@ function Menu({ navItems }: Props) {
   return (
     <div
       class="flex flex-col h-full overflow-y-auto"
-      style={{ minWidth: "100vw" }}
+      style={{ minWidth: "90vw" }}
     >
-      <div class=" flex justify-between w-full px-6 py-4">
+      <div class=" flex justify-between w-full px-6 py-4 border-b border-base-200 z-10">
         <div class="flex justify-center items-center">
           <label
-            for="sidemenu-drawer-lp"
-            aria-label="X"
             class="btn btn-ghost text-black px-0"
+            hx-on:click={useScript(CloseDrawer)}
           >
             <svg
-              width="14"
-              height="14"
+              width="20"
+              height="20"
               viewBox="0 0 20 20"
               fill="#000"
               xmlns="http://www.w3.org/2000/svg"
@@ -95,8 +141,8 @@ function Menu({ navItems }: Props) {
             class="btn btn-sm font-thin btn-ghost no-animation btn-square"
           >
             <svg
-              width="17"
-              height="18"
+              width="20"
+              height="21"
               viewBox="0 0 17 18"
               fill="#000"
               xmlns="http://www.w3.org/2000/svg"
@@ -110,8 +156,8 @@ function Menu({ navItems }: Props) {
           </a>
           <span class="w-auto flex justify-center items-center">
             <svg
-              width="17"
-              height="20"
+              width="20"
+              height="23"
               viewBox="0 0 17 20"
               fill="black"
               xmlns="http://www.w3.org/2000/svg"
@@ -130,51 +176,12 @@ function Menu({ navItems }: Props) {
           </span>
         </div>
       </div>
-      <ul class=" flex-grow flex flex-col divide-y divide-base-200 overflow-y-auto bg">
+      <ul class=" flex-grow flex flex-col overflow-y-auto bg">
         {navItems.map((item) => (
-          <li>
+          <li class="border-b border-base-200">
             <MenuItem item={item} />
           </li>
         ))}
-      </ul>
-
-      <ul class="flex flex-col py-2 bg-base-100">
-        <li>
-          <a
-            class="flex items-center gap-4 px-4 py-2"
-            href="/wishlist"
-          >
-            <Icon id="favorite" />
-            <span class="text-sm">Lista de desejos</span>
-          </a>
-        </li>
-        <li>
-          <a
-            class="flex items-center gap-4 px-4 py-2"
-            href="https://www.deco.cx"
-          >
-            <Icon id="home_pin" />
-            <span class="text-sm">Nossas lojas</span>
-          </a>
-        </li>
-        <li>
-          <a
-            class="flex items-center gap-4 px-4 py-2"
-            href="https://www.deco.cx"
-          >
-            <Icon id="call" />
-            <span class="text-sm">Fale conosco</span>
-          </a>
-        </li>
-        <li>
-          <a
-            class="flex items-center gap-4 px-4 py-2"
-            href="https://www.deco.cx"
-          >
-            <Icon id="account_circle" />
-            <span class="text-sm">Minha conta</span>
-          </a>
-        </li>
       </ul>
     </div>
   );

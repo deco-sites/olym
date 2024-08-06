@@ -166,7 +166,7 @@
           "position": 2
         },
         {
-          "content": "<p>&lt;/ENTRESSOLA INTERNA COM NT-X: 100% PEBAX® EXPANDIDO COM NITROGÊNIO SEM COMPRESSÃO</p><p><span style=\"color: #5ddc02\">+</span> LEVE</p><p><span style=\"color: #5ddc02\">+</span> RESILIENTE</p><p></p>",
+          "content": "<h2>ENTRESSOLA INTERNA COM NT-X: 100% PEBAX<i style='font-size: 12px;font-family: Signal Web, sans-serif;'>®</i> <br> EXPANDIDO COM NITROGÊNIO SEM COMPRESSÃO</h2>",
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/5f98f057-b94a-48a5-bab3-669a2c2abcb3",
           "imageOpacity": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/29308104-1e78-433a-968c-14aa71f11cbd",
           "alt": "tennis",
@@ -465,11 +465,11 @@
     {
       "__resolveType": "site/sections/Images/ImagesGrid.tsx",
       "background": "#262626",
-      "showAnimaton": true,
+      "showAnimaton": false,
       "animation": {
         "animationType": "fade-in-bottom"
       },
-      "title": "<p>ENTRESSOLA INTERNA COM NT-X: 100% PEBAX®</p><p>EXPANDIDO COM NITROGÊNIO SEM COMPRESSÃO</p>",
+      "title": "<p>ENTRESSOLA INTERNA COM NT-X: 100% PEBAX<i class=\"i-custom \">®</i></p><p>EXPANDIDO COM NITROGÊNIO SEM COMPRESSÃO</p>",
       "gridTemplate": "'img-1 img-1' 'img-2 img-2' 'img-3 img-3';",
       "images": [
         {
@@ -714,7 +714,7 @@
         "animationType": "fade-in-bottom"
       },
       "showAnimaton": true,
-      "title": "<p><span>SOLADO DE BORRACHA </span></p><p><span>COCRIADO COM A MICHELIN</span></p>",
+      "title": "<p><span>SOLADO DE BORRACHA</span></p><p><span>COCRIADO COM A MICHELIN</span></p>",
       "gridTemplate": "'img-1 img-1' 'img-2 img-2' 'img-3 img-3';",
       "images": [
         {

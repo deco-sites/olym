@@ -29,54 +29,185 @@
         }
       },
       "navItems": {
-        "__resolveType": "commerce/loaders/navbar.ts",
-        "items": [
+        "columns": [
           {
-            "@type": "SiteNavigationElement",
-            "url": "/deals",
-            "name": "Deals",
-            "children": [
+            "columns": [
               {
-                "image": [],
-                "children": [],
-                "name": "Hello"
+                "items": [
+                  {
+                    "label": "<p>Corrida</p>",
+                    "href": "/corrida"
+                  },
+                  {
+                    "label": "<p>Treino</p>",
+                    "href": "/treino"
+                  },
+                  {
+                    "label": "<p>Dia a dia</p>",
+                    "href": "/dia-a-dia"
+                  }
+                ],
+                "title": "Objetivo"
               },
               {
-                "image": [],
-                "children": [],
-                "name": "World"
+                "items": [
+                  {
+                    "label": "<p>Corrida</p>",
+                    "href": "/corrida"
+                  },
+                  {
+                    "label": "<p>Treino</p>",
+                    "href": "/treino"
+                  },
+                  {
+                    "label": "<p>Dia a dia</p>",
+                    "href": "/dia-a-dia"
+                  }
+                ],
+                "title": "Objetivo"
+              },
+              {
+                "items": [
+                  {
+                    "label": "<p>Corrida</p>",
+                    "href": "/corrida"
+                  },
+                  {
+                    "label": "<p>Treino</p>",
+                    "href": "/treino"
+                  },
+                  {
+                    "label": "<p>Dia a dia</p>",
+                    "href": "/dia-a-dia"
+                  }
+                ],
+                "title": "Objetivo"
+              },
+              {
+                "items": [
+                  {
+                    "label": "<p>Corrida</p>",
+                    "href": "/corrida"
+                  },
+                  {
+                    "label": "<p>Treino</p>",
+                    "href": "/treino"
+                  },
+                  {
+                    "label": "<p>Dia a dia</p>",
+                    "href": "/dia-a-dia"
+                  }
+                ],
+                "title": "Objetivo"
+              },
+              {
+                "items": [
+                  {
+                    "label": "<p>Corrida</p>",
+                    "href": "/corrida"
+                  },
+                  {
+                    "label": "<p>Treino</p>",
+                    "href": "/treino"
+                  },
+                  {
+                    "label": "<p>Dia a dia</p>",
+                    "href": "/dia-a-dia"
+                  }
+                ],
+                "title": "Objetivo"
               }
-            ]
+            ],
+            "label": "Pais",
+            "href": "/pais",
+            "colorText": "#e3fe01"
           },
           {
-            "@type": "SiteNavigationElement",
-            "url": "/valentines-day",
-            "name": "Valentine's Day",
-            "children": []
+            "columns": [],
+            "label": "Lançamentos",
+            "href": "/lançamentos",
+            "colorText": "#ffffff"
           },
           {
-            "@type": "SiteNavigationElement",
-            "url": "/women",
-            "name": "Women",
-            "children": []
-          },
-          {
-            "@type": "SiteNavigationElement",
-            "url": "/men",
-            "name": "Men",
-            "children": []
-          },
-          {
-            "@type": "SiteNavigationElement",
-            "url": "/clearance",
-            "name": "Clearance",
-            "children": []
-          },
-          {
-            "@type": "SiteNavigationElement",
-            "url": "/activities",
-            "name": "Activities",
-            "children": []
+            "columns": [
+              {
+                "items": [
+                  {
+                    "label": "<p>Corrida</p>",
+                    "href": "/corrida"
+                  },
+                  {
+                    "label": "<p>Treino</p>",
+                    "href": "/treino"
+                  },
+                  {
+                    "label": "<p>Dia a dia</p>",
+                    "href": "/dia-a-dia"
+                  }
+                ],
+                "title": "Objetivo"
+              },
+              {
+                "items": [
+                  {
+                    "label": "<p>Corrida</p>",
+                    "href": "/corrida"
+                  },
+                  {
+                    "label": "<p>Treino</p>",
+                    "href": "/treino"
+                  },
+                  {
+                    "label": "<p>Dia a dia</p>",
+                    "href": "/dia-a-dia"
+                  }
+                ],
+                "title": "Objetivo"
+              },
+              {
+                "items": [
+                  {
+                    "label": "<p>Corrida</p>",
+                    "href": "/corrida"
+                  },
+                  {
+                    "label": "<p>Treino</p>",
+                    "href": "/treino"
+                  },
+                  {
+                    "label": "<p>Dia a dia</p>",
+                    "href": "/dia-a-dia"
+                  }
+                ],
+                "title": "Objetivo"
+              },
+              {
+                "items": [
+                  {
+                    "label": "<p>Corrida</p>",
+                    "href": "/corrida"
+                  },
+                  {
+                    "label": "<p>Treino</p>",
+                    "href": "/treino"
+                  },
+                  {
+                    "label": "<p>Dia a dia</p>",
+                    "href": "/dia-a-dia"
+                  }
+                ],
+                "title": "Objetivo"
+              },
+              {
+                "items": []
+              }
+            ],
+            "label": "Pais",
+            "href": "/pais",
+            "colorText": "#e3fe01",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/3056f74e-98fd-4b39-afa1-ede16e4eb676",
+            "alt": "img",
+            "hrefImage": "/img"
           }
         ]
       }

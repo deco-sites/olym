@@ -1,12 +1,13 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import type { SiteNavigationElement } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
 import { useDevice } from "deco/hooks/useDevice.ts";
 import { useSection } from "deco/hooks/useSection.ts";
 import Alert, { Props as AlertsProps } from "../../components/header/Alert.tsx";
 import Bag from "../../components/header/Bag.tsx";
 import Menu from "../../components/header/Menu.tsx";
-import NavItem from "../../components/header/NavItem.tsx";
+import NavItem, {
+  Props as PropsNav,
+} from "../../components/header/NavItem.tsx";
 import SignIn from "../../components/header/SignIn.tsx";
 import {
   type SearchbarProps,
@@ -34,7 +35,7 @@ export interface SectionProps {
    * @title Navigation items
    * @description Navigation items used both on mobile and desktop menus
    */
-  navItems?: SiteNavigationElement[] | null;
+  navItems: PropsNav;
 
   /**
    * @title Searchbar
@@ -73,12 +74,12 @@ const Desktop = (
             </a>
           </div>
           <div class="flex justify-between items-center text-base-100 ">
-            <ul class="flex group">
-              {navItems?.slice(0, 4).map((item) => <NavItem item={item} />)}
-            </ul>
-            <div>
-              {/* ship to */}
-            </div>
+            {navItems.columns && navItems.columns.length > 1 &&
+              (
+                <ul class="flex group">
+                  {navItems.columns.map((item) => <NavItem item={item} />)}
+                </ul>
+              )}
           </div>
         </div>
         <div class="flex gap-4">
@@ -255,6 +256,8 @@ function Header({
   ...props
 }: Props) {
   const device = useDevice();
+
+  console.log("props", props.navItems);
 
   return (
     <header

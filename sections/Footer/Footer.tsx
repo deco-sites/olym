@@ -135,7 +135,7 @@ function Footer({
             {isMobile
               ? (
                 <div class="flex flex-col w-full">
-                  {contact.item.map(({ title, href, subTitle }) => (
+                  {contact?.item?.map(({ title, href, subTitle }) => (
                     <Summary title={title}>
                       <li class="flex flex-col ">
                         {href
@@ -156,7 +156,7 @@ function Footer({
               )
               : (
                 <ul class="flex flex-col gap-7">
-                  {contact.item.map(({ title, href, subTitle }) => (
+                  {contact?.item?.map(({ title, href, subTitle }) => (
                     <li class="flex flex-col ">
                       <span class="text-xs uppercase  ">{title}</span>
                       {href

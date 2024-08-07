@@ -2,150 +2,118 @@
   "__resolveType": "site/sections/Footer/Footer.tsx",
   "links": [
     {
-      "title": "Our Company",
+      "title": "Institucional",
       "children": [
         {
-          "title": "About us",
+          "title": "Sobre a Olympikus ",
           "href": "#"
         },
         {
-          "title": "Our blog",
+          "title": "Política de Entrega  ",
           "href": "#"
         },
         {
-          "title": "Stores",
+          "title": "Política de Pagamento ",
           "href": "#"
         },
         {
-          "title": "Work with us",
+          "title": " Política de Trocas e Devoluções  ",
+          "href": "#"
+        },
+        {
+          "title": "Política de Recusa  ",
+          "href": "#"
+        },
+        {
+          "title": "Aviso de Privacidade  ",
+          "href": "#"
+        },
+        {
+          "title": "Política de Cookies  ",
+          "href": "#"
+        },
+        {
+          "title": "Sustentabilidade ",
+          "href": "#"
+        },
+        {
+          "title": " Trabalhe Conosco  ",
+          "href": "#"
+        },
+        {
+          "title": "Política de Promoções",
           "href": "#"
         }
       ],
       "href": "#"
     },
     {
-      "title": "Orders & Purchases",
+      "title": "Precisa de ajuda?",
       "href": "#",
       "children": [
         {
-          "title": "Check order status",
+          "title": "Central de Ajuda  ",
           "href": "#"
         },
         {
-          "title": "Return and exchanges",
+          "title": "Meus Pedidos  ",
           "href": "#"
         },
         {
-          "title": "Product retail",
+          "title": "Trocas e Devoluções  ",
           "href": "#"
         },
         {
-          "title": "Gift cards",
+          "title": "Entregas  ",
+          "href": "#"
+        },
+        {
+          "title": "Troque Fácil Aqui  ",
+          "href": "#"
+        },
+        {
+          "title": "Cashback",
           "href": "#"
         }
       ]
-    },
-    {
-      "title": "Support & Services",
-      "href": "#",
-      "children": [
-        {
-          "title": "Support Center",
-          "href": "#"
-        },
-        {
-          "title": "Schedule a service",
-          "href": "#"
-        },
-        {
-          "title": "Contact us",
-          "href": "#"
-        }
-      ]
-    },
-    {
-      "title": "Support & Services",
-      "children": [
-        {
-          "title": "Support Center",
-          "href": "#"
-        },
-        {
-          "title": "Schedule a service",
-          "href": "#"
-        },
-        {
-          "title": "Contact us",
-          "href": "#"
-        }
-      ],
-      "href": "#"
     }
   ],
   "social": [
     {
       "alt": "facebook",
       "href": "#",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/66137259-6bdb-4322-bed1-a2593560934c"
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/66555ced-82de-4dfc-950b-f4d432ca4841"
     },
     {
       "alt": "Instagram",
       "href": "#",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/e71ae7f3-0f51-4185-af0a-fca08ebe4451"
-    },
-    {
-      "alt": "Pinterest",
-      "href": "#",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/4becba39-fc08-4df2-bb5d-5e843f375deb"
-    },
-    {
-      "alt": "X",
-      "href": "#",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/179a9ee9-3813-47b8-96eb-11e0c5558ede"
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/bf0a224b-4d87-47f4-b293-e85c299040cd"
     }
   ],
   "paymentMethods": [
     {
-      "alt": "Paypal",
-      "href": "#",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/7d858621-469e-4528-91b5-8c79fc413162"
+      "alt": "visa",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/8858d6e9-5285-4b21-b1f4-e6235f5b1ee9"
+    },
+    {
+      "alt": "American Express",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/13a6a034-94c2-4772-bf81-d5e4987d3f32"
+    },
+    {
+      "alt": "hiper card",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/ded9c7c5-aac3-436b-882f-84d1c4cde3ec"
     },
     {
       "alt": "Mastercard",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/88ab870c-4256-44b4-8da3-3cefe0436e87"
-    },
-    {
-      "alt": "Maestro",
-      "href": "#",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/e94aaf80-25f5-4e23-8708-14d78ffdebbb"
-    },
-    {
-      "alt": "Google Pay",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/ccddc66e-baa8-4b44-a52c-ea48d8e111b5"
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/6d94fdf2-dd6a-47cb-a1c7-6d488a600da4"
     },
     {
       "alt": "Elo",
-      "href": "#",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/11f90dd4-91b5-4b60-9304-f8a7a9be84eb"
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/9b5bb0db-76c3-490a-8964-aa67e3187dd1"
     },
     {
-      "alt": "Diners",
-      "href": "#",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/20bb8e66-5495-4f92-a6d0-4967a66f3a44"
-    },
-    {
-      "alt": "Apple Pay",
-      "href": "#",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/d4227ed7-333d-49b8-b3e2-35719f606640"
-    },
-    {
-      "alt": "Amex",
-      "href": "#",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/023472cf-782d-4a22-82d9-ecdf18466d96"
-    },
-    {
-      "alt": "Visa",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/2d213fd6-2754-4e92-a6f1-03825f71c7af"
+      "alt": "Pix",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/41946853-90e8-427a-8b38-487d78ee7528"
     }
   ],
   "policies": [
@@ -163,5 +131,50 @@
     }
   ],
   "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/f1faab73-e4ff-4037-b7c4-5d02bd0b1209",
-  "trademark": "TM & © 2023 Deco Storefront, Inc."
+  "trademark": "TM & © 2023 Deco Storefront, Inc.",
+  "background": "#2834d7",
+  "contact": {
+    "item": [
+      {
+        "title": "Sobre a loja",
+        "subTitle": "Telefone: 0800 000 7002"
+      },
+      {
+        "title": "Email",
+        "subTitle": "loja@olympikus.com.br",
+        "href": "loja@olympikus.com.br"
+      },
+      {
+        "title": "Horários de atendimento",
+        "subTitle": "Segunda à Sexta das 08h às 20h"
+      }
+    ]
+  },
+  "content": "<p><strong><span style=\"color: #b3b3b3\">FIQUE ATENTO ÀS FRAUDES!</span></strong></p><p><span style=\"color: #b3b3b3\">O site </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://olympikus.com.br\"><span style=\"color: #b3b3b3\">olympikus.com.br</span></a><span style=\"color: #b3b3b3\"> é o site exclusivo da marca para compras online. Antes de efetuar a compra, verifique que você está no site oficial.</span></p><p><span style=\"color: #b3b3b3\">Em caso de dúvida ou comunicação suspeita, se informe nos perfis oficiais da marca ou pela central de atendimento.</span></p><p></p><p><span style=\"color: #b3b3b3\">Copyright © 2024 OLYMPIKUS. Todos os Direitos Reservados.<br>VULCABRAS AZALEIA - SP, COMÉRCIO DE ARTIGOS ESPORTIVOS LTDA. - CNPJ: 18.565.468/0012-41 - Est. Municipal Luiz Lopes Neto, 21 - Tenentes - CEP: 37640-000 - Extrema/MG</span></p>",
+  "technologies": [
+    {
+      "alt": "Vtex",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/24e593c2-0794-4374-b975-b724e1f9e277",
+      "width": 61,
+      "height": 23
+    },
+    {
+      "alt": "vtex ",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/cfacf414-7762-45eb-aec9-3633101ee99f",
+      "width": 51,
+      "height": 32
+    },
+    {
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/b7f9f434-0046-4d57-b42c-a92ab5d4b928",
+      "alt": "lets encrypt",
+      "width": 60,
+      "height": 50
+    },
+    {
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/63493725-c75a-43d9-b04e-781cfcaa863c",
+      "alt": "reclame aqui",
+      "width": 70,
+      "height": 36
+    }
+  ]
 }

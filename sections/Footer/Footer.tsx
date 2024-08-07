@@ -131,7 +131,7 @@ function Footer({
               )
           ))}
 
-          <li class="flex flex-col sm:flex-row gap-12 justify-between items-start sm:items-center md:border-r  border-base-100 pb-0 md:py-5 md:pl-6 order-3 md:order-2">
+          <li class="flex flex-col sm:flex-row gap-12 justify-between items-center md:border-r  border-base-100 pb-0 md:py-5 md:pl-6 order-3 md:order-2">
             {isMobile
               ? (
                 <div class="flex flex-col w-full">

@@ -69,18 +69,18 @@
         "title": "<p><span>BRUNO REZENDE</span></p>",
         "backgroud": "#e4e4e4"
       },
-      "invertOrderDesktop": true,
-      "invertOrderMobile": true
+      "invertOrderMobile": true,
+      "invertOrderDesktop": true
     },
     {
       "__resolveType": "site/sections/Content/ContentCardsAndImage.tsx",
       "content": {
-        "tileCards": "<p><span>Conheça as tecnologias do </span><span style=\"color: #e3fe01\">Olympikus QU4DRA BR1</span></p>",
         "content": {
           "preTitle": "<p><u><span style=\"color: #e3fe01\">Tecnologias ↘</span></u></p>",
           "title": "<p><span style=\"color: #e3fe01\">Deixe sua marca<br>em qu4dra</span></p>",
           "posTitle": "<p>Estabilidade e conforto pra você focar no que interessa.</p>"
         },
+        "tileCards": "<p><span>Conheça as tecnologias do </span><span style=\"color: #e3fe01\">Olympikus QU4DRA BR1</span></p>",
         "cards": [
           {
             "content": "<p><span style=\"color: rgb(255, 255, 255); font-size: 12px\">Tecnologia que proporciona leveza e amortecimento, trazendo maior conforto e efeito trampolim.</span></p>",
@@ -123,6 +123,38 @@
         "alt": "tenis"
       },
       "invertOrderDesktop": true
+    },
+    {
+      "__resolveType": "site/sections/Content/TextBanner.tsx",
+      "title": "<h2 style=\"text-align: start\"><span style=\"color: #e2fc00\">O LEGADO CONTINUA</span></h2>",
+      "background": "#00494d",
+      "showBorder": true
+    },
+    {
+      "__resolveType": "site/sections/Images/ContentAndImage.tsx",
+      "image": {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/0edc9218-360c-4109-8807-ea604e52d638",
+        "alt": "jogador ",
+        "backgroud": "#00494d",
+        "cta": {
+          "label": "Comprar Agora",
+          "href": "#",
+          "textColorButton": "#ffffff",
+          "backgroundButton": "#000000"
+        },
+        "positionDesktop": "Direita",
+        "positionMobile": "Esquerda"
+      },
+      "content": {
+        "title": "<p><span style=\"color: #e3fe01\">Venha fazer</span></p><p><span style=\"color: #e3fe01\">parte dele</span></p>",
+        "content": "<p><span style=\"color: #e2fc00\">Se tem alguém que, assim como o Bruninho, nasceu pra jogar, é o Olympikus QU4DRA BR1. E é através da co-criação deste tênis que ele mantém seu legado vivo.</span></p><p></p><p><span style=\"color: #e2fc00\">O QU4DRA conecta a história do vôlei brasileiro à jornada de Bruninho com o objetivo de inspirar as futuras gerações a alcançarem suas maiores conquistas.</span></p><p></p><p><span style=\"color: #e2fc00\">SEJA PARTE DESTA HISTÓRIA E MUDE O RUMO DO JOGO DENTRO DAS 4 LINHAS.</span></p>",
+        "cta": {
+          "backgroundButton": "#000000",
+          "textColorButton": "#ffffff"
+        },
+        "background": "#00494d"
+      },
+      "invertOrderMobile": false
     },
     {
       "__resolveType": "site/sections/Newsletter/Newsletter.tsx",

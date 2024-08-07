@@ -54,6 +54,22 @@ interface ImageSection {
    * @description Este recurso é importante quando a imagem é a primeira a ser carregado no site, por exemplo se encontra na primeira dobra, recomendado em somente uma imagem por pagina
    */
   preload?: boolean;
+  /**
+   * @title Estilização do CTA
+   */
+  cta?: PropsCTA;
+  /**
+   * @title Posição do CTA Desktop
+   * @description Padrão: "Esquerda"
+   * @default "Esquerda"
+   */
+  positionDesktop?: "Direita" | "Esquerda" | "Centro";
+  /**
+   * @title Posição do CTA Mobile
+   * @description Padrão: "Centro"
+   * @default "Centro"
+   */
+  positionMobile?: "Direita" | "Esquerda" | "Centro";
 }
 
 interface Props {
@@ -75,17 +91,28 @@ interface Props {
   invertOrderMobile?: boolean;
 }
 
+const POSITIONMOBILE = {
+  "Esquerda": "left-4 right-auto",
+  "Centro": "left-0 right-0",
+  "Direita": "left-auto right-4",
+};
+const POSITIONDESKTOP = {
+  "Esquerda": "lg:left-4 lg:right-auto",
+  "Centro": "lg:left-0 lg:right-0",
+  "Direita": "lg:left-auto lg:right-4",
+};
+
 function TextContent(props: Content) {
   const { title, content, cta } = props;
 
   return (
     <div class="w-full lg:w-2/4 h-auto flex flex-col justify-between items-stretch py-5 px-4 gap-[50px] md:pr-8">
       <span
-        class="font-FKOlympikus text-[55px] leading-[48px] uppercase max-w-[250px] md:max-w-[350px] lg:max-w-[450px] xl:max-w-[600px] lg:text-[100px] lg:leading-[93px] xl:text-7.5xl"
+        class="font-FKOlympikus text-[55px] leading-[48px] uppercase max-w-[250px] md:max-w-[350px] lg:max-w-[450px] xl:max-w-[600px] lg:text-[100px] lg:leading-[93px] xl:text-7.5xl "
         dangerouslySetInnerHTML={{ __html: title }}
       >
       </span>
-      <div class="flex flex-col font-Signal text-lg gap-5">
+      <div class="flex flex-col font-Signal text-lg gap-5 leading-[20px]">
         <span dangerouslySetInnerHTML={{ __html: content }}></span>
         {cta?.label && <CTAButton {...cta} class="w-fit" />}
       </div>
@@ -94,12 +121,21 @@ function TextContent(props: Content) {
 }
 
 function ImageContent(props: ImageSection) {
-  const { image, alt, title, backgroud, preload } = props;
+  const {
+    image,
+    alt,
+    title,
+    backgroud,
+    preload,
+    cta,
+    positionDesktop,
+    positionMobile,
+  } = props;
   const device = useDevice();
   const isMobile = device == "mobile";
 
   return (
-    <div class="w-full lg:w-2/4 flex flex-col md:max-h-[400px] lg:max-h-full overflow-hidden">
+    <div class="w-full lg:w-2/4 flex flex-col md:max-h-[400px] lg:max-h-full overflow-hidden relative">
       {title &&
         (
           <div
@@ -123,6 +159,14 @@ function ImageContent(props: ImageSection) {
         fetchPriority={preload ? "high" : "low"}
         class={"w-full h-full object-cover md:max-h-[400px] lg:max-h-[90vh]"}
       />
+      {cta?.label && (
+        <CTAButton
+          {...cta}
+          class={`absolute w-fit bottom-4 mx-auto ${
+            POSITIONDESKTOP[positionDesktop || "Esquerda"]
+          } ${POSITIONMOBILE[positionMobile || "Centro"]}`}
+        />
+      )}
     </div>
   );
 }

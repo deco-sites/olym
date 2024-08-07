@@ -8,7 +8,7 @@
     {
       "__resolveType": "site/sections/Product/SearchResult.tsx",
       "page": {
-        "__resolveType": "shopify/loaders/ProductListingPage.ts",
+        "__resolveType": "vtex/loaders/ProductListingPage.ts",
         "query": "woman",
         "count": 12
       },

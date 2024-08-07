@@ -29,8 +29,12 @@
     "__resolveType": "website/loaders/fonts/googleFonts.ts",
     "fonts": [
       {
-        "variations": [],
-        "family": "Shrikhand"
+        "variations": [
+          {
+            "weight": "300"
+          }
+        ],
+        "family": "Inter"
       }
     ]
   },

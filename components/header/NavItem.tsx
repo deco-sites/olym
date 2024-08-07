@@ -33,9 +33,6 @@ export interface Column {
 }
 
 export interface Props {
-  /**
-   * @maxItems 5
-   */
   columns: Column[];
 }
 
@@ -87,7 +84,7 @@ function NavItem({ item }: { item: Column }) {
                       loading="lazy"
                     />
                   </a>
-                  {more &&
+                  {more && href &&
                     (
                       <div class="flex flex-row gap-1 border-b border-base-100 w-fit items-center">
                         <a
@@ -112,7 +109,9 @@ function NavItem({ item }: { item: Column }) {
                 </div>
               )}
               <ul
-                class="grid items-start justify-center gap-6 h-auto w-[70%]"
+                class={`grid items-start justify-center gap-6 h-auto w-[70%] ${
+                  image ? "w-[70%]" : "w-full"
+                }`}
                 style={{
                   gridTemplateColumns: `repeat(${columns.length}, 1fr)`,
                 }}
@@ -120,7 +119,7 @@ function NavItem({ item }: { item: Column }) {
                 {columns.map((node) => (
                   <li class="p-6 border-r border-base-100 pl-0 h-full last:border-r-0">
                     <a
-                      class="hover:underline text-xs uppercase "
+                      class="hover:outline-none text-xs uppercase "
                       href={node.title}
                     >
                       <span>{node.title}</span>
@@ -129,7 +128,7 @@ function NavItem({ item }: { item: Column }) {
                     <ul class="flex flex-col gap-1 mt-4">
                       {node.items?.map((leaf) => (
                         <li>
-                          <a class="hover:underline" href={leaf.href}>
+                          <a class="hover:outline-none" href={leaf.href}>
                             <span
                               class=" text-base"
                               dangerouslySetInnerHTML={{ __html: leaf.label }}
@@ -138,7 +137,7 @@ function NavItem({ item }: { item: Column }) {
                           </a>
                         </li>
                       ))}
-                      {node.more &&
+                      {node.more && node.href &&
                         (
                           <li class="flex flex-row gap-1 border-b border-base-100 w-fit items-center">
                             <a

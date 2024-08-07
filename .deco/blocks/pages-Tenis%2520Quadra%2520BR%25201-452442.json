@@ -52,70 +52,82 @@
               {
                 "items": [
                   {
-                    "label": "<p>Corrida</p>",
-                    "href": "/corrida"
+                    "label": "<p>Calças </p>",
+                    "href": "/calcas/dia-dos-pais?initialMap=productclusterids&initialQuery=491&map=category-3,productclusternames"
                   },
                   {
-                    "label": "<p>Treino</p>",
-                    "href": "/treino"
+                    "label": "<p>Blusas, Jaquetas e Moletons</p>",
+                    "href": "/agasalhos/casacos-e-jaquetas/moletons/dia-dos-pais?initialMap=productclusterids&initialQuery=491&map=category-3,category-3,category-3,productclusternames"
                   },
                   {
-                    "label": "<p>Dia a dia</p>",
-                    "href": "/dia-a-dia"
+                    "label": "<p>Camisatas e Regatas</p>",
+                    "href": "/camisetas/polos/regatas/dia-dos-pais?initialMap=productclusterids&initialQuery=491&map=category-3,category-3,category-3,productclusternames"
                   }
                 ],
-                "title": "Objetivo"
+                "title": "Roupas"
               },
               {
                 "items": [
                   {
-                    "label": "<p>Corrida</p>",
-                    "href": "/corrida"
+                    "label": "<p>Bolsas, Malas e Mochilas</p>",
+                    "href": "/bolsas/mala/mochilas/dia-dos-pais?initialMap=productclusterids&initialQuery=491&map=category-3,category-3,category-3,productclusternames"
                   },
                   {
-                    "label": "<p>Treino</p>",
-                    "href": "/treino"
+                    "label": "<p>Meias</p>",
+                    "href": "/meias/dia-dos-pais?initialMap=productclusterids&initialQuery=491&map=category-3,productclusternames"
                   },
                   {
-                    "label": "<p>Dia a dia</p>",
-                    "href": "/dia-a-dia"
+                    "label": "<p>Bónes e Viseiras</p>",
+                    "href": "/bones/viseira/viseiras/dia-dos-pais?initialMap=productclusterids&initialQuery=491&map=category-3,category-3,category-3,productclusternames"
                   }
                 ],
-                "title": "Objetivo"
+                "title": "acessórios"
               },
               {
                 "items": [
                   {
-                    "label": "<p>Corrida</p>",
+                    "label": "<p>Família Corre</p>",
                     "href": "/corrida"
                   },
                   {
-                    "label": "<p>Treino</p>",
+                    "label": "<p>Coleção de Inverno</p>",
                     "href": "/treino"
                   },
                   {
-                    "label": "<p>Dia a dia</p>",
+                    "label": "<p>Volta Às Aulas</p>",
                     "href": "/dia-a-dia"
+                  },
+                  {
+                    "label": "<p>Plus Size</p>",
+                    "href": "#"
+                  },
+                  {
+                    "label": "<p>Chinelos</p>",
+                    "href": "#"
                   }
                 ],
-                "title": "Objetivo"
+                "title": "Destaques"
               },
               {
                 "items": [
                   {
-                    "label": "<p>Corrida</p>",
+                    "label": "<p>R$ 99,99</p>",
                     "href": "/corrida"
                   },
                   {
-                    "label": "<p>Treino</p>",
+                    "label": "<p>R$ 129,99</p>",
                     "href": "/treino"
                   },
                   {
-                    "label": "<p>Dia a dia</p>",
+                    "label": "<p>R$ 199,99</p>",
                     "href": "/dia-a-dia"
+                  },
+                  {
+                    "label": "<p>R$ 399,99</p>",
+                    "href": "#"
                   }
                 ],
-                "title": "Objetivo"
+                "title": "Presentes até"
               }
             ],
             "label": "Pais",
@@ -137,76 +149,332 @@
                     "href": "/corrida"
                   },
                   {
-                    "label": "<p>Treino</p>",
+                    "label": "<p>Treino e Academia</p>",
                     "href": "/treino"
                   },
                   {
-                    "label": "<p>Dia a dia</p>",
+                    "label": "<p>Casual</p>",
                     "href": "/dia-a-dia"
+                  },
+                  {
+                    "label": "<p>Chinelo</p>",
+                    "href": "/chinelo"
+                  },
+                  {
+                    "label": "<p>Trilha</p>",
+                    "href": "/trilha"
+                  },
+                  {
+                    "label": "<p>Vôlei</p>",
+                    "href": "/volei"
                   }
                 ],
-                "title": "Objetivo",
-                "more": "<p>Ver Tudo</p>"
+                "title": "Calçados",
+                "more": "<p>Ver Tudo</p>",
+                "href": "/calçados"
               },
               {
                 "items": [
                   {
-                    "label": "<p>Corrida</p>",
+                    "label": "<p>Agasalhos</p>",
                     "href": "/corrida"
                   },
                   {
-                    "label": "<p>Treino</p>",
+                    "label": "<p>Bermudas</p>",
                     "href": "/treino"
                   },
                   {
-                    "label": "<p>Dia a dia</p>",
+                    "label": "<p>Calças</p>",
                     "href": "/dia-a-dia"
+                  },
+                  {
+                    "label": "<p>Camisetas</p>",
+                    "href": "/camisetas"
+                  },
+                  {
+                    "label": "<p>Casacos e Jaquetas</p>",
+                    "href": "/casacos"
+                  },
+                  {
+                    "label": "<p>Regatas</p>",
+                    "href": "/regatas"
+                  },
+                  {
+                    "label": "<p>Shorts</p>",
+                    "href": "/shorts"
+                  },
+                  {
+                    "label": "<p>Polos</p>",
+                    "href": "/polos"
+                  },
+                  {
+                    "label": "<p>Moletons</p>",
+                    "href": "/moletons"
+                  },
+                  {
+                    "label": "<p>Plus Size</p>",
+                    "href": "/plus-size"
                   }
                 ],
-                "title": "Objetivo"
+                "title": "Roupas",
+                "more": "<p>Ver tudo</p>",
+                "href": "/roupas"
               },
               {
                 "items": [
                   {
-                    "label": "<p>Corrida</p>",
+                    "label": "<p>Mochilas</p>",
                     "href": "/corrida"
                   },
                   {
-                    "label": "<p>Treino</p>",
+                    "label": "<p>Meias</p>",
                     "href": "/treino"
                   },
                   {
-                    "label": "<p>Dia a dia</p>",
+                    "label": "<p>Bonés</p>",
                     "href": "/dia-a-dia"
+                  },
+                  {
+                    "label": "<p>Pochete</p>",
+                    "href": "/pochetes"
+                  },
+                  {
+                    "label": "<p>Mala</p>",
+                    "href": "/malas"
+                  },
+                  {
+                    "label": "<p>Viseira</p>",
+                    "href": "/viseira"
                   }
                 ],
-                "title": "Objetivo"
+                "title": "Acessórios",
+                "more": "<p>Ver Tudo</p>",
+                "href": "/acessórios"
               },
               {
-                "items": [
-                  {
-                    "label": "<p>Corrida</p>",
-                    "href": "/corrida"
-                  },
-                  {
-                    "label": "<p>Treino</p>",
-                    "href": "/treino"
-                  },
-                  {
-                    "label": "<p>Dia a dia</p>",
-                    "href": "/dia-a-dia"
-                  }
-                ],
-                "title": "Objetivo"
+                "items": []
               }
             ],
-            "label": "Pais",
-            "href": "/pais",
-            "colorText": "#9bff2e",
+            "label": "Maculino",
+            "href": "/masculino",
+            "colorText": "#ffffff",
             "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/3056f74e-98fd-4b39-afa1-ede16e4eb676",
             "alt": "img",
             "hrefImage": "/img",
             "more": "<p>EU QUERO!</p>"
+          },
+          {
+            "columns": [
+              {
+                "items": [
+                  {
+                    "label": "<p>Corrida</p>",
+                    "href": "/corrida"
+                  },
+                  {
+                    "label": "<p>Treino e Academia</p>",
+                    "href": "/treino"
+                  },
+                  {
+                    "label": "<p>Casual</p>",
+                    "href": "/dia-a-dia"
+                  },
+                  {
+                    "label": "<p>Chinelo</p>",
+                    "href": "/chinelo"
+                  },
+                  {
+                    "label": "<p>Trilha</p>",
+                    "href": "/trilha"
+                  },
+                  {
+                    "label": "<p>Vôlei</p>",
+                    "href": "/volei"
+                  }
+                ],
+                "title": "Calçados",
+                "more": "<p>Ver Tudo</p>",
+                "href": "/calçados"
+              },
+              {
+                "items": [
+                  {
+                    "label": "<p>Agasalhos</p>",
+                    "href": "/corrida"
+                  },
+                  {
+                    "label": "<p>Bermudas</p>",
+                    "href": "/treino"
+                  },
+                  {
+                    "label": "<p>Calças</p>",
+                    "href": "/dia-a-dia"
+                  },
+                  {
+                    "label": "<p>Camisetas</p>",
+                    "href": "/camisetas"
+                  },
+                  {
+                    "label": "<p>Casacos e Jaquetas</p>",
+                    "href": "/casacos"
+                  },
+                  {
+                    "label": "<p>Regatas</p>",
+                    "href": "/regatas"
+                  },
+                  {
+                    "label": "<p>Shorts</p>",
+                    "href": "/shorts"
+                  },
+                  {
+                    "label": "<p>Polos</p>",
+                    "href": "/polos"
+                  },
+                  {
+                    "label": "<p>Moletons</p>",
+                    "href": "/moletons"
+                  },
+                  {
+                    "label": "<p>Plus Size</p>",
+                    "href": "/plus-size"
+                  }
+                ],
+                "title": "Roupas",
+                "more": "<p>Ver tudo</p>",
+                "href": "/roupas"
+              },
+              {
+                "items": [
+                  {
+                    "label": "<p>Mochilas</p>",
+                    "href": "/corrida"
+                  },
+                  {
+                    "label": "<p>Meias</p>",
+                    "href": "/treino"
+                  },
+                  {
+                    "label": "<p>Bonés</p>",
+                    "href": "/dia-a-dia"
+                  },
+                  {
+                    "label": "<p>Pochete</p>",
+                    "href": "/pochetes"
+                  },
+                  {
+                    "label": "<p>Mala</p>",
+                    "href": "/malas"
+                  },
+                  {
+                    "label": "<p>Viseira</p>",
+                    "href": "/viseira"
+                  }
+                ],
+                "title": "Acessórios",
+                "more": "<p>Ver Tudo</p>",
+                "href": "/acessórios"
+              },
+              {
+                "items": []
+              }
+            ],
+            "label": "Femininos",
+            "href": "/femininos",
+            "colorText": "#ffffff",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/6d68d7a6-82f1-4ed4-93b6-eedf5cef5ac1",
+            "alt": "img",
+            "hrefImage": "/img",
+            "more": "<p>EU QUERO!</p>"
+          },
+          {
+            "columns": [],
+            "label": "infantil",
+            "href": "/infantil"
+          },
+          {
+            "columns": [
+              {
+                "items": [
+                  {
+                    "label": "<p>Roupas e Acessórios com 20% Off</p>",
+                    "href": "/corrida"
+                  },
+                  {
+                    "label": "<p>Ofertas até R$ 199,99</p>",
+                    "href": "/treino"
+                  }
+                ],
+                "title": "Ofertas Especiais",
+                "more": "<p></p>"
+              },
+              {
+                "items": [
+                  {
+                    "label": "<p>Corrida</p>",
+                    "href": "/corrida"
+                  },
+                  {
+                    "label": "<p>Academia</p>",
+                    "href": "/treino"
+                  },
+                  {
+                    "label": "<p>Caminhada</p>",
+                    "href": "/dia-a-dia"
+                  },
+                  {
+                    "label": "<p>Casual</p>",
+                    "href": "/camisetas"
+                  }
+                ],
+                "title": "Tênis para o seu objetivo",
+                "more": "<p></p>"
+              },
+              {
+                "items": [
+                  {
+                    "label": "<p>Calçados</p>",
+                    "href": "/corrida"
+                  },
+                  {
+                    "label": "<p>Camisetas e Regatas</p>",
+                    "href": "/treino"
+                  },
+                  {
+                    "label": "<p>Shorts e Bermudas</p>",
+                    "href": "/dia-a-dia"
+                  },
+                  {
+                    "label": "<p>Calças e Leggings</p>",
+                    "href": "/pochetes"
+                  },
+                  {
+                    "label": "<p>Tops Femininos</p>",
+                    "href": "/malas"
+                  },
+                  {
+                    "label": "<p>Acessórios</p>",
+                    "href": "/viseira"
+                  }
+                ],
+                "title": "Categorias em Destaque",
+                "more": "<p></p>"
+              },
+              {
+                "items": []
+              }
+            ],
+            "label": "Ofertas",
+            "href": "/ofertas",
+            "colorText": "#ffffff",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/1bbeeaa7-e177-4f11-be5e-9f740fbe6e52",
+            "alt": "img",
+            "hrefImage": "/img",
+            "more": "<p>EU QUERO!</p>"
+          },
+          {
+            "columns": [],
+            "label": "BPC",
+            "href": "/bpc"
           }
         ]
       }

@@ -108,7 +108,7 @@ const Desktop = (
               </svg>
             </button>
           </form>
-          <div class="flex justify-center items-center">
+          <div class="flex justify-center items-center cursor-pointer">
             <svg
               width="19"
               height="17"
@@ -256,8 +256,6 @@ function Header({
   ...props
 }: Props) {
   const device = useDevice();
-
-  console.log("props", props.navItems);
 
   return (
     <header

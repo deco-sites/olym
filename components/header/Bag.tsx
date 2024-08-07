@@ -33,7 +33,7 @@ function Bag() {
       >
         <span
           id={id}
-          class="hidden indicator-item badge badge-primary badge-sm font-thin"
+          class="hidden indicator-item badge badge-primary badge-sm font-thin cursor-pointer"
         />
 
         <span class="w-auto flex justify-center items-center">

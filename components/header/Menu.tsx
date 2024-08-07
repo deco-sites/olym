@@ -44,7 +44,7 @@ function SubMenuItem({ item }: { item: Container }) {
       <div class="collapse collapse-plus min-h-12">
         <input type="checkbox" class="min-h-12" />
         <div
-          class="collapse-title min-h-12 uppercase font-Signal text-sm !px-0 font-normal py-3 items-center flex after:text-[32px] after:!right-9 after:!top-[0.20rem]"
+          class="collapse-title min-h-12 uppercase font-Signal text-sm !px-0 font-normal py-3 items-center flex after:text-[32px] after:!right-9 after:!top-[0.70rem]"
           dangerouslySetInnerHTML={{ __html: item.title }}
         >
           {item.title}
@@ -70,7 +70,7 @@ function MenuItem({ item }: { item: Column }) {
 
   if (item.columns && item.columns.length < 1) {
     return (
-      <div class="px-4 py-2">
+      <div class="px-5 py-2">
         <a
           href={item.href}
           class="uppercase font-FKOlympikus text-[32px]"
@@ -93,11 +93,17 @@ function MenuItem({ item }: { item: Column }) {
       </div>
       <div class="collapse-content !pb-0 !pl-5 !pr-0">
         <ul>
-          {item.columns?.map((node) => (
-            <li class="border-b border-base-200 last:border-none">
-              <SubMenuItem item={node} />
-            </li>
-          ))}
+          {item.columns?.map((node) => {
+            if (!node.title) {
+              return null;
+            }
+
+            return (
+              <li class="border-b border-base-200 last:border-b-0">
+                <SubMenuItem item={node} />
+              </li>
+            );
+          })}
         </ul>
       </div>
     </div>
@@ -111,7 +117,7 @@ function Menu({ navItems }: Props) {
       style={{ minWidth: "90vw" }}
     >
       <div class=" flex justify-between w-full px-6 py-4 border-b border-base-200 z-10 max-h-[65px]">
-        <div class="flex justify-center items-center">
+        <div class="flex justify-center items-center cursor-pointer">
           <label
             class="btn btn-ghost text-black px-0"
             hx-on:click={useScript(CloseDrawer)}
@@ -162,22 +168,16 @@ function Menu({ navItems }: Props) {
           </a>
           <span class="w-auto flex justify-center items-center">
             <svg
-              width="20"
-              height="23"
-              viewBox="0 0 17 20"
-              fill="black"
+              width="19"
+              height="17"
+              viewBox="0 0 19 17"
+              fill="#000"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M0.32666 16.668C0.32666 18.5884 1.30078 19.5439 3.23975 19.5439H14.1592C15.8198 19.5439 16.7939 18.5791 16.7939 16.668V7.06592C16.7939 5.15479 15.8105 4.18994 13.8809 4.18994H12.3965C12.3501 2.2417 10.6523 0.581055 8.55566 0.581055C6.45898 0.581055 4.77051 2.2417 4.71484 4.18994H3.23975C1.30078 4.18994 0.32666 5.14551 0.32666 7.06592V16.668ZM6.2085 4.18994C6.25488 2.98389 7.24756 1.99121 8.55566 1.99121C9.86377 1.99121 10.8657 2.98389 10.9028 4.18994H6.2085ZM1.82031 16.5938V7.14014C1.82031 6.17529 2.33057 5.68359 3.2583 5.68359H13.853C14.7715 5.68359 15.3003 6.17529 15.3003 7.14014V16.5938C15.3003 17.5586 14.7715 18.0503 14.1313 18.0503H3.2583C2.33057 18.0503 1.82031 17.5586 1.82031 16.5938Z"
-                fill="black"
-              >
-              </path>
-              <path
-                d="M8.32302 15.6903C6.67302 15.6903 6.02302 14.7403 5.92302 13.4903H7.07302C7.17302 14.3403 7.52302 14.6903 8.32302 14.6903C9.07302 14.6903 9.52302 14.3103 9.52302 13.5803C9.52302 12.8903 9.19302 12.5403 8.07302 12.5403H7.67302V11.5403H8.12302C8.85302 11.5403 9.27302 11.1603 9.27302 10.4603C9.27302 9.83033 8.88302 9.49033 8.30302 9.49033C7.67302 9.49033 7.34302 9.75033 7.22302 10.4903H6.07302C6.21302 9.23033 7.07302 8.49033 8.33302 8.49033C9.50302 8.49033 10.423 9.11033 10.423 10.3403C10.423 11.0303 9.99302 11.6203 9.30302 11.8803C10.173 12.1003 10.673 12.7003 10.673 13.5703C10.673 14.9603 9.77302 15.6903 8.32302 15.6903Z"
-                fill="black"
-              >
-              </path>
+                d="M0.871582 5.30273C0.871582 9.04688 4.00928 12.7295 8.96631 15.8936C9.15088 16.0078 9.41455 16.1309 9.59912 16.1309C9.78369 16.1309 10.0474 16.0078 10.2407 15.8936C15.189 12.7295 18.3267 9.04688 18.3267 5.30273C18.3267 2.19141 16.1909 -0.00585938 13.3433 -0.00585938C11.7173 -0.00585938 10.3989 0.767578 9.59912 1.9541C8.81689 0.776367 7.48096 -0.00585938 5.85498 -0.00585938C3.00732 -0.00585938 0.871582 2.19141 0.871582 5.30273ZM2.28662 5.30273C2.28662 2.96484 3.79834 1.40918 5.8374 1.40918C7.48975 1.40918 8.43896 2.4375 9.00146 3.31641C9.23877 3.66797 9.38818 3.76465 9.59912 3.76465C9.81006 3.76465 9.94189 3.65918 10.1968 3.31641C10.8032 2.45508 11.7173 1.40918 13.3608 1.40918C15.3999 1.40918 16.9116 2.96484 16.9116 5.30273C16.9116 8.57227 13.4575 12.0967 9.78369 14.54C9.6958 14.6016 9.63428 14.6455 9.59912 14.6455C9.56396 14.6455 9.50244 14.6016 9.42334 14.54C5.74072 12.0967 2.28662 8.57227 2.28662 5.30273Z"
+                fill="#000"
+              />
             </svg>
           </span>
         </div>

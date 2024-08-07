@@ -1,13 +1,9 @@
-import type { SiteNavigationElement } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
-import {
-  HEADER_HEIGHT_DESKTOP,
-  NAVBAR_HEIGHT_DESKTOP,
-} from "../../constants.ts";
+import { NAVBAR_HEIGHT_DESKTOP } from "../../constants.ts";
 import { ImageWidget, RichText } from "apps/admin/widgets.ts";
 
 /**@titleBy label */
-interface Link {
+export interface Link {
   label: RichText;
   href: string;
 }
@@ -19,7 +15,7 @@ export interface Container {
   href?: string;
 }
 
-interface Column {
+export interface Column {
   label: string;
   href: string;
   /**
@@ -116,7 +112,7 @@ function NavItem({ item }: { item: Column }) {
                 </div>
               )}
               <ul
-                class="grid items-start justify-center gap-6 w-full h-auto"
+                class="grid items-start justify-center gap-6 h-auto w-[70%]"
                 style={{
                   gridTemplateColumns: `repeat(${columns.length}, 1fr)`,
                 }}

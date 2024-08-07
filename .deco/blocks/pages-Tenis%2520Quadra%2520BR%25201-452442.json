@@ -120,7 +120,7 @@
             ],
             "label": "Pais",
             "href": "/pais",
-            "colorText": "#e3fe01"
+            "colorText": "#9bff2e"
           },
           {
             "columns": [],
@@ -202,7 +202,7 @@
             ],
             "label": "Pais",
             "href": "/pais",
-            "colorText": "#e3fe01",
+            "colorText": "#9bff2e",
             "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/3056f74e-98fd-4b39-afa1-ede16e4eb676",
             "alt": "img",
             "hrefImage": "/img",

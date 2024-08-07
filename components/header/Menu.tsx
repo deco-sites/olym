@@ -1,22 +1,9 @@
 import { useScript } from "deco/hooks/useScript.ts";
-import type { SiteNavigationElement } from "apps/commerce/types.ts";
-import { ImageWidget, RichText } from "apps/admin/widgets.ts";
-
-/**@titleBy label */
-interface Link {
-  label: RichText;
-  href: string;
-}
-/**@titleBy title */
-export interface Column {
-  image?: ImageWidget;
-  alt?: string;
-  title: string;
-  items?: Link[];
-}
+import { Props as PropsNav } from "../../components/header/NavItem.tsx";
+import { Column, Container, Link } from "../../components/header/NavItem.tsx";
 
 export interface Props {
-  navItems: SiteNavigationElement[];
+  navItems: PropsNav;
 }
 
 function CloseDrawer() {
@@ -27,53 +14,69 @@ function CloseDrawer() {
   close?.click();
 }
 
-function Item({ item }: { item: SiteNavigationElement }) {
+function Item({ item }: { item: Link }) {
   return (
-    <a href={item.url} class="text-xs font-normal">
-      {item.name}
+    <a
+      href={item.href}
+      class="text-xs font-normal uppercase"
+      dangerouslySetInnerHTML={{ __html: item.label }}
+    >
     </a>
   );
 }
 
-function SubMenuItem({ item }: { item: SiteNavigationElement }) {
-  if (item.children && item.children.length < 1) {
+function SubMenuItem({ item }: { item: Container }) {
+  if (item.title) {
+    if (item.items && item.items.length < 1) {
+      return (
+        <div class="py-[14px]">
+          <a
+            href={item.href}
+            class="min-h-12 uppercase font-Signal text-sm font-normal"
+          >
+            {item.title}
+          </a>
+        </div>
+      );
+    }
+
     return (
-      <div class="py-[14px]">
-        <a
-          href={item.url}
-          class="min-h-12 uppercase font-Signal text-sm font-normal"
+      <div class="collapse collapse-plus min-h-12">
+        <input type="checkbox" class="min-h-12" />
+        <div
+          class="collapse-title min-h-12 uppercase font-Signal text-sm !px-0 font-normal py-3 items-center flex after:text-[32px] after:!right-9 after:!top-[0.20rem]"
+          dangerouslySetInnerHTML={{ __html: item.title }}
         >
-          {item.name}
-        </a>
+          {item.title}
+        </div>
+        <div class="collapse-content pb-0 !px-2">
+          <ul class="flex flex-col gap-2">
+            {item.items?.map((node) => (
+              <li>
+                <Item item={node} />
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     );
   }
 
-  return (
-    <div class="collapse collapse-plus min-h-12">
-      <input type="checkbox" class="contents" />
-      <div class="collapse-title min-h-12 uppercase font-Signal text-sm !px-0 font-normal">
-        {item.name}
-      </div>
-      <div class="collapse-content pb-0 !px-2">
-        <ul>
-          {item.children?.map((node) => (
-            <li>
-              <Item item={node} />
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
-  );
+  return null;
 }
 
-function MenuItem({ item }: { item: SiteNavigationElement }) {
-  if (item.children && item.children?.length < 1) {
+function MenuItem({ item }: { item: Column }) {
+  const color = item.colorText == "#ffffff" ? "#303030" : item.colorText;
+
+  if (item.columns && item.columns.length < 1) {
     return (
       <div class="px-4 py-2">
-        <a href={item.url} class="uppercase font-FKOlympikus text-4xl">
-          {item.name}
+        <a
+          href={item.href}
+          class="uppercase font-FKOlympikus text-[32px]"
+          style={{ color: color }}
+        >
+          {item.label}
         </a>
       </div>
     );
@@ -82,12 +85,15 @@ function MenuItem({ item }: { item: SiteNavigationElement }) {
   return (
     <div class="collapse collapse-plus">
       <input type="checkbox" />
-      <div class="collapse-title uppercase font-FKOlympikus text-4xl !py-2 !px-5 after:!font-Signal after:!top-2 after:!right-9">
-        {item.name}
+      <div
+        class="collapse-title uppercase font-FKOlympikus text-[32px] !py-1 !px-5 after:!font-Signal after:!top-2 after:!right-9 after:!text-base-200 "
+        style={{ color: color }}
+      >
+        {item.label}
       </div>
       <div class="collapse-content !pb-0 !pl-5 !pr-0">
         <ul>
-          {item.children?.map((node) => (
+          {item.columns?.map((node) => (
             <li class="border-b border-base-200 last:border-none">
               <SubMenuItem item={node} />
             </li>
@@ -104,7 +110,7 @@ function Menu({ navItems }: Props) {
       class="flex flex-col h-full overflow-y-auto"
       style={{ minWidth: "90vw" }}
     >
-      <div class=" flex justify-between w-full px-6 py-4 border-b border-base-200 z-10">
+      <div class=" flex justify-between w-full px-6 py-4 border-b border-base-200 z-10 max-h-[65px]">
         <div class="flex justify-center items-center">
           <label
             class="btn btn-ghost text-black px-0"
@@ -177,8 +183,8 @@ function Menu({ navItems }: Props) {
         </div>
       </div>
       <ul class=" flex-grow flex flex-col overflow-y-auto bg">
-        {navItems.map((item) => (
-          <li class="border-b border-base-200">
+        {navItems.columns.map((item) => (
+          <li class="border-b border-base-200 font-normal">
             <MenuItem item={item} />
           </li>
         ))}

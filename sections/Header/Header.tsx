@@ -56,7 +56,7 @@ const Desktop = (
   { navItems, logo, searchbar }: Props,
 ) => (
   <>
-    <div class="flex flex-col gap-4 py-[10px] px-5 font-Signal bg-primary">
+    <div class="flex flex-col gap-4 px-5 font-Signal bg-primary">
       <div class="flex flex-row justify-between items-center">
         <div class="flex items-center justify-center gap-10">
           <div class="flex justify-center items-center h-full">
@@ -76,7 +76,7 @@ const Desktop = (
           <div class="flex justify-between items-center text-base-100 ">
             {navItems.columns && navItems.columns.length > 1 &&
               (
-                <ul class="flex group">
+                <ul class="flex">
                   {navItems.columns.map((item) => <NavItem item={item} />)}
                 </ul>
               )}

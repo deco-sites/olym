@@ -3,7 +3,83 @@
   "path": "/tenis-qu4dra-br1",
   "sections": [
     {
-      "__resolveType": "Header"
+      "__resolveType": "site/sections/Header/Header.tsx",
+      "logo": {
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/fb82fe45-843e-401d-9810-501fc485da46",
+        "alt": "olympikus",
+        "width": 206,
+        "height": 24
+      },
+      "alerts": {
+        "0": "<p>Frete grátis para todo o Brasil acima de R$ 199,99</p>",
+        "1": "<p>Frete grátis para todo o Brasil acima de R$ 199,99</p>",
+        "alerts": [
+          "<p><strong>20% de cashback</strong> para a próxima compra</p>",
+          "<p>Frete grátis para todo o Brasil acima de R$ 199,99</p>"
+        ],
+        "background": "#000000",
+        "type": "Variant2"
+      },
+      "searchbar": {
+        "loader": {
+          "data": {
+            "__resolveType": "vtex/loaders/intelligentSearch/suggestions.ts"
+          },
+          "__resolveType": "resolved"
+        }
+      },
+      "navItems": {
+        "__resolveType": "commerce/loaders/navbar.ts",
+        "items": [
+          {
+            "@type": "SiteNavigationElement",
+            "url": "/deals",
+            "name": "Deals",
+            "children": [
+              {
+                "image": [],
+                "children": [],
+                "name": "Hello"
+              },
+              {
+                "image": [],
+                "children": [],
+                "name": "World"
+              }
+            ]
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "url": "/valentines-day",
+            "name": "Valentine's Day",
+            "children": []
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "url": "/women",
+            "name": "Women",
+            "children": []
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "url": "/men",
+            "name": "Men",
+            "children": []
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "url": "/clearance",
+            "name": "Clearance",
+            "children": []
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "url": "/activities",
+            "name": "Activities",
+            "children": []
+          }
+        ]
+      }
     },
     {
       "__resolveType": "site/sections/Content/TextBanner.tsx",
@@ -69,18 +145,18 @@
         "title": "<p><span>BRUNO REZENDE</span></p>",
         "backgroud": "#e4e4e4"
       },
-      "invertOrderMobile": true,
-      "invertOrderDesktop": true
+      "invertOrderDesktop": true,
+      "invertOrderMobile": true
     },
     {
       "__resolveType": "site/sections/Content/ContentCardsAndImage.tsx",
       "content": {
+        "tileCards": "<p><span>Conheça as tecnologias do </span><span style=\"color: #e3fe01\">Olympikus QU4DRA BR1</span></p>",
         "content": {
           "preTitle": "<p><u><span style=\"color: #e3fe01\">Tecnologias ↘</span></u></p>",
           "title": "<p><span style=\"color: #e3fe01\">Deixe sua marca<br>em qu4dra</span></p>",
           "posTitle": "<p>Estabilidade e conforto pra você focar no que interessa.</p>"
         },
-        "tileCards": "<p><span>Conheça as tecnologias do </span><span style=\"color: #e3fe01\">Olympikus QU4DRA BR1</span></p>",
         "cards": [
           {
             "content": "<p><span style=\"color: rgb(255, 255, 255); font-size: 12px\">Tecnologia que proporciona leveza e amortecimento, trazendo maior conforto e efeito trampolim.</span></p>",
@@ -125,38 +201,6 @@
       "invertOrderDesktop": true
     },
     {
-      "__resolveType": "site/sections/Content/TextBanner.tsx",
-      "title": "<h2 style=\"text-align: start\"><span style=\"color: #e2fc00\">O LEGADO CONTINUA</span></h2>",
-      "background": "#00494d",
-      "showBorder": true
-    },
-    {
-      "__resolveType": "site/sections/Images/ContentAndImage.tsx",
-      "image": {
-        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/0edc9218-360c-4109-8807-ea604e52d638",
-        "alt": "jogador ",
-        "backgroud": "#00494d",
-        "cta": {
-          "label": "Comprar Agora",
-          "href": "#",
-          "textColorButton": "#ffffff",
-          "backgroundButton": "#000000"
-        },
-        "positionDesktop": "Direita",
-        "positionMobile": "Esquerda"
-      },
-      "content": {
-        "title": "<p><span style=\"color: #e3fe01\">Venha fazer</span></p><p><span style=\"color: #e3fe01\">parte dele</span></p>",
-        "content": "<p><span style=\"color: #e2fc00\">Se tem alguém que, assim como o Bruninho, nasceu pra jogar, é o Olympikus QU4DRA BR1. E é através da co-criação deste tênis que ele mantém seu legado vivo.</span></p><p></p><p><span style=\"color: #e2fc00\">O QU4DRA conecta a história do vôlei brasileiro à jornada de Bruninho com o objetivo de inspirar as futuras gerações a alcançarem suas maiores conquistas.</span></p><p></p><p><span style=\"color: #e2fc00\">SEJA PARTE DESTA HISTÓRIA E MUDE O RUMO DO JOGO DENTRO DAS 4 LINHAS.</span></p>",
-        "cta": {
-          "backgroundButton": "#000000",
-          "textColorButton": "#ffffff"
-        },
-        "background": "#00494d"
-      },
-      "invertOrderMobile": false
-    },
-    {
       "__resolveType": "site/sections/Newsletter/Newsletter.tsx",
       "content": "<p>Cadastre-se em nossa newsletter para receber ofertas e novidades exclusivas sobre os produtos Olympikus.</p>",
       "title": "Newsletter",
@@ -169,7 +213,152 @@
       "background": "#b3b3b3"
     },
     {
-      "__resolveType": "Footer"
+      "__resolveType": "site/sections/Footer/Footer.tsx",
+      "links": [
+        {
+          "title": "Our Company",
+          "children": [
+            {
+              "title": "About us",
+              "href": "#"
+            },
+            {
+              "title": "Our blog",
+              "href": "#"
+            },
+            {
+              "title": "Stores",
+              "href": "#"
+            },
+            {
+              "title": "Work with us",
+              "href": "#"
+            }
+          ],
+          "href": "#"
+        },
+        {
+          "title": "Orders & Purchases",
+          "href": "#",
+          "children": [
+            {
+              "title": "Check order status",
+              "href": "#"
+            },
+            {
+              "title": "Return and exchanges",
+              "href": "#"
+            },
+            {
+              "title": "Product retail",
+              "href": "#"
+            },
+            {
+              "title": "Gift cards",
+              "href": "#"
+            }
+          ]
+        }
+      ],
+      "social": [
+        {
+          "alt": "facebook",
+          "href": "#",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/66555ced-82de-4dfc-950b-f4d432ca4841"
+        },
+        {
+          "alt": "Instagram",
+          "href": "#",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/bf0a224b-4d87-47f4-b293-e85c299040cd"
+        }
+      ],
+      "paymentMethods": [
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/8858d6e9-5285-4b21-b1f4-e6235f5b1ee9",
+          "alt": "visa"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/13a6a034-94c2-4772-bf81-d5e4987d3f32",
+          "alt": "American Express"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/ded9c7c5-aac3-436b-882f-84d1c4cde3ec",
+          "alt": "hiper card"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/6d94fdf2-dd6a-47cb-a1c7-6d488a600da4",
+          "alt": "Mastercard"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/9b5bb0db-76c3-490a-8964-aa67e3187dd1",
+          "alt": "Elo"
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/41946853-90e8-427a-8b38-487d78ee7528",
+          "alt": "Pix"
+        }
+      ],
+      "policies": [
+        {
+          "title": "Privacy Policy",
+          "href": "#"
+        },
+        {
+          "title": "Terms and Conditions",
+          "href": "#"
+        },
+        {
+          "title": "Cookies Policy",
+          "href": "#"
+        }
+      ],
+      "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/f1faab73-e4ff-4037-b7c4-5d02bd0b1209",
+      "trademark": "TM & © 2023 Deco Storefront, Inc.",
+      "background": "#2834d7",
+      "contact": {
+        "item": [
+          {
+            "title": "Sobre a loja",
+            "subTitle": "Telefone: 0800 000 7002"
+          },
+          {
+            "title": "Email",
+            "subTitle": "loja@olympikus.com.br",
+            "href": "loja@olympikus.com.br"
+          },
+          {
+            "title": "Horários de atendimento",
+            "subTitle": "Segunda à Sexta das 08h às 20h"
+          }
+        ]
+      },
+      "content": "<p><strong><span style=\"color: #b3b3b3\">FIQUE ATENTO ÀS FRAUDES!</span></strong></p><p><span style=\"color: #b3b3b3\">O site </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://olympikus.com.br\"><span style=\"color: #b3b3b3\">olympikus.com.br</span></a><span style=\"color: #b3b3b3\"> é o site exclusivo da marca para compras online. Antes de efetuar a compra, verifique que você está no site oficial.</span></p><p><span style=\"color: #b3b3b3\">Em caso de dúvida ou comunicação suspeita, se informe nos perfis oficiais da marca ou pela central de atendimento.</span></p><p></p><p><span style=\"color: #b3b3b3\">Copyright © 2024 OLYMPIKUS. Todos os Direitos Reservados.<br>VULCABRAS AZALEIA - SP, COMÉRCIO DE ARTIGOS ESPORTIVOS LTDA. - CNPJ: 18.565.468/0012-41 - Est. Municipal Luiz Lopes Neto, 21 - Tenentes - CEP: 37640-000 - Extrema/MG</span></p>",
+      "technologies": [
+        {
+          "alt": "Vtex",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/24e593c2-0794-4374-b975-b724e1f9e277",
+          "width": 61,
+          "height": 23
+        },
+        {
+          "alt": "vtex ",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/cfacf414-7762-45eb-aec9-3633101ee99f",
+          "width": 51,
+          "height": 32
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/b7f9f434-0046-4d57-b42c-a92ab5d4b928",
+          "alt": "lets encrypt",
+          "width": 60,
+          "height": 50
+        },
+        {
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/63493725-c75a-43d9-b04e-781cfcaa863c",
+          "alt": "reclame aqui",
+          "width": 70,
+          "height": 36
+        }
+      ]
     }
   ],
   "seo": {

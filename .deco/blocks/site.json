@@ -38,7 +38,8 @@
       "__resolveType": "vtex/loaders/proxy.ts",
       "extraPathsToProxy": [],
       "includeSiteMap": [],
-      "excludePathsFromDecoSiteMap": []
+      "excludePathsFromDecoSiteMap": [],
+      "generateDecoSiteMap": false
     },
     {
       "__resolveType": "website/loaders/pages.ts"

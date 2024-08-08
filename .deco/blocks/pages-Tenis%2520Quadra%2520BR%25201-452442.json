@@ -128,18 +128,6 @@
       "invertOrderDesktop": true
     },
     {
-      "__resolveType": "site/sections/Newsletter/Newsletter.tsx",
-      "content": "<p>Cadastre-se em nossa newsletter para receber ofertas e novidades exclusivas sobre os produtos Olympikus.</p>",
-      "title": "Newsletter",
-      "plachegolder": "Digite aqui seu Email",
-      "cta": {
-        "label": "Cadastre-se",
-        "backgroundButton": "#000000",
-        "textColorButton": "#ffffff"
-      },
-      "background": "#b3b3b3"
-    },
-    {
       "__resolveType": "site/sections/Content/TextBanner.tsx",
       "title": "<h1 style=\"text-align: start\"><span style=\"color: #e3fe01\">OLYMPIKUS QU4DRA BR1</span></h1>",
       "background": "#00494d",
@@ -173,6 +161,18 @@
       },
       "invertOrderDesktop": false,
       "invertOrderMobile": true
+    },
+    {
+      "__resolveType": "site/sections/Newsletter/Newsletter.tsx",
+      "content": "<p>Cadastre-se em nossa newsletter para receber ofertas e novidades exclusivas sobre os produtos Olympikus.</p>",
+      "title": "Newsletter",
+      "plachegolder": "Digite aqui seu Email",
+      "cta": {
+        "label": "Cadastre-se",
+        "backgroundButton": "#000000",
+        "textColorButton": "#ffffff"
+      },
+      "background": "#b3b3b3"
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",

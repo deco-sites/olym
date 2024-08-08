@@ -457,7 +457,7 @@
         "__resolveType": "vtex/loaders/intelligentSearch/suggestions.ts"
       }
     },
-    "placeholder": "What are you looking for?"
+    "placeholder": "Buscar"
   },
   "alerts": {
     "0": "<p>Frete grátis para todo o Brasil acima de R$ 199,99</p>",

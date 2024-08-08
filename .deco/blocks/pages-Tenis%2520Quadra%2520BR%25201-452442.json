@@ -10,8 +10,8 @@
     },
     {
       "__resolveType": "site/sections/Content/TextBanner.tsx",
-      "title": "<h1 style=\"text-align: start\"><span style=\"color: #e3fe01\">OLYMPIKUS QU4DRA BR1</span></h1>",
-      "background": "#00494d"
+      "background": "#00494d",
+      "title": "<h1 style=\"text-align: start\"><span style=\"color: #e3fe01\">OLYMPIKUS QU4DRA BR1</span></h1>"
     },
     {
       "__resolveType": "site/sections/Images/VideoAndImage.tsx",
@@ -42,7 +42,7 @@
         "alt": "jogador "
       },
       "content": {
-        "title": "<p><span>Muito mais do que um tênis esportivo.</span></p>",
+        "title": "<p>Muito mais </p><p>do que um tênis</p><p>esportivo.</p>",
         "content": "<p><span>Uma expressão de excelência, paixão e legado para quem vive as 4 linhas. Co-criado junto com um dos maiores jogadores da história do vôlei mundial, Bruno Rezende ↗, o Olympikus QU4DRA BR1 foi desenvolvido com tudo o que você precisa para fazer bonito na hora do jogo e fora dele.<br><br>Resultado de uma parceria de longa data e da nossa constante evolução, o produto traz as melhores tecnologias diretamente do mundo das quadras para você mudar o rumo do jogo. Além disso, seu design fluido cria um visual único que se destaca e permite que você se movimente livremente, trocando de direção a qualquer momento e assumindo o controle da partida.</span></p>",
         "cta": {
           "href": "#",
@@ -58,7 +58,7 @@
       "__resolveType": "site/sections/Images/ContentAndImage.tsx",
       "content": {
         "content": "<p><span style=\"color: #e3fe01\">Uma expressão de excelência, paixão e legado para quem vive as 4 linhas. Co-criado junto com um dos maiores jogadores da história do vôlei mundial, Bruno Rezende ↗, o Olympikus QU4DRA BR1 foi desenvolvido com tudo o que você precisa para fazer bonito na hora do jogo e fora dele.<br><br>Resultado de uma parceria de longa data e da nossa constante evolução, o produto traz as melhores tecnologias diretamente do mundo das quadras para você mudar o rumo do jogo. Além disso, seu design fluido cria um visual único que se destaca e permite que você se movimente livremente, trocando de direção a qualquer momento e assumindo o controle da partida.</span></p>",
-        "title": "<p><span style=\"color: #e3fe01\">O nome do jogo</span></p>",
+        "title": "<p><span style=\"color: rgb(227, 254, 1)\"><span class=\"unset\">O nome</span> <span class=\"unset\">do jogo</span></span></p>",
         "cta": {
           "href": "#",
           "backgroundButton": "#000000",
@@ -138,7 +138,7 @@
       "__resolveType": "site/sections/Images/ContentAndImage.tsx",
       "content": {
         "content": "<p><span style=\"color: #e3fe01\">Se tem alguém que, assim como o Bruninho, nasceu pra jogar, é o Olympikus QU4DRA BR1. E é através da co-criação deste tênis que ele mantém seu legado vivo.</span></p><p></p><p><span style=\"color: #e3fe01\">O QU4DRA conecta a história do vôlei brasileiro à jornada de Bruninho com o objetivo de inspirar as futuras gerações a alcançarem suas maiores conquistas.</span></p><p></p><p><span style=\"color: #e3fe01\">SEJA PARTE DESTA HISTÓRIA E MUDE O RUMO DO JOGO DENTRO DAS 4 LINHAS.</span></p>",
-        "title": "<p><span style=\"color: #e3fe01\">Venha fazer parte dele</span></p>",
+        "title": "<p><span style=\"color: rgb(227, 254, 1)\">Venha fazer</span></p><p><span style=\"color: rgb(227, 254, 1)\">parte dele</span></p>",
         "cta": {
           "href": "#",
           "backgroundButton": "#000000",

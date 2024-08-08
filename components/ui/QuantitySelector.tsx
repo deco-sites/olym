@@ -19,10 +19,10 @@ function QuantitySelector(
   { id = useId(), disabled, ...props }: JSX.IntrinsicElements["input"],
 ) {
   return (
-    <div class="join border rounded w-full">
+    <div class="join w-full flex h-8 items-center">
       <button
         type="button"
-        class="btn btn-square btn-ghost no-animation"
+        class="btn btn-square btn-ghost no-animation h-8 w-7"
         hx-on:click={useScript(onClick, -1)}
         disabled={disabled}
       >
@@ -33,14 +33,14 @@ function QuantitySelector(
         class={clx(
           "flex-grow join-item",
           "flex justify-center items-center",
-          "has-[:invalid]:tooltip has-[:invalid]:tooltip-error has-[:invalid]:tooltip-open has-[:invalid]:tooltip-bottom",
+          "has-[:invalid]:tooltip has-[:invalid]:tooltip-error has-[:invalid]:tooltip-open has-[:invalid]:tooltip-bottom h-8",
         )}
       >
         <input
           id={id}
           class={clx(
             "input text-center flex-grow [appearance:textfield]",
-            "invalid:input-error",
+            "invalid:input-error bg-black text-white px-0 rounded-md h-8 w-8",
           )}
           disabled={disabled}
           inputMode="numeric"
@@ -50,7 +50,7 @@ function QuantitySelector(
       </div>
       <button
         type="button"
-        class="btn btn-square btn-ghost no-animation"
+        class="btn btn-square btn-ghost no-animation h-8 w-7"
         hx-on:click={useScript(onClick, 1)}
         disabled={disabled}
       >

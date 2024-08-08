@@ -108,6 +108,7 @@ const Desktop = (
               </svg>
             </button>
           </form>
+          <SignIn variant="desktop" />
           <div class="flex justify-center items-center cursor-pointer">
             <svg
               width="19"
@@ -122,7 +123,6 @@ const Desktop = (
               />
             </svg>
           </div>
-          <SignIn variant="desktop" />
           <Bag />
         </div>
       </div>
@@ -280,5 +280,9 @@ export default function Section({ variant, ...props }: SectionProps) {
     return <Menu navItems={props.navItems ?? []} />;
   }
 
+  return <Header {...props} />;
+}
+
+export function LoadingFallback(props: Props) {
   return <Header {...props} />;
 }

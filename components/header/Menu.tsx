@@ -150,7 +150,7 @@ function Menu({ navItems }: Props) {
           <a
             href="/login"
             aria-label="Login"
-            class="btn btn-sm font-thin btn-ghost no-animation btn-square"
+            class="btn btn-sm font-thin btn-ghost no-animation btn-square px-0"
           >
             <svg
               width="20"

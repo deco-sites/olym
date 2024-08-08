@@ -80,7 +80,7 @@ function Aside(
   return (
     <div
       data-aside
-      class="bg-base-100 grid grid-rows-[auto_1fr] h-full divide-y relative"
+      class="bg-base-100 flex flex-col h-full divide-y relative"
       style={{ maxWidth: "100vw" }}
     >
       <label

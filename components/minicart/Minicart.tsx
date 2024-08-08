@@ -1,10 +1,9 @@
 import { useScript } from "deco/hooks/useScript.ts";
 import { AppContext } from "../../apps/site.ts";
-import { MINICART_DRAWER_ID, MINICART_FORM_ID } from "../../constants.ts";
+import { MINICART_FORM_ID } from "../../constants.ts";
 import { clx } from "../../sdk/clx.ts";
 import { formatPrice } from "../../sdk/format.ts";
 import { useComponent } from "../../sections/Component.tsx";
-import Coupon from "./Coupon.tsx";
 import FreeShippingProgressBar from "./FreeShippingProgressBar.tsx";
 import CartItem, { Item } from "./Item.tsx";
 
@@ -117,7 +116,6 @@ export default function Cart({
       discounts,
       locale,
       currency,
-      enableCoupon = true,
       freeShippingTarget,
       checkoutHref,
     },
@@ -128,7 +126,7 @@ export default function Cart({
   return (
     <>
       <form
-        class="contents"
+        class="contents font-Signal"
         id={MINICART_FORM_ID}
         hx-sync="this:replace"
         hx-trigger="submit, change delay:300ms"
@@ -138,6 +136,11 @@ export default function Cart({
         hx-post={useComponent(import.meta.url)}
         hx-swap="outerHTML"
       >
+        <div class="bg-primary text-white px-4 py-2 text-2xl w-full ">
+          <span class="text-start">
+            Carrinho {count > 0 ? `(${count})` : ""}
+          </span>
+        </div>
         {/* Button to submit the form */}
         <button hidden autofocus />
 
@@ -169,32 +172,23 @@ export default function Cart({
         >
           {count === 0
             ? (
-              <div class="flex flex-col gap-6">
-                <span class="font-medium text-2xl">Sua sacola está vazia</span>
-                <label
-                  for={MINICART_DRAWER_ID}
-                  class="btn btn-outline no-animation"
-                >
-                  Escolher produtos
-                </label>
+              <div class="flex items-start justify-center h-full bg-white w-full">
+                <div class=" p-4 w-full bg-[#f5f5f5] shadow-md">
+                  <h2 class="text-lg font-normal text-black">
+                    Seu carrinho está vazio!
+                  </h2>
+                  <p class="text-sm font-normal text-black mt-2">
+                    Navegue pelo site e adicione os produtos que deseja.
+                  </p>
+                </div>
               </div>
             )
             : (
-              <>
-                {/* Free Shipping Bar */}
-                <div class="px-2 py-4 w-full">
-                  <FreeShippingProgressBar
-                    total={total}
-                    locale={locale}
-                    currency={currency}
-                    target={freeShippingTarget}
-                  />
-                </div>
-
+              <div class="w-full h-full flex justify-between flex-col">
                 {/* Cart Items */}
                 <ul
                   role="list"
-                  class="mt-6 px-2 flex-grow overflow-y-auto flex flex-col gap-6 w-full"
+                  class="mt-6 px-4 flex-grow overflow-y-auto flex flex-col gap-6 w-full h-full"
                 >
                   {items.map((item, index) => (
                     <li>
@@ -208,57 +202,68 @@ export default function Cart({
                   ))}
                 </ul>
 
-                {/* Cart Footer */}
-                <footer class="w-full">
-                  {/* Subtotal */}
-                  <div class="border-t border-base-200 py-2 flex flex-col">
-                    {discounts > 0 && (
-                      <div class="flex justify-between items-center px-4">
-                        <span class="text-sm">Descontos</span>
-                        <span class="text-sm">
-                          {formatPrice(discounts, currency, locale)}
-                        </span>
+                <div class="flex flex-col w-full h-auto absolute bottom-0 ">
+                  {/* Free Shipping Bar */}
+                  <div class="py-4 px-6 w-full border-t border-[#c2c2c2]">
+                    <FreeShippingProgressBar
+                      total={total}
+                      locale={locale}
+                      currency={currency}
+                      target={freeShippingTarget}
+                    />
+                  </div>
+
+                  {/* Cart Footer */}
+                  <footer class="w-full bg-[#f5f5f5] border-t border-[#c2c2c2]">
+                    {/* Subtotal */}
+                    <div class="py-2 flex flex-col">
+                      {discounts > 0 && (
+                        <div class="flex justify-between items-center px-4">
+                          <span class="text-xs ">Descontos</span>
+                          <span class=" text-base font-bold text-black">
+                            {formatPrice(discounts, currency, locale)}
+                          </span>
+                        </div>
+                      )}
+                      <div class="pt-4 px-6 w-full flex justify-between text-sm">
+                        <span class="text-xs">Subtotal</span>
+                        <output
+                          class="text-base font-bold"
+                          form={MINICART_FORM_ID}
+                        >
+                          {formatPrice(subtotal, currency, locale)}
+                        </output>
                       </div>
-                    )}
-                    <div class="w-full flex justify-between px-4 text-sm">
-                      <span>Subtotal</span>
-                      <output form={MINICART_FORM_ID}>
-                        {formatPrice(subtotal, currency, locale)}
-                      </output>
                     </div>
-                    {enableCoupon && <Coupon coupon={coupon} />}
-                  </div>
 
-                  {/* Total */}
-                  <div class="border-t border-base-200 pt-4 flex flex-col justify-end items-end gap-2 mx-4">
-                    <div class="flex justify-between items-center w-full">
-                      <span>Total</span>
-                      <output
-                        form={MINICART_FORM_ID}
-                        class="font-medium text-xl"
+                    {/* Total */}
+                    <div class="pb-4 px-6 flex flex-col justify-end items-end gap-2 ">
+                      <div class="flex justify-between items-center w-full">
+                        <span class="text-xs">Total</span>
+                        <output
+                          form={MINICART_FORM_ID}
+                          class="text-base font-bold text-black"
+                        >
+                          {formatPrice(total, currency, locale)}
+                        </output>
+                      </div>
+                    </div>
+
+                    <div class="w-full">
+                      <a
+                        class="btn uppercase bg-black text-base-100 w-full no-animation rounded-none lg:h-[86px]"
+                        href={checkoutHref}
+                        hx-on:click={useScript(sendBeginCheckoutEvent)}
                       >
-                        {formatPrice(total, currency, locale)}
-                      </output>
+                        <span class="[.htmx-request_&]:hidden font-normal text-lg">
+                          Finalizar Comprar
+                        </span>
+                        <span class="[.htmx-request_&]:inline hidden loading loading-spinner" />
+                      </a>
                     </div>
-                    <span class="text-sm text-base-300">
-                      Taxas e fretes serão calculados no checkout
-                    </span>
-                  </div>
-
-                  <div class="p-4">
-                    <a
-                      class="btn btn-primary w-full no-animation"
-                      href={checkoutHref}
-                      hx-on:click={useScript(sendBeginCheckoutEvent)}
-                    >
-                      <span class="[.htmx-request_&]:hidden">
-                        Begin Checkout
-                      </span>
-                      <span class="[.htmx-request_&]:inline hidden loading loading-spinner" />
-                    </a>
-                  </div>
-                </footer>
-              </>
+                  </footer>
+                </div>
+              </div>
             )}
         </div>
       </form>

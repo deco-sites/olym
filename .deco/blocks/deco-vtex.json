@@ -2,12 +2,14 @@
   "__resolveType": "site/apps/deco/vtex.ts",
   "salesChannel": "1",
   "defaultSegment": {
-    "channelPrivacy": "public"
+    "channelPrivacy": "public",
+    "cultureInfo": "pt-BR",
+    "countryCode": "BRA",
+    "currencySymbol": "R$",
+    "currencyCode": "BRL",
+    "channel": "1"
   },
   "platform": "vtex",
   "publicUrl": "www.olympikus.com.br",
-  "account": "olympikus",
-  "appKey": {
-    "__resolveType": "website/loaders/secret.ts"
-  }
+  "account": "olympikus"
 }

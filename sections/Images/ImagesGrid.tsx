@@ -166,7 +166,7 @@ export default function ImagesGrid(props: Props) {
               duration={animation?.duration}
             >
               <span
-                class="font-FKOlympikus text-white text-[50px] leading-[42px] md:text-6xl md:leading-[1] lg:text-[65px] text-center px-6 md:px-0 block"
+                class="font-FKOlympikus text-white text-[50px] leading-[42px] md:text-6xl md:leading-[1] lg:text-[65px] text-center block"
                 dangerouslySetInnerHTML={{ __html: title }}
               >
               </span>
@@ -174,7 +174,7 @@ export default function ImagesGrid(props: Props) {
           )
           : (
             <span
-              class="font-FKOlympikus text-white text-[50px] leading-[42px] md:text-6xl md:leading-[1] lg:text-[65px] text-center px-6 md:px-0 block"
+              class="font-FKOlympikus text-white text-[50px] leading-[42px] md:text-6xl md:leading-[1] lg:text-[65px] text-center block"
               dangerouslySetInnerHTML={{ __html: title }}
             >
             </span>

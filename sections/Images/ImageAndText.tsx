@@ -82,7 +82,7 @@ export default function ImageAndText({
           >
             <div class=" relative inset-0 flex flex-col items-center justify-center lg:p-4 gap-5 lg:gap-10 p-10 max-w-[1279px] mx-auto h-full">
               <h2
-                class="font-FKOlympikus text-6.5xl text-center md:text-7xl lg:text-7.5xl -mt-4 pb-4 uppercase"
+                class="font-FKOlympikus text-[50px] leading-[42px] text-center md:text-7xl lg:text-7.5xl -mt-4 pb-4 uppercase"
                 dangerouslySetInnerHTML={{ __html: title }}
               >
               </h2>
@@ -102,7 +102,7 @@ export default function ImageAndText({
         : (
           <div class="absolute inset-0 flex flex-col items-center justify-center lg:p-4 gap-5 lg:gap-10 p-10 max-w-[1279px] mx-auto">
             <h2
-              class="font-FKOlympikus text-6.5xl text-center md:text-7xl lg:text-7.5xl -mt-4 pb-4 uppercase"
+              class="font-FKOlympikus text-[50px] leading-[42px] text-center md:text-7xl lg:text-7.5xl -mt-4 pb-4 uppercase"
               dangerouslySetInnerHTML={{ __html: title }}
             >
             </h2>

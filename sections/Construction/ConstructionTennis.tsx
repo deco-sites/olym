@@ -210,7 +210,7 @@ export default function ConstructionTennis(props: Props) {
             style={`box-shadow: 1px 40px 30px ${background};`}
           >
             <span
-              class="font-FKOlympikus text-[65px] leading-[55px] w-full text-left z-10 "
+              class="font-FKOlympikus text-[50px] leading-[42px] lg:text-[65px] lg:leading-[55px] w-full text-left z-10 "
               dangerouslySetInnerHTML={{ __html: title }}
             >
             </span>
@@ -354,7 +354,7 @@ export default function ConstructionTennis(props: Props) {
     >
       <div class="w-full h-full max-w-[1270px] min-h-[660px] :min-h-[560px]  mx-auto text-white flex flex-col items-center justify-start relative">
         <span
-          class="font-FKOlympikus text-[65px] leading-[55px] w-full text-left z-10 "
+          class="font-FKOlympikus text-[50px] leading-[42px] lg:text-[65px] lg:leading-[55px] w-full text-left z-10"
           dangerouslySetInnerHTML={{ __html: title }}
         >
         </span>

@@ -117,6 +117,7 @@ i.i-custom {
   font-weight: 700;
   position: relative;
   bottom: 1rem;
+  line-height: 10px;
 }
 
 @media (min-width: 760px) {
@@ -128,5 +129,11 @@ i.i-custom {
 @media (min-width: 1024px) {
   span.unset {
     display: block;
+  }
+}
+
+@media (max-width: 760px) {
+  br.none-mobile {
+    display: none;
   }
 }

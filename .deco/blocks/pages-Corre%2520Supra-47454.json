@@ -74,8 +74,8 @@
     },
     {
       "__resolveType": "site/sections/Content/TextEmphais.tsx",
-      "title": "<p>&lt;/CORRA_SUPRA&gt;</p>",
-      "content": "<p>O SUPERTÊNIS BRASILEIRO</p><p>COM AS MELHORES TECNOLOGIAS</p><p>DO MUNDO DA CORRIDA.</p>",
+      "title": "<p><span style=\"color: #8e8e8e\">&lt;/CORRA_SUPRA&gt;</span></p>",
+      "content": "<p>O SUPERTÊNIS BRASILEIRO <br class=\"none-mobile\"> COM AS MELHORES TECNOLOGIAS <br class=\"none-mobile\"> DO MUNDO DA CORRIDA.</p>",
       "animation": {
         "animationType": "fade-in-bottom",
         "duration": "0.8"
@@ -180,7 +180,7 @@
           "position": 4
         },
         {
-          "content": "<p>&lt;/ENTRESSOLA EXTERNA NT-X: 100% PEBAX® EXPANDIDO COM NITROGÊNIO</p><p><span style=\"color: #479311\">○</span> EFEITO CAMA ELÁSTICA</p><p><span style=\"color: #5cd903\">○</span> NÍVEL MÁXIMO DE AMORTECIMENTO</p><p><span style=\"color: #5ddc02\">○</span> DROP 8MM</p><p></p>",
+          "content": "<p>&lt;/ENTRESSOLA EXTERNA NT-X: 100% PEBAX<i class=\"i-custom\">®</i> <br class=\"none-mobile\"> EXPANDIDO COM NITROGÊNIO</p><p><span style=\"color: #479311\">○</span> EFEITO CAMA ELÁSTICA</p><p><span style=\"color: #5cd903\">○</span> NÍVEL MÁXIMO DE AMORTECIMENTO</p><p><span style=\"color: #5ddc02\">○</span> DROP 8MM</p><p></p>",
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/4178a994-b646-4115-864f-598179d8bb9b",
           "imageOpacity": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/cf6cdefc-2868-4fa9-a1ea-244d6ac0d578",
           "alt": "tennis",
@@ -285,7 +285,7 @@
         "duration": "0.8"
       },
       "title": "<p><span style=\"color: rgb(141, 141, 141)\">&lt;/CORRA_SUPRA&gt;</span></p>",
-      "content": "<p><span>ESTUDOS, DESEVOLVIMENTO, INOVAÇÃO E DESIGN CONCENTRADOS EM APENAS 217g.</span></p>",
+      "content": "<p><span>ESTUDOS, DESEVOLVIMENTO, <br class=\"none-mobile\"> INOVAÇÃO E DESIGN CONCENTRADOS <br class=\"none-mobile\"> EM APENAS 217g.</span></p>",
       "button": {},
       "backgroundSection": "#262626",
       "gradineColorText": {
@@ -469,7 +469,7 @@
       "animation": {
         "animationType": "fade-in-bottom"
       },
-      "title": "<p>ENTRESSOLA INTERNA COM NT-X: 100% PEBAX®</p><p>EXPANDIDO COM NITROGÊNIO SEM COMPRESSÃO</p>",
+      "title": "<p>ENTRESSOLA INTERNA COM NT-X: 100% PEBAX<i class=\"i-custom\">®</i> <br class=\"none-mobile\"> EXPANDIDO COM NITROGÊNIO SEM COMPRESSÃO</p>",
       "gridTemplate": "'img-1 img-1' 'img-2 img-2' 'img-3 img-3';",
       "images": [
         {
@@ -538,7 +538,7 @@
       "animation": {
         "animationType": "fade-in-bottom"
       },
-      "title": "<p><span>PLACA DE IMPULSÃO INÉDITA: <br>CARBONO + GRAFENO</span></p>",
+      "title": "<p><span>PLACA DE IMPULSÃO INÉDITA: <br class=\"none-mobile\">CARBONO + GRAFENO</span></p>",
       "gridTemplate": "'img-1 img-1' 'img-2 img-2' 'img-3 img-3';",
       "images": [
         {
@@ -625,7 +625,7 @@
         "animationType": "fade-in-bottom"
       },
       "showAnimaton": true,
-      "title": "<p><span>ENTRESSOLA EXTERNA NT-X: <br>100% PEBAX® EXPANDIDO COM NITROGÊNIO</span></p>",
+      "title": "<p><span>ENTRESSOLA EXTERNA NT-X: <br class=\"none-mobile\"> 100% PEBAX<i class=\"i-custom\">®</i> EXPANDIDO COM NITROGÊNIO</span></p>",
       "gridTemplate": "'img-1 img-1' 'img-2 img-2' 'img-3 img-3';",
       "images": [
         {
@@ -714,7 +714,7 @@
         "animationType": "fade-in-bottom"
       },
       "showAnimaton": true,
-      "title": "<p><span>SOLADO DE BORRACHA</span></p><p><span>COCRIADO COM A MICHELIN</span></p>",
+      "title": "<p>SOLADO DE BORRACHA <br class=\"node-mobile\">COCRIADO COM A MICHELIN</p>",
       "gridTemplate": "'img-1 img-1' 'img-2 img-2' 'img-3 img-3';",
       "images": [
         {

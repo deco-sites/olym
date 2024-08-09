@@ -195,7 +195,7 @@ export default function TennnisSlider(props: Props) {
       style={{ background: background }}
     >
       <span
-        class="font-FKOlympikus text-[65px] leading-[55px] w-full text-left z-10 pb-1 max-w-[1270px] mx-auto px-10"
+        class="font-FKOlympikus text-[50px] leading-[42px] lg:text-[65px] lg:leading-[55px] w-full text-left z-10 pb-1 max-w-[1270px] mx-auto px-10 lg:px-0"
         style={` background: linear-gradient(270deg,${gradineColorText?.secondColor} -1.04%,${gradineColorText?.primaryColor} 100.71%); -webkit-background-clip: text;  -webkit-text-fill-color: transparent`}
         dangerouslySetInnerHTML={{ __html: title }}
       >

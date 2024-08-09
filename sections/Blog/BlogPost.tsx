@@ -153,7 +153,7 @@ export default function BlogPosts(props: Props) {
           </span>
         )}
         <span
-          class="font-FKOlympikus text-[65px] leading-[55px] w-full text-left z-10 pb-1 max-w-[833px] uppercase px-10 xl:px-12 mb-8 md:mb-20 "
+          class="font-FKOlympikus text-[50px] leading-[42px] lg:text-[65px] lg:leading-[55px] w-full text-left z-10 pb-1 max-w-[833px] uppercase px-10 xl:px-12 mb-8 md:mb-20 "
           dangerouslySetInnerHTML={{ __html: title }}
           style={` background: linear-gradient(270deg,${gradineColorText.primaryColor} -1.04%,${gradineColorText.secondColor} 100.71%); -webkit-background-clip: text;  -webkit-text-fill-color: transparent`}
         >

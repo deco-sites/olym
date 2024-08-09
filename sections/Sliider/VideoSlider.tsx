@@ -135,7 +135,7 @@ function Item(
               <Slider.Animation
                 index={index}
                 class={`
-                flex flex-col gap-5 md:gap-10 justify-center items-center max-w-[1056px] mx-auto opacity-1 data-[disabled]:opacity-0 ${
+                flex flex-col gap-5 md:gap-10 justify-center items-center mx-auto opacity-1 data-[disabled]:opacity-0 ${
                   ANIMATIONS[animation || "fade-in-right"]
                 }`}
               >
@@ -145,7 +145,7 @@ function Item(
                 >
                 </h2>
                 <span
-                  class="font-FKOlympikus text-6.5xl text-center md:text-7xl lg:text-7.5xl -mt-4 pb-4 uppercase"
+                  class="font-FKOlympikus text-[60px] leading-[50px] text-center md:text-7xl lg:text-7.5xl -mt-4 pb-4 uppercase"
                   dangerouslySetInnerHTML={{ __html: content }}
                 >
                 </span>
@@ -178,7 +178,7 @@ function Item(
             <Slider.Animation
               index={index}
               class={`
-            flex flex-col gap-5 md:gap-10 justify-center items-center max-w-[1056px] mx-auto opacity-1 data-[disabled]:opacity-0 ${
+            flex flex-col gap-5 md:gap-10 justify-center items-center mx-auto opacity-1 data-[disabled]:opacity-0 ${
                 ANIMATIONS[animation || "fade-in-right"]
               }`}
             >
@@ -188,7 +188,7 @@ function Item(
               >
               </h2>
               <span
-                class="font-FKOlympikus text-6.5xl text-center md:text-7xl lg:text-7.5xl -mt-4 pb-4 uppercase"
+                class="font-FKOlympikus text-[60px] leading-[50px] text-center md:text-7xl lg:text-7.5xl -mt-4 pb-4 uppercase"
                 dangerouslySetInnerHTML={{ __html: content }}
               >
               </span>

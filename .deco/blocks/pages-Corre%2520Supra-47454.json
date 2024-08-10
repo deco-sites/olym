@@ -146,7 +146,7 @@
       "step": [
         {
           "position": 1,
-          "alt": "tennis",
+          "alt": "tenis",
           "content": "<p><span>&lt;/CABEDAL OXITEC 3.0<br><br></span><span style=\"color: #5ddc02\">+</span><span> LEVE<br></span><span style=\"color: #5ddc02\">+</span><span> AJUSTÁVEL<br></span><span style=\"color: #5ddc02\">+</span><span> RESPIRÁVEL</span></p>",
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/a7ce8ca6-a29c-47d3-9387-a1f738b991d2",
           "imageOpacity": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/e82c6b2c-920b-4b56-acfb-6e742988803b"
@@ -155,42 +155,42 @@
           "content": "<p>&lt;/NOVO CADARÇO COM O COM O MESMO AJUSTE DO INÍCIO AO FIM DA CORRIDA</p>",
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/24e50093-291e-49c8-9210-39b69a2485a7",
           "imageOpacity": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/2392b405-3bac-4660-a654-518ab679c011",
-          "alt": "tennis",
+          "alt": "tenis",
           "position": 1
         },
         {
-          "content": "<p>&lt;/PALMILHA NT-X</p><p><span style=\"color: #5cdb02\">+</span> LEVE</p><p><span style=\"color: #5ddc02\">+</span> RESILIENTE</p><p><span style=\"color: #5bd703\">-</span> DEFORMAÇÃO DINÂMICA</p><p></p>",
+          "content": "<p>&lt;/PALMILHA NT-X</p><br><p><span style=\"color: rgb(92, 219, 2)\">+</span> LEVE</p><p><span style=\"color: rgb(93, 220, 2)\">+</span> RESILIENTE</p><p><span style=\"color: rgb(91, 215, 3)\">-</span> DEFORMAÇÃO DINÂMICA</p><p></p>",
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/b0f80aca-fbfc-4b1b-a5ca-d3941feb4836",
           "imageOpacity": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/5b0ba0ec-af86-4580-8670-1ca076cd34a4",
-          "alt": "tennis",
+          "alt": "tenis",
           "position": 2
         },
         {
-          "content": "<p>&lt;/ENTRESSOLA INTERNA COM NT-X: 100% PEBAX<i>®</i> EXPANDIDO COM NITROGÊNIO SEM COMPRESSÃO</p><p><span style=\"color: #5ddc02\">+</span> LEVE</p><p><span style=\"color: #5ddc02\">+</span> RESILIENTE</p><p></p>",
+          "content": "<p>&lt;/ENTRESSOLA INTERNA COM NT-X: 100% PEBAX<em>®</em> EXPANDIDO COM NITROGÊNIO SEM COMPRESSÃO</p><br><p><span style=\"color: rgb(93, 220, 2)\">+</span> LEVE</p><p><span style=\"color: rgb(93, 220, 2)\">+</span> RESILIENTE</p><p></p>",
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/5f98f057-b94a-48a5-bab3-669a2c2abcb3",
           "imageOpacity": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/29308104-1e78-433a-968c-14aa71f11cbd",
-          "alt": "tennis",
+          "alt": "tenis",
           "position": 3
         },
         {
-          "content": "<p>&lt;/NOVA PLACA DE IMPULSÃO INÉDITA: CARBONO + GRAFENO</p><p></p><p><span style=\"color: #5ddc02\">ATÉ 3X </span>MAIS PROPULSÃO EM COMPARAÇÃO ÀS FIBRAS CURTAS</p><p><span style=\"color: #53c62d\">ATÉ 3X </span>MAIS RESISTÊNCIA EM COMPARAÇÃO ÀS FIBRAS CURTAS</p><p></p>",
+          "content": "<p>&lt;/NOVA PLACA DE IMPULSÃO INÉDITA: CARBONO + GRAFENO</p><br><p><span style=\"color: #5ddc02\">ATÉ 3X </span>MAIS PROPULSÃO EM COMPARAÇÃO ÀS FIBRAS CURTAS</p><p><span style=\"color: #53c62d\">ATÉ 3X </span>MAIS RESISTÊNCIA EM COMPARAÇÃO ÀS FIBRAS CURTAS</p><p></p>",
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/3f3a0f98-31b8-4594-814d-f0d1a2cdd0a5",
           "imageOpacity": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/7361d913-ab98-4f45-8e7e-e69ceadb0b07",
-          "alt": "tennis",
+          "alt": "tenis",
           "position": 4
         },
         {
-          "content": "<p>&lt;/ENTRESSOLA EXTERNA NT-X: 100% PEBAX® <br class=\"none-mobile\"> EXPANDIDO COM NITROGÊNIO</p><p><span style=\"color: #479311\">○</span> EFEITO CAMA ELÁSTICA</p><p><span style=\"color: #5cd903\">○</span> NÍVEL MÁXIMO DE AMORTECIMENTO</p><p><span style=\"color: #5ddc02\">○</span> DROP 8MM</p><p></p>",
+          "content": "<p>&lt;/ENTRESSOLA EXTERNA NT-X: 100% PEBAX® <br>EXPANDIDO COM NITROGÊNIO</p><p><br></p><p><span style=\"color: rgb(71, 147, 17)\">○</span> EFEITO CAMA ELÁSTICA</p><p><span style=\"color: rgb(92, 217, 3)\">○</span> NÍVEL MÁXIMO DE AMORTECIMENTO</p><p><span style=\"color: rgb(93, 220, 2)\">○</span> DROP 8MM</p><p></p>",
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/4178a994-b646-4115-864f-598179d8bb9b",
           "imageOpacity": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/cf6cdefc-2868-4fa9-a1ea-244d6ac0d578",
-          "alt": "tennis",
+          "alt": "tenis",
           "position": 5
         },
         {
-          "content": "<p>&lt;/SOLADO DE BORRACHA</p><p>COCRIADO COM A MICHELIN</p><p></p><p><span style=\"color: #5cd902\">+</span> ADERÊNCIA</p><p><span style=\"color: #5cd703\">+</span> DURABILIDADE</p>",
+          "content": "<p>&lt;/SOLADO DE BORRACHA</p><p>COCRIADO COM A MICHELIN</p><br><p><span style=\"color: #5cd902\">+</span> ADERÊNCIA</p><p><span style=\"color: #5cd703\">+</span> DURABILIDADE</p>",
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/5d7cdb4a-c87d-4dcb-adac-9fc0915d8543",
           "imageOpacity": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/9aedcba1-4df4-404b-9361-9b4c31bd34e9",
-          "alt": "tennis",
+          "alt": "tenis",
           "position": 6
         }
       ],

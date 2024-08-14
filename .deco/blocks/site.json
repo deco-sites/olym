@@ -2,11 +2,11 @@
   "seo": {
     "type": "website",
     "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/588713ea-ae99-407d-b32c-a0b4ed82437b",
-    "title": "Storefront",
+    "title": "Olympikus Brasil ",
     "jsonLDs": [],
     "noIndexing": false,
-    "description": "Build profitable websites with deco.cx",
-    "titleTemplate": "Lançamento Olympikus QU4DRA BR1 | Olympikus Brasil ",
+    "description": "Olympikus Brasil - Tênis, Roupas e Artigos Esportivos",
+    "titleTemplate": "%s | Olympikus Brasil ",
     "descriptionTemplate": "%s | Olympikus Brasil ",
     "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/1c162d46-2acb-4d21-bf6f-57d3aa54eb9b"
   },

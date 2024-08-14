@@ -3,6 +3,19 @@
   "path": "/corre_supra",
   "sections": [
     {
+      "__resolveType": "commerce/sections/Seo/SeoPLPV2.tsx",
+      "title": "Corre Supra",
+      "description": "Corre Supra",
+      "jsonLD": {
+        "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+        "query": "corre supra",
+        "count": 6,
+        "sort": "price:desc",
+        "fuzzy": "automatic",
+        "selectedFacets": []
+      }
+    },
+    {
       "__resolveType": "site/sections/Header/HeaderLP.tsx",
       "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/fb82fe45-843e-401d-9810-501fc485da46",
       "cta": "Comprar agora",
@@ -43,14 +56,14 @@
     },
     {
       "__resolveType": "site/sections/Animation/HeroAnimationImages.tsx",
-      "primaryImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/7c385203-d77a-4a3e-8b4a-cc31e6db4695",
-      "altPrimary": "tenis traz",
-      "secondImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/e7996cdf-5851-4aed-ad1d-ae7b356267de",
-      "altSecond": "tenis frente",
       "animation": {
         "animationType": "fade-in-bottom",
         "duration": "0.8"
       },
+      "primaryImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/7c385203-d77a-4a3e-8b4a-cc31e6db4695",
+      "altPrimary": "tenis traz",
+      "secondImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/e7996cdf-5851-4aed-ad1d-ae7b356267de",
+      "altSecond": "tenis frente",
       "images": [
         {
           "animation": {
@@ -74,31 +87,31 @@
     },
     {
       "__resolveType": "site/sections/Content/TextEmphais.tsx",
-      "title": "<p><span style=\"color: #8e8e8e\">&lt;/CORRA_SUPRA&gt;</span></p>",
-      "content": "<p>O SUPERTÊNIS BRASILEIRO <br class=\"none-mobile\"> COM AS MELHORES TECNOLOGIAS <br class=\"none-mobile\"> DO MUNDO DA CORRIDA.</p>",
       "animation": {
         "animationType": "fade-in-bottom",
         "duration": "0.8"
       },
+      "title": "<p><span style=\"color: #8e8e8e\">&lt;/CORRA_SUPRA&gt;</span></p>",
+      "content": "<p>O SUPERTÊNIS BRASILEIRO <br class=\"none-mobile\"> COM AS MELHORES TECNOLOGIAS <br class=\"none-mobile\"> DO MUNDO DA CORRIDA.</p>",
+      "showAnimaton": false,
       "button": {
         "label": "Comprar agora",
         "href": "#"
       },
-      "backgroundSection": "#d9d9d9",
       "gradineColorText": {
         "primaryColor": "#858585",
         "secondColor": "#afafaf"
       },
-      "showAnimaton": false
+      "backgroundSection": "#d9d9d9"
     },
     {
       "__resolveType": "site/sections/Content/TextAndVideo.tsx",
+      "title": "<p><span style=\"color: #ffffff\">&lt;/CORRE_SUPRA&gt;</span></p>",
+      "content": "<p>TECNOLOGIA, PERFORMANCE &amp; DESIGN.</p>",
       "animation": {
         "animationType": "fade-in-bottom",
         "duration": "0.8"
       },
-      "title": "<p><span style=\"color: #ffffff\">&lt;/CORRE_SUPRA&gt;</span></p>",
-      "content": "<p>TECNOLOGIA, PERFORMANCE &amp; DESIGN.</p>",
       "showAnimaton": true,
       "button": {
         "label": "Assista ao vídeo",
@@ -199,6 +212,11 @@
     {
       "__resolveType": "site/sections/Sliider/TennisSlider.tsx",
       "title": "<p><span>AS CORES DA VELOCIDADE</span></p>",
+      "gradineColorText": {
+        "primaryColor": "#858585",
+        "secondColor": "#ebebeb"
+      },
+      "id": "cores",
       "slider": [
         {
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/42a7ad6a-54f2-4a6c-b6c3-bb16dac9f716",
@@ -270,12 +288,7 @@
         "label": "Em Breve",
         "href": "#"
       },
-      "gradineColorText": {
-        "primaryColor": "#858585",
-        "secondColor": "#ebebeb"
-      },
-      "background": "#d9d9d9",
-      "id": "cores"
+      "background": "#d9d9d9"
     },
     {
       "__resolveType": "site/sections/Content/TextEmphais.tsx",
@@ -297,10 +310,10 @@
     {
       "__resolveType": "site/sections/Images/ImagesGrid.tsx",
       "background": "#262626",
-      "showAnimaton": true,
       "animation": {
         "animationType": "fade-in-bottom"
       },
+      "showAnimaton": true,
       "title": "<p><span>O CABEDAL TECNOLÓGICO QUE NÃO LACEIA</span></p>",
       "gridTemplate": "'img-1 img-1' 'img-2 img-2' 'img-3 img-3';",
       "images": [
@@ -391,10 +404,10 @@
     {
       "__resolveType": "site/sections/Images/ImagesGrid.tsx",
       "background": "#262626",
+      "showAnimaton": true,
       "animation": {
         "animationType": "fade-in-bottom"
       },
-      "showAnimaton": true,
       "title": "<p>PALMILHA NT-X</p>",
       "gridTemplate": "'img-1 img-1' 'img-2 img-2' 'img-3 img-3';",
       "images": [
@@ -465,10 +478,10 @@
     {
       "__resolveType": "site/sections/Images/ImagesGrid.tsx",
       "background": "#262626",
-      "showAnimaton": false,
       "animation": {
         "animationType": "fade-in-bottom"
       },
+      "showAnimaton": false,
       "title": "<p>ENTRESSOLA INTERNA COM NT-X: 100% PEBAX<i class=\"i-custom\">®</i> <br class=\"none-mobile\"> EXPANDIDO COM NITROGÊNIO SEM COMPRESSÃO</p>",
       "gridTemplate": "'img-1 img-1' 'img-2 img-2' 'img-3 img-3';",
       "images": [
@@ -513,10 +526,10 @@
     {
       "__resolveType": "site/sections/Content/DescriptionAndBenefits.tsx",
       "background": "#262626",
+      "showAnimaton": true,
       "animation": {
         "animationType": "fade-in-bottom"
       },
-      "showAnimaton": true,
       "description": "<p><span>O primeiro modelo produzido no Brasil com entressola feita com 100% de </span><span style=\"color: #5ddc02\">Pebax®</span><span> (SCF - super critical foam), uma super espuma presente nos melhores supertênis do mundo e um material superior ao EVA. <br><br>O Corre Supra possui duas camadas de entressola, onde a primeira — logo acima da placa de impulsão — utiliza a expansão de lâminas de </span><span style=\"color: #5ddc02\">Pebax®</span><span> sem nenhuma compressão, resultando num material mais nobre.</span></p>",
       "emphasis": [
         {
@@ -600,10 +613,10 @@
     {
       "__resolveType": "site/sections/Content/DescriptionAndBenefits.tsx",
       "background": "#262626",
-      "showAnimaton": true,
       "animation": {
         "animationType": "fade-in-bottom"
       },
+      "showAnimaton": true,
       "description": "<p><span>A tecnologia exclusiva Olympikus </span><span style=\"color: #7ad214\">Carbon G</span><span> é o resultado de uma placa de impulsão de carbono de primeira linha com revestimento em grafeno, essa junção de materiais trouxe resultados surpreendentes nos testes já realizados.<br><br>A aplicação da técnica de fibras contínuas de carbono em sua composição promove maior estabilidade e aumenta o retorno de energia na passada.<br><br>O revestimento em grafeno traz maior rigidez à placa, resultando em uma propulsão maior nos pés do corredor.</span></p>",
       "emphasis": [
         {
@@ -839,6 +852,7 @@
     },
     {
       "__resolveType": "site/sections/Content/DescriptionAndBenefits.tsx",
+      "showAnimaton": true,
       "description": "<p><span>O cadarço foi desenvolvido pra criar um ajuste perfeito e individual aos pés dos corredores, excluindo a necessidade de um nó duplo. <br><br>Seu design com ranhuras e ondulações laterais promovem um maior atrito e encaixe entre si, evitando que o cadarço ceda ou desamarre durante a corrida.</span></p>",
       "background": "#262626",
       "emphasis": [
@@ -855,11 +869,11 @@
       ],
       "animation": {
         "animationType": "fade-in-bottom"
-      },
-      "showAnimaton": true
+      }
     },
     {
       "__resolveType": "site/sections/Sliider/VideoSlider.tsx",
+      "idS": "midia",
       "interval": 2,
       "slides": [
         {
@@ -994,13 +1008,12 @@
       "animationE": {
         "animationType": "fade-in-bottom"
       },
-      "showAnimaton": false,
-      "idS": "midia"
+      "showAnimaton": false
     },
     {
       "__resolveType": "site/sections/Blog/BlogPost.tsx",
-      "preTitle": "<p><span>&lt;/MÍDIA&gt;</span></p>",
       "title": "<p>o corre supra por quem mais entende DE TECNOLOGIA</p>",
+      "preTitle": "<p><span>&lt;/MÍDIA&gt;</span></p>",
       "posts": [
         {
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/0533b8c4-5d4c-4478-8ee9-e427c89f2b9e",
@@ -1037,8 +1050,8 @@
     },
     {
       "__resolveType": "site/sections/Images/ImageAndText.tsx",
-      "backgroundImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/4f9244af-c5a0-42f1-8f0e-41024a0723e7",
       "title": "<p><span>O seu corre de alta performance agora é Supra.</span></p>",
+      "backgroundImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11900/4f9244af-c5a0-42f1-8f0e-41024a0723e7",
       "cta": {
         "label": "Comprar agora",
         "href": "#"

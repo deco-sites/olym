@@ -32,14 +32,14 @@ export interface SectionProps {
   alerts?: AlertsProps;
 
   /**
-   * @title Navigation items
-   * @description Navigation items used both on mobile and desktop menus
+   * @title Items de Navegação
+   * @description esses Item serâo exibidos no menu
    */
   navItems: PropsNav;
 
   /**
-   * @title Searchbar
-   * @description Searchbar configuration
+   * @title Compo de busca
+   * @description COnfigurações do campo de busca
    */
   searchbar?: SearchbarProps;
 

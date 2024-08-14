@@ -10,8 +10,17 @@ interface Item {
 }
 /** @titleBy title */
 interface ItemContact {
+  /**
+   * @title Titulo
+   */
   title: string;
+  /**
+   * @title SubTitulo
+   */
   subTitle: string;
+  /**
+   * @title Link
+   */
   href?: string;
 }
 
@@ -24,24 +33,62 @@ interface Link extends Item {
  * @titleBy
  */
 interface Contact {
+  /**
+   * @title Meios de contato
+   */
   item: ItemContact[];
 }
 
 /** @titleBy alt */
 interface Social {
+  /**
+   * @title Tag alt da Imagem
+   */
   alt?: string;
+  /**
+   * @title Link
+   */
   href?: string;
+  /**
+   * @title Imagem
+   */
   image: ImageWidget;
+  /**
+   * @title Comprimento
+   * @description Padrão 34
+   */
   width?: number;
+  /**
+   * @title Altura
+   * @description Padrão 23
+   */
   height?: number;
 }
 
 interface Props {
+  /**
+   * @title Colua de LInks
+   */
   links?: Link[];
+  /**
+   * @title Contato
+   */
   contact: Contact;
+  /**
+   * @title Redes Sociais
+   */
   social?: Social[];
+  /**
+   * @title Metodos de Pagamento
+   */
   paymentMethods?: Social[];
+  /**
+   * @title Tecnologias
+   */
   technologies?: Social[];
+  /**
+   * @title Descrição
+   */
   content?: RichText;
   /**
    * @title Cor de fundo

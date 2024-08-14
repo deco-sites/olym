@@ -6,7 +6,7 @@ interface Props {
    */
   title: RichText;
   /**
-   * @titile Cor do funcdo
+   * @titile Cor do fundo
    * @format color-input
    */
   background?: string;

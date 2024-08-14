@@ -4,35 +4,84 @@ import { ImageWidget, RichText } from "apps/admin/widgets.ts";
 
 /**@titleBy label */
 export interface Link {
+  /**
+   * @title Texto
+   */
   label: RichText;
+  /**
+   * @title Link
+   */
   href: string;
 }
 /**@titleBy title */
 export interface Container {
+  /**
+   * @title Titulo
+   */
   title?: string;
+  /**
+   * @title Links
+   */
   items?: Link[];
+  /**
+   * @title Ver Mais
+   * @description Texto ao final dos links por exemplo "Ver Mais"
+   */
   more?: RichText;
+  /**
+   * @title Link
+   */
   href?: string;
 }
 
+/**
+ * @titleBy label
+ */
 export interface Column {
+  /**
+   * @title Texto
+   */
   label: string;
+  /**
+   * @title Link
+   */
   href: string;
   /**
    * @maxItems 5
+   * @title Colunas
    */
   columns?: Container[];
   /**
    * @format color-input
+   * @title Cor do texto
    */
   colorText?: string;
+  /**
+   * @title Imagem
+   */
   image?: ImageWidget;
+  /**
+   * @title Tag Alt da Imagem
+   */
   alt?: string;
+  /**
+   * @title Link da imagem
+   */
   hrefImage?: string;
+  /**
+   * @title Texto
+   * @description Abaixo da Imagem, por exemplo "Ver Mais"
+   */
   more?: RichText;
 }
 
+/**
+ * @title Menu
+ */
 export interface Props {
+  /**
+   * @title Itens
+   */
   columns: Column[];
 }
 

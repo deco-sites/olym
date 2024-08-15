@@ -67,13 +67,14 @@ export default function SearchBar(
           autoFocus
           tabIndex={0}
           name={NAME}
+          autocomplete="off"
           class="bg-transparent outline-none  placeholder:text-base-100 text-base-100"
           placeholder={placeholder || "Buscar"}
           hx-target={`#${slot}`}
           hx-post={loader && useComponent<SuggestionProps>(Suggestions, {
             loader: asResolved(loader),
           })}
-          hx-trigger={`input changed delay:300ms, ${NAME}`}
+          hx-trigger={`click, input changed delay:300ms, ${NAME}`}
           hx-indicator={`#${SEARCHBAR_INPUT_FORM_ID}`}
           hx-swap="innerHTML"
         >
@@ -99,7 +100,7 @@ export default function SearchBar(
       {/* Suggestions slot */}
       <div
         id={slot}
-        class="absolute top-[calc(100%-25px)] lg:top-[calc(100%-35px)] right-0 left-0 w-full bg-base-100 z-20 max-h-[calc(100vh-114px)] lg:max-h-full overflow-y-scroll lg:overflow-y-hidden"
+        class="absolute top-[calc(100%-25px)] lg:top-[calc(100%-35px)] right-0 left-0 w-full  z-20 max-h-[calc(100vh-114px)] lg:max-h-none overflow-y-scroll lg:overflow-y-hidden"
       />
 
       <script

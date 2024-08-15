@@ -73,10 +73,30 @@ function ProductCard({
       {...event}
       class={clx("card card-compact group text-sm", _class)}
     >
+      <div class="flex gap-3">
+        <span class=" text-sm lg:text-[22px]">
+          {title}
+        </span>
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="19"
+            height="17"
+            viewBox="0 0 19 17"
+            fill="none"
+          >
+            <path
+              d="M9.52539 16.916C9.81543 16.916 10.1846 16.7754 10.4922 16.5732C15.291 13.5059 18.2529 9.84961 18.2529 6.2373C18.2529 3.04688 16.1084 0.858398 13.2783 0.858398C11.8193 0.858398 10.5186 1.48242 9.52539 2.92383C8.54102 1.48242 7.23145 0.858398 5.77246 0.858398C2.94238 0.858398 0.797852 3.04688 0.797852 6.2373C0.797852 9.84961 3.75977 13.5059 8.55859 16.5732C8.86621 16.7754 9.23535 16.916 9.52539 16.916ZM9.52539 15.457C9.47266 15.457 9.39355 15.4307 9.29688 15.3604C5.10449 12.627 2.21289 9.30469 2.21289 6.2373C2.21289 3.82031 3.7334 2.27344 5.77246 2.27344C7.33691 2.27344 8.3916 3.38965 8.875 4.32129C9.05078 4.66406 9.23535 4.82227 9.52539 4.82227C9.81543 4.82227 10 4.66406 10.167 4.33008C10.6328 3.38965 11.7139 2.27344 13.2783 2.27344C15.3174 2.27344 16.8379 3.82031 16.8379 6.2373C16.8379 9.30469 13.9463 12.627 9.75391 15.3604C9.64844 15.4307 9.57812 15.457 9.52539 15.457Z"
+              fill="black"
+            >
+            </path>
+          </svg>
+        </div>
+      </div>
       <figure
         class={clx(
-          "relative bg-base-200",
-          "rounded border border-transparent",
+          "relative",
+          "rounded",
           "group-hover:border-primary",
         )}
         style={{ aspectRatio: ASPECT_RATIO }}
@@ -86,8 +106,8 @@ function ProductCard({
           href={relativeUrl}
           aria-label="view product"
           class={clx(
-            "absolute top-0 left-0",
-            "grid grid-cols-1 grid-rows-1",
+            "absolute top-0 left-0 p-6",
+            "grid grid-cols-1 grid-rows-1 ",
             "w-full",
             !inStock && "opacity-70",
           )}
@@ -155,17 +175,13 @@ function ProductCard({
       </figure>
 
       <a href={relativeUrl} class="pt-5">
-        <span class="font-medium">
-          {title}
-        </span>
-
-        <div class="flex gap-2 pt-2">
+        <div class="flex gap-2 pt-2 flex-col">
           {listPrice && (
-            <span class="line-through font-normal text-gray-400">
+            <span class="line-through font-normal text-black text-2xl hidden">
               {formatPrice(listPrice, offers?.priceCurrency)}
             </span>
           )}
-          <span class="font-medium text-base-300">
+          <span class="font-medium text-black text-base lg:text-2xl text-end">
             {formatPrice(price, offers?.priceCurrency)}
           </span>
         </div>

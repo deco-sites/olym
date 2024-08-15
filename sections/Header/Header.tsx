@@ -20,6 +20,7 @@ import {
   SIDEMENU_CONTAINER_ID,
   SIDEMENU_DRAWER_ID,
 } from "../../constants.ts";
+import SearchBar from "deco-sites/olym/components/search/Searchbar/SearchBar.tsx";
 
 export interface Logo {
   src: ImageWidget;
@@ -41,7 +42,7 @@ export interface SectionProps {
    * @title Compo de busca
    * @description COnfigurações do campo de busca
    */
-  searchbar?: SearchbarProps;
+  searchbar: SearchbarProps;
 
   /** @title Logo */
   logo: Logo;
@@ -83,31 +84,10 @@ const Desktop = (
           </div>
         </div>
         <div class="flex gap-4">
-          <form
-            action={"/s"}
-            class="w-full h-full border border-base-100 rounded-3xl px-4 py-1 flex gap-4 justify-between"
-          >
-            <input
-              name={"search"}
-              class="bg-transparent outline-none  placeholder:text-base-100 text-base-100"
-              placeholder={searchbar?.placeholder || "Buscar"}
-            >
-            </input>
-            <button>
-              <svg
-                width="19"
-                height="20"
-                viewBox="0 0 19 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0.536133 8.31372C0.536133 12.3958 3.85742 15.717 7.93945 15.717C9.55371 15.717 11.0288 15.1975 12.2441 14.3254L16.8086 18.8992C17.022 19.1125 17.3003 19.2146 17.5972 19.2146C18.228 19.2146 18.6641 18.7415 18.6641 18.1199C18.6641 17.823 18.5527 17.554 18.3579 17.3591L13.8213 12.7947C14.7769 11.5515 15.3428 10.0022 15.3428 8.31372C15.3428 4.23169 12.0215 0.9104 7.93945 0.9104C3.85742 0.9104 0.536133 4.23169 0.536133 8.31372ZM2.12256 8.31372C2.12256 5.10376 4.72949 2.49683 7.93945 2.49683C11.1494 2.49683 13.7563 5.10376 13.7563 8.31372C13.7563 11.5237 11.1494 14.1306 7.93945 14.1306C4.72949 14.1306 2.12256 11.5237 2.12256 8.31372Z"
-                  fill="white"
-                />
-              </svg>
-            </button>
-          </form>
+          <SearchBar
+            placeholder={searchbar.placeholder}
+            loader={searchbar.loader}
+          />
           <SignIn variant="desktop" />
           <div class="flex justify-center items-center cursor-pointer">
             <svg
@@ -214,31 +194,10 @@ const Mobile = ({ logo, searchbar }: Props) => (
         </div>
       </div>
       <div class="px-4 py-3 w-full">
-        <form
-          action={"/s"}
-          class="w-full h-full border border-base-100 rounded-3xl px-4 py-1 flex gap-4 justify-between"
-        >
-          <input
-            name={"search"}
-            class="bg-transparent outline-none  placeholder:text-base-100 text-base-100"
-            placeholder={searchbar?.placeholder || "Buscar"}
-          >
-          </input>
-          <button>
-            <svg
-              width="19"
-              height="20"
-              viewBox="0 0 19 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0.536133 8.31372C0.536133 12.3958 3.85742 15.717 7.93945 15.717C9.55371 15.717 11.0288 15.1975 12.2441 14.3254L16.8086 18.8992C17.022 19.1125 17.3003 19.2146 17.5972 19.2146C18.228 19.2146 18.6641 18.7415 18.6641 18.1199C18.6641 17.823 18.5527 17.554 18.3579 17.3591L13.8213 12.7947C14.7769 11.5515 15.3428 10.0022 15.3428 8.31372C15.3428 4.23169 12.0215 0.9104 7.93945 0.9104C3.85742 0.9104 0.536133 4.23169 0.536133 8.31372ZM2.12256 8.31372C2.12256 5.10376 4.72949 2.49683 7.93945 2.49683C11.1494 2.49683 13.7563 5.10376 13.7563 8.31372C13.7563 11.5237 11.1494 14.1306 7.93945 14.1306C4.72949 14.1306 2.12256 11.5237 2.12256 8.31372Z"
-                fill="white"
-              />
-            </svg>
-          </button>
-        </form>
+        <SearchBar
+          placeholder={searchbar.placeholder}
+          loader={searchbar.loader}
+        />
       </div>
     </div>
   </div>

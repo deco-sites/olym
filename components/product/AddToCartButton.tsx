@@ -140,7 +140,7 @@ function AddToCartButton(props: Props) {
 
       <button
         disabled
-        class={clx("flex-grow peer-checked:hidden", _class?.toString())}
+        class={clx("flex-grow peer-checked:hidden hidden", _class?.toString())}
         hx-on:click={useScript(onClick)}
       >
         Add to Cart

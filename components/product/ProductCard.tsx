@@ -73,7 +73,7 @@ function ProductCard({
       {...event}
       class={clx("card card-compact group text-sm", _class)}
     >
-      <div class="flex gap-3">
+      <div class="flex gap-3 justify-between">
         <span class=" text-sm lg:text-[22px]">
           {title}
         </span>
